@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "248185106763",
+    "firebase_url": "https://regrowth-c498e-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "regrowth-c498e",
+    "storage_bucket": "regrowth-c498e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:248185106763:android:af88f329ff2effdbd878ce",
+        "android_client_info": {
+          "package_name": "com.iot.technion.regrowth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "248185106763-sm8tco5ioh9rc6paci899tt52hdi5m2c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.iot.technion.regrowth",
+            "certificate_hash": "31a415a6f34a18885bb263f4d5205fe72d5ffc39"
+          }
+        },
+        {
+          "client_id": "248185106763-ildj0j39c5t1ccvn19am6or45snkuvi5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbULIZmjSP87utoUVa5Mf1Jgz13Ffuolk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "248185106763-ildj0j39c5t1ccvn19am6or45snkuvi5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
