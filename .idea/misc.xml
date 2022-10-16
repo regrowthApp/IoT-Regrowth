@@ -10,6 +10,7 @@
         <entry key="..\:/Regrowth/app/src/main/res/drawable/circle_background.xml" value="0.1805" />
         <entry key="..\:/Regrowth/app/src/main/res/drawable/grey_background.xml" value="0.1805" />
         <entry key="..\:/Regrowth/app/src/main/res/drawable/ic_android_black_24dp.xml" value="0.1805" />
+        <entry key="..\:/Regrowth/app/src/main/res/drawable/ic_background_picture.xml" value="0.3135" />
         <entry key="..\:/Regrowth/app/src/main/res/drawable/ic_baseline_add_24.xml" value="0.29" />
         <entry key="..\:/Regrowth/app/src/main/res/drawable/ic_baseline_analytics_24.xml" value="0.29" />
         <entry key="..\:/Regrowth/app/src/main/res/drawable/ic_baseline_info_24.xml" value="0.29" />
@@ -34,8 +35,9 @@
         <entry key="..\:/Regrowth/app/src/main/res/layout/activity_graph2.xml" value="0.153125" />
         <entry key="..\:/Regrowth/app/src/main/res/layout/activity_login.xml" value="0.3145833333333333" />
         <entry key="..\:/Regrowth/app/src/main/res/layout/activity_main.xml" value="0.21979166666666666" />
-        <entry key="..\:/Regrowth/app/src/main/res/layout/activity_profile.xml" value="0.2988679352838745" />
-        <entry key="..\:/Regrowth/app/src/main/res/layout/activity_tabbed.xml" value="0.21912350597609562" />
+        <entry key="..\:/Regrowth/app/src/main/res/layout/activity_maps.xml" value="0.3145833333333333" />
+        <entry key="..\:/Regrowth/app/src/main/res/layout/activity_profile.xml" value="1.0" />
+        <entry key="..\:/Regrowth/app/src/main/res/layout/activity_tabbed.xml" value="0.2264151024877837" />
         <entry key="..\:/Regrowth/app/src/main/res/layout/add_node.xml" value="0.2971014492753623" />
         <entry key="..\:/Regrowth/app/src/main/res/layout/dialog_create_animal.xml" value="0.21979166666666666" />
         <entry key="..\:/Regrowth/app/src/main/res/layout/dialog_remove_animal.xml" value="0.3145833333333333" />
@@ -44,9 +46,10 @@
         <entry key="..\:/Regrowth/app/src/main/res/layout/fragment_home.xml" value="0.153125" />
         <entry key="..\:/Regrowth/app/src/main/res/layout/fragment_pig.xml" value="0.153125" />
         <entry key="..\:/Regrowth/app/src/main/res/layout/fragment_sheep.xml" value="0.153125" />
-        <entry key="..\:/Regrowth/app/src/main/res/layout/fragment_tabbed.xml" value="0.2988679352838745" />
+        <entry key="..\:/Regrowth/app/src/main/res/layout/fragment_tabbed.xml" value="0.25769927536231885" />
         <entry key="..\:/Regrowth/app/src/main/res/layout/item_node.xml" value="0.2971014492753623" />
         <entry key="..\:/Regrowth/app/src/main/res/layout/item_tab.xml" value="0.21979166666666666" />
+        <entry key="..\:/Regrowth/app/src/main/res/layout/profile_activity.xml" value="0.24864130434782608" />
         <entry key="..\:/Regrowth/app/src/main/res/menu/activity_main_drawer.xml" value="0.21979166666666666" />
         <entry key="..\:/Regrowth/app/src/main/res/menu/bot_bar.xml" value="0.21979166666666666" />
         <entry key="..\:/Regrowth/app/src/main/res/menu/top_bar.xml" value="0.21979166666666666" />

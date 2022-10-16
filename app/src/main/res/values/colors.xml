@@ -6,7 +6,7 @@
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="white">#FFFFFF</color>
     <color name="pink">#FFC0CB</color>
     <color name="yellow">#FFFF00</color>
     <color name="grey">#808080</color>
@@ -16,4 +16,20 @@
     <color name="bright_green">#17A589</color>
     <color name="cyan">#009688</color>
     <color name="basic">#36393B</color>
+
+
+    <!--Animals Tabs Colors-->
+    <color name="Chicken_Tab_Color">#F4B942</color>
+    <color name="Pig_tab_color">#F95A10</color>
+    <color name="Sheep_Tab_Color">#47A025</color>
+    <color name="Goat_Tab_Color">#28BB11</color>
+
+    <!--BarCharts Colors-->
+    <color name="Weight_Bar_Color">#006400</color>
+    <color name="Activity_Bar_Color">#F44336</color>
+
+    <!--PieCharts Colors-->
+    <!--    <color name="Activity_Chart_Color"></color>-->
+    <!--    <color name="Heat_Chart_Color"></color>-->
+    <!--    <color name="Weight_Chart_Color"></color>-->
 </resources>

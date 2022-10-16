@@ -7,15 +7,15 @@ import java.util.*
 
 class ProfileModel {
     var name : String = ""
-    var image : String = ""
-    var birthday : String = ""
+    var farm_image : String = ""
+    var logo_image : String = ""
     var phone_number : String = ""
     var email : String = ""
 
-    constructor(name : String, image : String, birthday : String, phone : String, email: String){
+    constructor(name : String, farm_image : String, logo_image : String, phone : String, email: String){
         this.name = name
-        this.image = image
-        this.birthday = birthday
+        this.farm_image = farm_image
+        this.logo_image = logo_image
         this.phone_number = phone
         this.email = email
     }

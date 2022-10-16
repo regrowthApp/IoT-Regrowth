@@ -9,35 +9,43 @@ import android.widget.ArrayAdapter
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import com.github.mikephil.charting.charts.BarChart
+import com.github.mikephil.charting.data.BarData
+import com.github.mikephil.charting.data.BarDataSet
+import com.github.mikephil.charting.data.BarEntry
 import com.iot.technion.regrowth.databinding.ActivityTabbedBinding
 import com.iot.technion.regrowth.model.AnimalModel
 import com.iot.technion.regrowth.model.NodeModel
-import com.iot.technion.regrowth.ui.main.AnimalsAdapter
+import com.iot.technion.regrowth.AnimalsAdapter
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
+import com.iot.technion.regrowth.databinding.FragmentTabbedBinding
 import kotlinx.android.synthetic.main.dialog_create_animal.view.*
+import kotlinx.android.synthetic.main.fragment_tabbed.view.*
 import kotlinx.android.synthetic.main.item_tab.view.*
 
 
 class MainActivity : AppCompatActivity() {
 
     var selectedAnimal: AnimalModel? = null
+    var barData : BarData = BarData()
     private lateinit var binding: ActivityTabbedBinding
     var animals: ArrayList<AnimalModel> = ArrayList<AnimalModel>()
     lateinit var tabs: TabLayout
     var animalsAdapter: AnimalsAdapter? = null
     val TAG = "TabbedActivity"
     var database = FirebaseDatabase.getInstance()
-    lateinit var myRef : DatabaseReference
+    lateinit var myRef: DatabaseReference
+    private var uid: String = ""
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         binding = ActivityTabbedBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val uid = intent.getStringExtra("id")
+        uid = intent.getStringExtra("id").toString()
         myRef = database.getReference("users/regrowth")
 
         getFromFirebase()
@@ -50,7 +58,6 @@ class MainActivity : AppCompatActivity() {
                     Log.d(TAG, "onTabSelected: ${tab?.position}")
                     performTabSelected(tab)
                 }
-
 
                 override fun onTabUnselected(tab: TabLayout.Tab?) {
                     Log.e("TabbedActivity", "onTabUnselected: ${tab?.position}")
@@ -88,15 +95,14 @@ class MainActivity : AppCompatActivity() {
                                 ).show()
                                 return@setPositiveButton
                             }
-                            animalModel.icon = getAnimalsDrawable().get(view.animalNameSpinner.selectedItemPosition)
+                            animalModel.icon = getAnimalIcon(animalModel.name)
                             addAnimalToFirebase(animalModel)
                         }
                         dialog.setNegativeButton("Cancel") { dialog, which ->
                             dialog.dismiss()
                         }
                         dialog.show()
-                    }
-                    else if (tab?.position == animals.size - 1) {
+                    } else if (tab?.position == animals.size - 1) {
                         //show dialog to delete animal
                         var dialog = AlertDialog.Builder(this@MainActivity)
                         dialog.setTitle("Delete animal")
@@ -111,7 +117,8 @@ class MainActivity : AppCompatActivity() {
 
                         dialog.setView(view)
                         dialog.setPositiveButton("Delete") { dialog, which ->
-                            myRef.child(view.animalNameSpinner.selectedItem.toString()).removeValue()
+                            myRef.child(view.animalNameSpinner.selectedItem.toString())
+                                .removeValue()
                             dialog.dismiss()
                         }
                         dialog.setNegativeButton("Cancel") { dialog, which ->
@@ -137,8 +144,7 @@ class MainActivity : AppCompatActivity() {
 
 
     fun getAnimalColor(animalModel: AnimalModel): String {
-        when(animalModel.name)
-        {
+        when (animalModel.name) {
             "Chicken" -> return "#F4B942"
             "Pig" -> return "#F95A10"
             "Sheep" -> return "#47A025"
@@ -147,18 +153,18 @@ class MainActivity : AppCompatActivity() {
         return "#FFFFFF"
     }
 
-    fun getAnimalsDrawable(): ArrayList<Int> {
-        var animalNames = ArrayList<Int>()
-        animalNames.add(R.drawable.ic_goat)
-        animalNames.add(R.drawable.ic_pig)
-        animalNames.add(R.drawable.ic_sheep)
-        animalNames.add(R.drawable.ic_chicken)
-
-        return animalNames
+    fun getAnimalIcon(animal_name: String): Int {
+        when (animal_name) {
+            "Chicken" -> return R.drawable.ic_chicken
+            "Goat" -> return R.drawable.ic_goat
+            "Sheep" -> return R.drawable.ic_sheep
+            "Pig" -> return R.drawable.ic_pig
+        }
+        return R.drawable.ic_chicken
     }
 
-    fun checkIfAnimal(key : String?) :Boolean{
-        when(key){
+    fun checkIfAnimal(key: String?): Boolean {
+        when (key) {
             "Chicken" -> return true
             "Pig" -> return true
             "Sheep" -> return true
@@ -175,8 +181,7 @@ class MainActivity : AppCompatActivity() {
                     animalsAdapter?.removeAllAnimals()
                     animalsAdapter?.notifyDataSetChanged()
                     animalsAdapter = null
-                    animalsAdapter = AnimalsAdapter(this@MainActivity, animals)
-
+                    animalsAdapter = AnimalsAdapter(this@MainActivity, animals, "regrowth")
                     binding.viewPager.adapter = null
                     binding.viewPager.adapter = animalsAdapter
                     TabLayoutMediator(binding.tabs, binding.viewPager,
@@ -190,16 +195,12 @@ class MainActivity : AppCompatActivity() {
                         }).attach()
                     Handler().postDelayed({
                         dataSnapshot.children.forEach {
-                            if (checkIfAnimal( it.key )) {
+                            if (checkIfAnimal(it.key)) {
                                 val animal = AnimalModel()
                                 animal.name = it.child("name").value.toString()
                                 animal.color = it.child("color").value.toString()
-                                when (animal.name) {
-                                    "Chicken" -> animal.icon = R.drawable.ic_chicken
-                                    "Goat" -> animal.icon = R.drawable.ic_goat
-                                    "Sheep" -> animal.icon = R.drawable.ic_sheep
-                                    "Pig" -> animal.icon = R.drawable.ic_pig
-                                }
+                                animal.icon = getAnimalIcon(animal.name)
+
                                 it.child("nodes").children.forEach {
                                     var node = NodeModel()
                                     node.gatewayId = it.child("gatewayId").value.toString()
@@ -208,14 +209,15 @@ class MainActivity : AppCompatActivity() {
                                     node.tension = it.child("tension").value.toString().toFloat()
                                     animal.nodes.put(node.gatewayId, node)
                                 }
+
                                 animals.add(animal)
                                 Log.e(TAG, "onDataChange: $dataSnapshot")
                                 Log.e(TAG, "onDataChange: ${animal.toString()}")
 
                             }
                         }
-                        animals.add(AnimalModel("Add", R.drawable.ic_baseline_add_24, "#36393B"))
-                        animals.add(AnimalModel("Remove", R.drawable.ic_baseline_remove_24, "#36393B"))
+                        animals.add(AnimalModel("Add", R.drawable.ic_baseline_add_24, "#FFFFFF"))
+                        animals.add(AnimalModel("Remove", R.drawable.ic_baseline_remove_24, "#FFFFFF"))
                         animalsAdapter?.resetAnimals(animals)
                         animalsAdapter?.notifyDataSetChanged()
                     }, 100)

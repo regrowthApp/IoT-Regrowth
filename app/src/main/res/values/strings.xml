@@ -36,6 +36,16 @@
     <string name="percent">percent</string>
     <string name="please_enter_the_node_id">Please enter the Node ID</string>
 
+     <!--Animals Tabs Colors-->
+    <string name="Chicken_Tab_Color">#F4B942</string>
+    <string name="Pig_tab_color">#F95A10</string>
+    <string name="Sheep_Tab_Color">#47A025</string>
+    <string name="Goat_Tab_Color">#28BB11</string>
+
+    <!--BarCharts Colors-->
+    <string name="Weight_Bar_Color">#006400</string>
+    <string name="Activity_Bar_Color">#F44336</string>
+
     <string-array name="node_connections">
         <item>Gateway</item>
         <item>Internet</item>
@@ -73,4 +83,5 @@
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
     <string name="webclient_id">"248185106763-sm8tco5ioh9rc6paci899tt52hdi5m2c.apps.googleusercontent.com"</string>
+    <string name="title_activity_maps">MapsActivity</string>
 </resources>

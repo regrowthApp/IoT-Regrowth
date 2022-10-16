@@ -9,10 +9,8 @@
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/top_bar"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="72dp"
-        android:background="@color/white"
-        app:itemIconTint="@color/green"
         app:itemIconSize="40dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

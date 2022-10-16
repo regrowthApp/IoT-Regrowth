@@ -17,13 +17,29 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.GoogleAuthProvider
 import com.google.firebase.auth.ktx.auth
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.ktx.Firebase
-import kotlinx.android.synthetic.main.activity_login.*
+
+class data{
+    var animal_weight = 0.0
+    var animal_temp = 0.0
+    var animal_humidity = 0.0
+    var activity = 0
+
+    constructor(weight : Double , temp: Double, humidity: Double, activity: Int){
+        this.animal_weight = weight
+        this.animal_temp = temp
+        this.animal_humidity = humidity
+        this.activity = activity
+    }
+}
 
 class LoginActivity : AppCompatActivity() {
 
     private lateinit var googleSignInClient: GoogleSignInClient
     private lateinit var auth: FirebaseAuth
+    private lateinit var database : FirebaseDatabase
 
     private lateinit var binding: ActivityLoginBinding
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -32,6 +48,7 @@ class LoginActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         auth = FirebaseAuth.getInstance()
+        database = FirebaseDatabase.getInstance()
 
         if(GoogleApiAvailability.getInstance().isGooglePlayServicesAvailable(this) == ConnectionResult.SUCCESS) {
             Log.d(TAG, "google api available")
@@ -60,11 +77,20 @@ class LoginActivity : AppCompatActivity() {
             auth.signInWithEmailAndPassword(email, password)
                 .addOnCompleteListener() { it ->
                     if (it.isSuccessful) {
-                        val intent: Intent = Intent(this@LoginActivity, profile_activity::class.java)
-                        val email_address = email.substringBefore("@")
-                        intent.putExtra("id", email_address)
-                        startActivity(intent)
-                        }
+                        val uid = email.substringBefore("@")
+                        database.reference.child("users").get()
+                            .addOnCompleteListener {
+                                if (it.result.hasChild(uid)) {
+                                    val intent = Intent(this@LoginActivity, MainActivity::class.java)
+                                    intent.putExtra("id", uid)
+                                    startActivity(intent)
+                                } else {
+                                    val intent = Intent(this@LoginActivity, profile_activity::class.java)
+                                    intent.putExtra("id", uid)
+                                    startActivity(intent)
+                                }
+                            }
+                    }
                     else{
                         Log.d("error","could not connect to firebase!!")
                     }
