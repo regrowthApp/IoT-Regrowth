@@ -12,6 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Regrowth"
         tools:targetApi="31">
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyBA1YOl8wyYzLK3Fjxc3bvZC823MGxN0Sc" />
@@ -21,20 +25,19 @@
             android:exported="false"
             android:label="@string/title_activity_maps" />
         <activity
-            android:name=".profile_activity"
-            android:exported="false">
-        </activity>
+            android:name=".UserActivity"
+            android:exported="false"></activity>
         <activity
             android:name=".LoginActivity"
             android:exported="false"
-            android:label="Regrowth">
-        </activity>
+            android:label="Regrowth"></activity>
         <activity
             android:name=".MainActivity"
             android:exported="true"
             android:theme="@style/Theme.Regrowth.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

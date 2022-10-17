@@ -1,10 +1,10 @@
 package com.iot.technion.regrowth
 
+import android.app.Activity
 import android.content.ContentValues.TAG
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.iot.technion.regrowth.databinding.ActivityLoginBinding
 import com.google.android.gms.auth.api.signin.GoogleSignIn
@@ -16,10 +16,10 @@ import com.google.android.gms.common.api.ApiException
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.GoogleAuthProvider
-import com.google.firebase.auth.ktx.auth
-import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.DataSnapshot
+import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
-import com.google.firebase.ktx.Firebase
+import com.google.firebase.database.ValueEventListener
 
 class data{
     var animal_weight = 0.0
@@ -40,8 +40,9 @@ class LoginActivity : AppCompatActivity() {
     private lateinit var googleSignInClient: GoogleSignInClient
     private lateinit var auth: FirebaseAuth
     private lateinit var database : FirebaseDatabase
-
     private lateinit var binding: ActivityLoginBinding
+    private lateinit var uid : String
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityLoginBinding.inflate(layoutInflater)
@@ -54,7 +55,7 @@ class LoginActivity : AppCompatActivity() {
             Log.d(TAG, "google api available")
         } else {
             //Google Play Services are not available, or not updated
-            Log.d(TAG, "google api not not not available")
+            Log.d(TAG, "google api not available!")
         }
 
         binding.googleBtn.setOnClickListener {
@@ -64,9 +65,8 @@ class LoginActivity : AppCompatActivity() {
                 .requestEmail()
                 .build()
 
-            googleSignInClient = GoogleSignIn.getClient(this, gso)
-            val signInIntent = googleSignInClient.signInIntent
-            startActivityForResult(signInIntent, RC_SIGN_IN)
+            uid = gso.account.toString().substringBefore("@")
+            checkifUserAlreadyRegistered(this,gso)
         }
 
 
@@ -77,7 +77,7 @@ class LoginActivity : AppCompatActivity() {
             auth.signInWithEmailAndPassword(email, password)
                 .addOnCompleteListener() { it ->
                     if (it.isSuccessful) {
-                        val uid = email.substringBefore("@")
+                        uid = email.substringBefore("@")
                         database.reference.child("users").get()
                             .addOnCompleteListener {
                                 if (it.result.hasChild(uid)) {
@@ -85,8 +85,9 @@ class LoginActivity : AppCompatActivity() {
                                     intent.putExtra("id", uid)
                                     startActivity(intent)
                                 } else {
-                                    val intent = Intent(this@LoginActivity, profile_activity::class.java)
+                                    val intent = Intent(this@LoginActivity, UserActivity::class.java)
                                     intent.putExtra("id", uid)
+                                    intent.putExtra("type","create")
                                     startActivity(intent)
                                 }
                             }
@@ -139,7 +140,7 @@ class LoginActivity : AppCompatActivity() {
 
     private fun updateUI(user: FirebaseUser?) {
         if (user != null) {
-            val intent = Intent(applicationContext, profile_activity::class.java)
+            val intent = Intent(applicationContext, UserActivity::class.java)
             intent.putExtra(EXTRA_NAME, user.displayName)
             startActivity(intent)
         }
@@ -148,5 +149,29 @@ class LoginActivity : AppCompatActivity() {
     companion object {
         const val RC_SIGN_IN = 1001
         const val EXTRA_NAME = "EXTRA_NAME"
+    }
+
+    private fun checkifUserAlreadyRegistered(activity: Activity, gso : GoogleSignInOptions){
+        database.reference.child("users").addListenerForSingleValueEvent(
+            object : ValueEventListener {
+                override fun onDataChange(dataSnapshot: DataSnapshot) {
+                    if(dataSnapshot.hasChild("uid")){
+                        val intent : Intent = Intent(this@LoginActivity,MainActivity::class.java)
+                        intent.putExtra("id",uid)
+                        startActivity(intent)
+                    }
+                    else{
+                        googleSignInClient = GoogleSignIn.getClient(activity, gso)
+                        val signInIntent = googleSignInClient.signInIntent
+                        startActivityForResult(signInIntent, RC_SIGN_IN)
+                    }
+                }
+
+                override fun onCancelled(error: DatabaseError) {
+                    // Failed to read value
+                    Log.e(TAG, "Failed to read value.", error.toException())
+                }
+            }
+        )
     }
 }

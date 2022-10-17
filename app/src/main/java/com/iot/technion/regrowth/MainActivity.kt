@@ -1,5 +1,6 @@
 package com.iot.technion.regrowth
 
+import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
 import android.os.Handler
@@ -9,21 +10,14 @@ import android.widget.ArrayAdapter
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
-import com.github.mikephil.charting.charts.BarChart
 import com.github.mikephil.charting.data.BarData
-import com.github.mikephil.charting.data.BarDataSet
-import com.github.mikephil.charting.data.BarEntry
 import com.iot.technion.regrowth.databinding.ActivityTabbedBinding
 import com.iot.technion.regrowth.model.AnimalModel
 import com.iot.technion.regrowth.model.NodeModel
-import com.iot.technion.regrowth.AnimalsAdapter
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
-import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
-import com.iot.technion.regrowth.databinding.FragmentTabbedBinding
 import kotlinx.android.synthetic.main.dialog_create_animal.view.*
-import kotlinx.android.synthetic.main.fragment_tabbed.view.*
 import kotlinx.android.synthetic.main.item_tab.view.*
 
 
@@ -133,7 +127,17 @@ class MainActivity : AppCompatActivity() {
 
             }
         )
+        binding.topNaviBar.setOnItemSelectedListener {
+            when(it.itemId){
+                R.id.profile -> {
+                    moveToProfile()
+                }
 
+                R.id.notification -> {
+                    moveToNotification()}
+            }
+            true
+        }
 
     }
 
@@ -229,5 +233,15 @@ class MainActivity : AppCompatActivity() {
                 }
             }
         )
+    }
+
+    private fun moveToProfile(){
+        val intent = Intent(this@MainActivity,ProfileActivity::class.java)
+        intent.putExtra("id","regrowth")
+        startActivity(intent)
+    }
+
+    private fun moveToNotification(){
+
     }
 }

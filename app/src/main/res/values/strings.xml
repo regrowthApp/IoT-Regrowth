@@ -36,7 +36,7 @@
     <string name="percent">percent</string>
     <string name="please_enter_the_node_id">Please enter the Node ID</string>
 
-     <!--Animals Tabs Colors-->
+    <!--Animals Tabs Colors-->
     <string name="Chicken_Tab_Color">#F4B942</string>
     <string name="Pig_tab_color">#F95A10</string>
     <string name="Sheep_Tab_Color">#47A025</string>
