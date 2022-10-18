@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.iot.technion.regrowth.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_chicken"
+        android:name="com.iot.technion.regrowth.ui.chicken.ChickenFragment"
+        android:label="Chicken"
+        tools:layout="@layout/fragment_chicken" />
+
+    <fragment
+        android:id="@+id/nav_sheep"
+        android:name="com.iot.technion.regrowth.ui.sheep.SheepFragment"
+        android:label="Sheep"
+        tools:layout="@layout/fragment_sheep" />
+
+    <fragment
+        android:id="@+id/nav_goat"
+        android:name="com.iot.technion.regrowth.ui.goat.GoatFragment"
+        android:label="Goat"
+        tools:layout="@layout/fragment_goat" />
+
+    <fragment
+        android:id="@+id/nav_pig"
+        android:name="com.iot.technion.regrowth.ui.pig.PigFragment"
+        android:label="Pig"
+        tools:layout="@layout/fragment_pig" />
+
+</navigation>

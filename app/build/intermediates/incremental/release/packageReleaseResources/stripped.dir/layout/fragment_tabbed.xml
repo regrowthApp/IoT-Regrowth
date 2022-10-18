@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--This section belong to start of the charts UI-->
+
+        <TextView
+            android:id="@+id/Activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Activity"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/activity_chart"
+            app:layout_constraintEnd_toEndOf="@+id/activity_chart"
+            app:layout_constraintStart_toStartOf="@+id/activity_chart" />
+
+        <TextView
+            android:id="@+id/Heat_stress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Heat Stress"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/heat_chart"
+            app:layout_constraintEnd_toEndOf="@+id/heat_chart"
+            app:layout_constraintStart_toStartOf="@+id/heat_chart" />
+
+
+        <TextView
+            android:id="@+id/Weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weight goal"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/weight_chart"
+            app:layout_constraintEnd_toEndOf="@+id/weight_chart"
+            app:layout_constraintStart_toStartOf="@+id/weight_chart" />
+
+        <com.faskn.lib.ClickablePieChart
+            android:id="@+id/activity_chart"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="40dp"
+            app:animationDuration="2000"
+            app:centerColor="@color/white"
+            app:layout_constraintEnd_toStartOf="@+id/heat_chart"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:popupText="Ziyaret"
+            app:showPercentage="true"
+            app:showPopup="true" />
+
+        <com.faskn.lib.ClickablePieChart
+            android:id="@+id/heat_chart"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="40dp"
+            android:scaleType="centerInside"
+            app:animationDuration="2000"
+            app:centerColor="@color/white"
+            app:layout_constraintEnd_toStartOf="@+id/weight_chart"
+            app:layout_constraintStart_toEndOf="@+id/activity_chart"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.faskn.lib.ClickablePieChart
+            android:id="@+id/weight_chart"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="18dp"
+            android:scaleType="fitCenter"
+            app:animationDuration="2000"
+            app:centerColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:popupText="Ziyaret"
+            app:showPercentage="true"
+            app:showPopup="true" />
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/animals_chart"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="8dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/weight_chart" />
+        <!--This section belong to end of the charts UI-->
+
+
+        <!--This section belong to start of the nodes UI-->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/node_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="@color/green"
+            android:shadowColor="@color/black"
+            android:shadowRadius="15"
+            android:text="@string/add_node"
+            android:textSize="12sp"
+            app:cornerRadius="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/animals_chart" />
+
+        <ImageView
+            android:id="@+id/nodes_img"
+            android:layout_width="40dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:foregroundGravity="left"
+            android:src="@drawable/ic_nodes_analytics"
+            app:layout_constraintBottom_toBottomOf="@+id/node_btn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/animals_chart" />
+
+        <!--This section belong to end of the nodes UI-->
+
+
+        <TableLayout
+            android:id="@+id/nodes_table"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:background="@android:color/white"
+            android:divider="@color/black"
+            android:showDividers="middle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/node_btn">
+
+            <!-- Table Heading -->
+
+            <TableRow
+                android:id="@+id/tableRowHeading"
+                android:background="@color/green">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:fontFamily="Fira Sans Condensed"
+                    android:gravity="center_horizontal"
+                    android:padding="10sp"
+                    android:text="@string/gateway_id"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:fontFamily="Fira Sans Condensed"
+                    android:gravity="center_horizontal"
+                    android:padding="10sp"
+                    android:text="@string/battery"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:fontFamily="Fira Sans Condensed"
+                    android:gravity="center_horizontal"
+                    android:padding="10sp"
+                    android:text="@string/tension"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:fontFamily="Fira Sans Condensed"
+                    android:gravity="center_horizontal"
+                    android:text="@string/connection"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+
+            </TableRow>
+        </TableLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/nodes_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/nodes_table"
+            tools:listitem="@layout/item_node" />
+
+        <!--Start of the Guidelines-->
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/vertical_line.3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.33" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/vertical_line.7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.7" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/vertical_line.9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.95" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/vertical_line.6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.66" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/vertical_line.15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.15" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/horizontal_line.3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.23" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/horizontal_line.65"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.65" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/horizontal_line.7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.7" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/horizontal_line.1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.0" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/horizontal_line.9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="747dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/horizontal_line1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="1" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/horizontal_line0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

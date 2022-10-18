@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <ImageView
+        android:id="@+id/background_img"
+        android:layout_width="match_parent"
+        android:layout_height="294dp"
+        android:src="@drawable/ic_background_picture"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/logo_img"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="180dp"
+        android:src="@drawable/ic_launcher_user_img_foreground"
+        app:layout_constraintEnd_toStartOf="@id/vertical_line.92"
+        app:layout_constraintStart_toStartOf="@+id/horizontal_line.58"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="154dp"
+        android:layout_height="154dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toStartOf="@+id/vertical_line.92"
+        app:layout_constraintStart_toStartOf="@+id/horizontal_line.55"
+        app:layout_constraintTop_toBottomOf="@+id/background_img" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="20dp"
+        android:text="Farm Name"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:autoSizeTextType="uniform"
+        android:drawableLeft="@drawable/ic_home"
+        android:drawablePadding="5dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/farm_name"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/farm_name"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="20dp"
+        android:autoSizeTextType="uniform"
+        android:textColor="@color/green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/horizontal_line.55"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </TextView>
+
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="10dp"
+        android:text="Phone number"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:autoSizeTextType="uniform"
+        android:drawableLeft="@drawable/ic_home"
+        android:drawablePadding="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/phone_number"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/phone_number"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="170dp"
+        android:layout_marginEnd="20dp"
+        android:autoSizeTextType="uniform"
+        android:textColor="@color/green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/horizontal_line.55"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/background_img" />
+
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="10dp"
+        android:drawableLeft="@drawable/ic_home"
+        android:drawablePadding="5dp"
+        android:text="Address"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@+id/address"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="310dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="20dp"
+        android:autoSizeTextType="uniform"
+        android:textColor="@color/green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/horizontal_line.55"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/background_img" />
+
+
+    <TextView
+        android:text="Email Address"
+        android:layout_width="150dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="10dp"
+        android:drawableLeft="@drawable/ic_home"
+        android:drawablePadding="5dp"
+        android:textStyle="bold"
+        android:autoSizeTextType="uniform"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/email_address"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/email_address"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="450dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="20dp"
+        android:autoSizeTextType="uniform"
+        android:textStyle="bold"
+        android:textColor="@color/green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/horizontal_line.55"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </TextView>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_edit_profile"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:text="Edit Profile"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/green"
+        app:layout_constraintStart_toStartOf="@id/vertical_line.5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+    </com.google.android.material.button.MaterialButton>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/back_home"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Back"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/vertical_line.5"
+        app:layout_constraintStart_toStartOf="parent">
+    </com.google.android.material.button.MaterialButton>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontal_line.55"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.55" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontal_line.58"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.58" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vertical_line.92"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.92" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vertical_line.5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
