@@ -10,7 +10,6 @@ import android.widget.ArrayAdapter
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
-import com.github.mikephil.charting.data.BarData
 import com.iot.technion.regrowth.databinding.ActivityTabbedBinding
 import com.iot.technion.regrowth.model.AnimalModel
 import com.iot.technion.regrowth.model.NodeModel
@@ -24,7 +23,6 @@ import kotlinx.android.synthetic.main.item_tab.view.*
 class MainActivity : AppCompatActivity() {
 
     var selectedAnimal: AnimalModel? = null
-    var barData : BarData = BarData()
     private lateinit var binding: ActivityTabbedBinding
     var animals: ArrayList<AnimalModel> = ArrayList<AnimalModel>()
     lateinit var tabs: TabLayout
@@ -32,15 +30,15 @@ class MainActivity : AppCompatActivity() {
     val TAG = "TabbedActivity"
     var database = FirebaseDatabase.getInstance()
     lateinit var myRef: DatabaseReference
-    private var uid: String = ""
+    private var uid: String = "regrowth"
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         binding = ActivityTabbedBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        uid = intent.getStringExtra("id").toString()
-        myRef = database.getReference("users/regrowth")
+//        uid = intent.getStringExtra("id").toString()
+        myRef = database.getReference("users/${uid}")
 
         getFromFirebase()
 
@@ -185,7 +183,7 @@ class MainActivity : AppCompatActivity() {
                     animalsAdapter?.removeAllAnimals()
                     animalsAdapter?.notifyDataSetChanged()
                     animalsAdapter = null
-                    animalsAdapter = AnimalsAdapter(this@MainActivity, animals, "regrowth")
+                    animalsAdapter = AnimalsAdapter(this@MainActivity, animals, uid)
                     binding.viewPager.adapter = null
                     binding.viewPager.adapter = animalsAdapter
                     TabLayoutMediator(binding.tabs, binding.viewPager,

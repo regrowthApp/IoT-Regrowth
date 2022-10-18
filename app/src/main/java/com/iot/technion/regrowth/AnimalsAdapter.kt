@@ -37,11 +37,9 @@ class AnimalsAdapter(private val context: Context, private val animalList: Array
     val TAG = "SectionsPagerAdapter"
     var animals: ArrayList<AnimalModel> = ArrayList<AnimalModel>()
     val activity: MainActivity = context as MainActivity
-//    val currentDate = LocalDate.now().format(DateTimeFormatter.ofPattern("dd-MM-yyyy"))
-    val currentDate = "16-10-2022"
 
-//    val currentTime = LocalTime.now().hour
-    val currentTime = 13
+    val currentDate = LocalDate.now().format(DateTimeFormatter.ofPattern("dd-MM-yyyy"))
+    val currentTime = LocalTime.now().hour
 
     val database = FirebaseDatabase.getInstance()
 
@@ -137,46 +135,40 @@ class AnimalsAdapter(private val context: Context, private val animalList: Array
             object : ValueEventListener {
                 override fun onDataChange(dataSnapshot: DataSnapshot) {
                     dataSnapshot.children.forEach {
-                        val animal_id = it.key.toString().toFloat()
-                        val singleAnimal_activity = it.child("${currentDate}/activity").value.toString()
-                        val singleAnimal_weight = it.child("${currentDate}/weight").value.toString().toFloat()
-                        xAxis.add(animal_id.toString())
-                        weights.add(singleAnimal_weight)
+                        if (it.hasChild(currentDate)) {
+                            val animal_id = it.key.toString().toFloat()
+                            val singleAnimal_activity =
+                                it.child("${currentDate}/activity").value.toString()
+                            val singleAnimal_weight =
+                                it.child("${currentDate}/weight").value.toString().toFloat()
+                            xAxis.add(animal_id.toString())
+                            weights.add(singleAnimal_weight)
 
-                        barlist1.add(
-                            BarEntry(
-                                animal_id,
-                                singleAnimal_weight,
-                                animal_id.toString()
+                            barlist1.add(
+                                BarEntry(
+                                    animal_id,
+                                    singleAnimal_weight,
+                                    animal_id.toString()
+                                )
                             )
-                        )
 
-                        barlist2.add(
-                            BarEntry(
-                                animal_id,
-                                singleAnimal_activity.toFloat(),
-                                animal_id.toString()
+                            barlist2.add(
+                                BarEntry(
+                                    animal_id,
+                                    singleAnimal_activity.toFloat(),
+                                    animal_id.toString()
+                                )
                             )
-                        )
 
-                        totalActivity += singleAnimal_activity.toInt()
-                        activities.add(singleAnimal_activity.toInt())
+                            totalActivity += singleAnimal_activity.toInt()
+                            activities.add(singleAnimal_activity.toInt())
+                        }
+
                     }
-
-                    loadAnimalsChart(binding,barlist1,barlist2,xAxis)
-                    loadActivityChart(binding,activities)
-                    loadWeightChart(binding,weights)
-                    loadHeatChart(binding,animal)
-//                    val threads = ArrayList<Thread>()
-//                    threads.add(Thread(Runnable { loadAnimalsChart(binding,barlist1,barlist2,xAxis) }))
-//                    threads.add(Thread(Runnable { loadActivityChart(binding,activities) }))
-//                    threads.add(Thread(Runnable { loadWeightChart(binding,weights) }))
-//
-//                    for (thread in threads){
-//                        thread.start()
-//                        thread.join()
-//                    }
-
+                        loadAnimalsChart(binding, barlist1, barlist2, xAxis)
+                        loadActivityChart(binding, activities)
+                        loadWeightChart(binding, weights)
+                        loadHeatChart(binding, animal)
                 }
 
                 override fun onCancelled(error: DatabaseError) {
@@ -188,6 +180,12 @@ class AnimalsAdapter(private val context: Context, private val animalList: Array
     }
 
     private fun loadAnimalsChart(binding: FragmentTabbedBinding,barlist1 : ArrayList<BarEntry>, barlist2: ArrayList<BarEntry>, xAxis : ArrayList<String>){
+
+        if(barlist1.isEmpty() || barlist2.isEmpty()){
+            binding.animalsChart.invalidate()
+            return
+        }
+
         val chart = binding.animalsChart
         val barDataSet1 = BarDataSet(barlist1, "weight")
         barDataSet1.color = Color.parseColor("#006400")
@@ -206,10 +204,20 @@ class AnimalsAdapter(private val context: Context, private val animalList: Array
         chart.xAxis.position = XAxis.XAxisPosition.BOTTOM
         chart.groupBars(0f,groupSpace,barSpace)
         chart.enableScroll()
+        chart.isDragEnabled = true
+        chart.isScrollContainer = true
+        chart.isClickable = false
+        chart.animateXY(0,500)
         chart.invalidate()
     }
 
     private fun loadActivityChart(binding: FragmentTabbedBinding,activities : ArrayList<Int>){
+
+        if(activities.isEmpty()){
+            binding.activityChart.invalidate()
+            return
+        }
+
         val median = activities.median().toFloat()
         val pieEntries = arrayListOf(PieEntry(median))
         val pieChart = binding.activityChart
@@ -230,6 +238,12 @@ class AnimalsAdapter(private val context: Context, private val animalList: Array
     }
 
     private fun loadWeightChart(binding: FragmentTabbedBinding, weights : ArrayList<Float>){
+
+        if(weights.isEmpty()){
+            binding.weightChart.invalidate()
+            return
+        }
+
         val median = weights.median().toFloat()
         val pieEntries = arrayListOf(PieEntry(median))
         val pieChart = binding.weightChart
@@ -251,33 +265,33 @@ class AnimalsAdapter(private val context: Context, private val animalList: Array
     private fun loadHeatChart(binding: FragmentTabbedBinding, animal: String){
         val pieChart = binding.heatChart
         val pieEntries = ArrayList<PieEntry>()
-        database.reference.child("users/${uid}/Weather/${animal}").addValueEventListener(
+        database.reference.child("users/${uid}/Environment").addValueEventListener(
             object : ValueEventListener {
                 override fun onDataChange(snapshot: DataSnapshot) {
+                    if (snapshot.hasChild("$animal/${currentDate}/${getTime()}")) {
+                            val values = snapshot.child("$animal/${currentDate}/${getTime()}")
+                            val humidity = values.child("humidity").value.toString().toFloat()
+                            val temperature = values.child("temperature").value.toString().toFloat()
+                            pieEntries.add(PieEntry(temperature))
+                            pieEntries.add(PieEntry(humidity))
 
-                    val values = snapshot.child("${currentDate}/${getTime()}")
-                    val humidity = values.child("humidity").value.toString().toFloat()
-                    val temperature = values.child("temperature").value.toString().toFloat()
-                    pieEntries.add(PieEntry(temperature))
-                    pieEntries.add(PieEntry(humidity))
+                            pieChart.centerText = "$temperature\n$humidity"
+                            val pieDataSet = PieDataSet(pieEntries, "")
+                            pieDataSet.setColors(Color.RED, Color.parseColor("#FFA500"))
+                            val pieData = PieData(pieDataSet)
+                            pieData.setDrawValues(false)
+                            pieData.setValueFormatter(PercentFormatter())
+                            pieChart.animateXY(1000, 1000)
+                            pieChart.setUsePercentValues(true)
+                            pieChart.setCenterTextSize(20f)
+                            pieChart.legend.isEnabled = false
+                            pieChart.description.isEnabled = false
+                            pieChart.holeRadius = 85f
+                            pieChart.data = pieData
+                        }
 
-
-                    pieChart.centerText = "$temperature\n$humidity"
-                    val pieDataSet = PieDataSet(pieEntries, "")
-                    pieDataSet.setColors(Color.RED, Color.parseColor("#FFA500"))
-                    val pieData = PieData(pieDataSet)
-                    pieData.setDrawValues(false)
-                    pieData.setValueFormatter(PercentFormatter())
-                    pieChart.animateXY(1000,1000)
-                    pieChart.setUsePercentValues(true)
-                    pieChart.setCenterTextSize(20f)
-                    pieChart.legend.isEnabled = false
-                    pieChart.description.isEnabled = false
-                    pieChart.holeRadius = 85f
-                    pieChart.data = pieData
-                    pieChart.invalidate()
-
-                }
+                        pieChart.invalidate()
+                    }
 
                 override fun onCancelled(error: DatabaseError) {
                     // Failed to read value
