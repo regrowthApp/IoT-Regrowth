@@ -15,9 +15,7 @@ import com.google.firebase.database.ValueEventListener
 import com.google.firebase.storage.FirebaseStorage
 import com.iot.technion.regrowth.databinding.ActivityUserBinding
 import com.iot.technion.regrowth.model.ProfileModel
-import kotlinx.android.synthetic.main.activity_user.*
 import java.io.File
-import java.util.*
 
 
 class UserActivity : AppCompatActivity() {
@@ -80,7 +78,8 @@ class UserActivity : AppCompatActivity() {
             val name = binding.farmName.text!!.toString()
             val phone_number = binding.phoneNumber.text!!.toString()
             val email = binding.emailAddress.text!!.toString()
-            uploadData(name,phone_number,email)
+            val address = binding.address.text!!.toString()
+            uploadData(name,phone_number,email,address)
         }
 
         binding.cancel.setOnClickListener{
@@ -109,7 +108,7 @@ class UserActivity : AppCompatActivity() {
         }
     }
 
-    private fun uploadData(name : String, phone : String, email: String) {
+    private fun uploadData(name : String, phone : String, email: String,address :String) {
         var reference = storage.reference.child("Profile Pictures/${uid}")
         var farmImgPath = ""
         var logoImgPath = ""
@@ -130,12 +129,12 @@ class UserActivity : AppCompatActivity() {
             }
         }
 
-        val profile = ProfileModel(name, farmImgPath, logoImgPath, phone, email)
+        val profile = ProfileModel(name, farmImgPath, logoImgPath, phone, email,address)
         database.reference.child("users/${uid}/profile")
             .setValue(profile).addOnSuccessListener {
                 Toast.makeText(
                     this@UserActivity,
-                    "Saving Profile",
+                    "Profile Saved!",
                     Toast.LENGTH_LONG
                 ).show()
                 val intent: Intent = Intent(this@UserActivity, MainActivity::class.java)

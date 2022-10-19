@@ -3,18 +3,13 @@ package com.iot.technion.regrowth
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
-import android.widget.ImageView
-import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
-import com.google.android.gms.common.SignInButton
 import com.google.android.gms.common.api.ApiException
-import com.google.android.gms.tasks.OnFailureListener
-import com.google.android.gms.tasks.OnSuccessListener
 import com.google.android.gms.tasks.Task
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.GoogleAuthProvider
@@ -22,23 +17,9 @@ import com.google.firebase.auth.ktx.auth
 import com.google.firebase.database.*
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
-import com.google.firebase.storage.FileDownloadTask
-import com.google.firebase.storage.FirebaseStorage
-import com.google.firebase.storage.StorageReference
 import com.iot.technion.regrowth.databinding.ActivityLoginBinding
-import com.iot.technion.regrowth.databinding.ActivityUserBinding
-import com.iot.technion.regrowth.databinding.ItemNodeBinding
-import java.io.File
 
 
-class User {
-    var username: String? = null
-    var useremail: String? = null
-    var userid: String? = null
-
-}
-
-var my_user = User()
 class LoginActivity : AppCompatActivity() {
     private lateinit var auth: FirebaseAuth
     private lateinit var mGoogleSignInClient: GoogleSignInClient
@@ -60,7 +41,7 @@ class LoginActivity : AppCompatActivity() {
                     if (it.isSuccessful) {
                         database.ref.child("users").get()
                             .addOnCompleteListener {
-                                if (it.result.hasChild(user_id)) {
+                                if (it.isSuccessful and it.result.hasChild(user_id)) {
                                     val intent = Intent(this@LoginActivity, MainActivity::class.java)
                                     intent.putExtra("id", user_id)
                                     startActivity(intent)
@@ -109,7 +90,6 @@ class LoginActivity : AppCompatActivity() {
                             // Sign in success, update UI with the signed-in user's information
                             Log.d("Good auth", "signInWithCredential:success")
                             val user = auth.currentUser
-                            my_user.useremail=user?.email
                             val uid = user?.email!!.substringBefore("@").replace(".","-")
                             database.ref.child("users").get()
                                 .addOnCompleteListener {
