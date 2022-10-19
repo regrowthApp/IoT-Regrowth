@@ -9,16 +9,20 @@ import android.widget.ArrayAdapter
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.recyclerview.widget.RecyclerView
+import com.github.mikephil.charting.charts.PieChart
 import com.github.mikephil.charting.components.Legend
 import com.github.mikephil.charting.components.XAxis
 import com.github.mikephil.charting.data.*
 import com.github.mikephil.charting.formatter.IndexAxisValueFormatter
 import com.github.mikephil.charting.formatter.PercentFormatter
+import com.github.mikephil.charting.highlight.Highlight
+import com.github.mikephil.charting.listener.OnChartValueSelectedListener
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
 import com.iot.technion.regrowth.databinding.AddNodeBinding
+import com.iot.technion.regrowth.databinding.ChartTabbedBinding
 import com.iot.technion.regrowth.databinding.FragmentTabbedBinding
 import com.iot.technion.regrowth.databinding.RemoveNodeBinding
 import com.iot.technion.regrowth.model.AnimalModel
@@ -45,7 +49,6 @@ class AnimalsAdapter(private val context: Context, private val animalList: Array
 //    val currentDate = LocalDate.now().format(DateTimeFormatter.ofPattern("dd-MM-yyyy"))
     val currentDate = "18-10-2022"
     val currentTime = LocalTime.now().hour
-
 
     val database = FirebaseDatabase.getInstance()
 
@@ -181,6 +184,8 @@ class AnimalsAdapter(private val context: Context, private val animalList: Array
         val weights = ArrayList<Float>()
         val xAxis = ArrayList<String>()
         var totalActivity = 0
+        val mostActiveAnimal = 0
+        val leastActiveAnimal = 0
         val activities = arrayListOf<Int>()
 
         val database = FirebaseDatabase.getInstance()
@@ -225,9 +230,25 @@ class AnimalsAdapter(private val context: Context, private val animalList: Array
                         }
 
                     }
-                        loadAnimalsChart(binding, barlist1, barlist2, xAxis)
-                        loadActivityChart(binding, activities)
-                        loadWeightChart(binding, weights)
+                        val max_active = activities.withIndex().maxByOrNull { it.value }
+                        val min_active = activities.withIndex().minByOrNull { it.value }
+                        val max_weight = weights.withIndex().maxByOrNull { it.value }
+                        val min_weight = weights.withIndex().minByOrNull { it.value }
+
+                        if(!barlist1.isEmpty() and !barlist2.isEmpty()){
+                            loadAnimalsChart(binding, barlist1, barlist2, xAxis)
+                        }
+
+                        if(!activities.isEmpty()){
+                        loadActivityChart(binding, activities,totalActivity,xAxis[max_active!!.index],
+                            max_active.value,xAxis[min_active!!.index],min_active.value)
+                        }
+
+                        if(!weights.isEmpty()){
+                            loadWeightChart(binding, weights,xAxis[max_weight!!.index],max_weight.value,xAxis[min_weight!!.index],min_weight.value)
+                        }
+
+
                         loadHeatChart(binding, animal)
                 }
 
@@ -286,9 +307,11 @@ class AnimalsAdapter(private val context: Context, private val animalList: Array
         legend.orientation = Legend.LegendOrientation.HORIZONTAL
 
         chart.invalidate()
+
     }
 
-    private fun loadActivityChart(binding: FragmentTabbedBinding,activities : ArrayList<Int>){
+    private fun loadActivityChart(binding: FragmentTabbedBinding,activities : ArrayList<Int>,totalActivity: Int, mostActiveAnimal: String, mostActive: Int,
+                                  leastActiveAnimal: String, leastActive : Int){
 
         if(activities.isEmpty()){
             binding.activityChart.invalidate()
@@ -308,13 +331,45 @@ class AnimalsAdapter(private val context: Context, private val animalList: Array
         pieChart.setUsePercentValues(true)
         pieChart.setCenterTextSize(25f)
         pieChart.legend.isEnabled = false
+        pieChart.isLongClickable = true
         pieChart.description.isEnabled = false
         pieChart.holeRadius = 85f
         pieChart.data = pieData
         pieChart.invalidate()
+
+        binding.activityChart.setOnChartValueSelectedListener (
+            object : OnChartValueSelectedListener {
+                override fun onValueSelected(e: Entry, h: Highlight?) {
+                    val view = ChartTabbedBinding.inflate(LayoutInflater.from(context))
+                    val chart = view.activityChartTabbed
+                    chart.data = pieChart.data
+                    chart.holeRadius = 90f
+                    chart.setCenterTextSize(10f)
+                    chart.legend.isEnabled = false
+                    chart.description.isEnabled = false
+                    chart.animateXY(1000,1000)
+                    chart.centerText = "$median"
+                    chart.setCenterTextSize(30f)
+                    chart.invalidate()
+                    view.leastActive.text = "Least Active Animal: $leastActiveAnimal with $leastActive Activity"
+                    view.mostActive.text = "Most Active Animal: $mostActiveAnimal with $mostActive Activity"
+                    view.totalActivites.text = "Total Activity Number: ${totalActivity}"
+
+                    val dialog = AlertDialog.Builder(context)
+                    dialog.setNeutralButton("Back"){ dialog,which->
+                        dialog.dismiss()
+                    }
+
+                    dialog.setView(view.root)
+
+                    dialog.show()
+                }
+                override fun onNothingSelected() {}
+            }
+        )
     }
 
-    private fun loadWeightChart(binding: FragmentTabbedBinding, weights : ArrayList<Float>){
+    private fun loadWeightChart(binding: FragmentTabbedBinding, weights : ArrayList<Float>,maxAnimalWeight: String,maxWeight : Float,minAnimalWeight : String, minWeight : Float){
 
         if(weights.isEmpty()){
             binding.weightChart.invalidate()
@@ -337,6 +392,39 @@ class AnimalsAdapter(private val context: Context, private val animalList: Array
         pieChart.holeRadius = 85f
         pieChart.data = pieData
         pieChart.invalidate()
+
+        binding.weightChart.setOnChartValueSelectedListener (
+            object : OnChartValueSelectedListener {
+                override fun onValueSelected(e: Entry, h: Highlight?) {
+                    val view = ChartTabbedBinding.inflate(LayoutInflater.from(context))
+                    val chart = view.activityChartTabbed
+                    chart.data = pieChart.data
+                    chart.holeRadius = 90f
+                    chart.setCenterTextSize(10f)
+                    chart.legend.isEnabled = false
+                    chart.description.isEnabled = false
+                    chart.animateXY(1000,1000)
+                    chart.centerText = "$median"
+                    chart.setCenterTextSize(30f)
+                    chart.invalidate()
+                    view.leastActive.text = "Max Animal Weight: $maxAnimalWeight wights $maxWeight"
+                    view.mostActive.text = "Min Animal Weight: $minAnimalWeight weights $minWeight"
+                    view.totalActivites.text = "Weights Median : ${median}"
+
+                    val dialog = AlertDialog.Builder(context)
+                    dialog.setNeutralButton("Back"){ dialog,which->
+                        dialog.dismiss()
+                    }
+
+                    dialog.setView(view.root)
+
+                    dialog.show()
+                }
+                override fun onNothingSelected() {}
+            }
+        )
+
+
     }
 
     private fun loadHeatChart(binding: FragmentTabbedBinding, animal: String){

@@ -72,6 +72,7 @@ id Weight
 id action_FirstFragment_to_SecondFragment
 id action_SecondFragment_to_FirstFragment
 id activity_chart
+id activity_chart_tabbed
 id address
 id animalIcon
 id animalName
@@ -102,12 +103,14 @@ id horizontal_line.7
 id horizontal_line.9
 id horizontal_line.92
 id itemRoot
+id least_active
 id login_logo
 id loginbtn
 id logo_btn
 id logo_img
 id main_layout
 id mapView
+id most_active
 id nav_graph
 id node_available
 id node_btn
@@ -126,6 +129,7 @@ id socialicons
 id tableRowHeading
 id tabs
 id top_navi_bar
+id total_activites
 id vertical_line.15
 id vertical_line.3
 id vertical_line.5
@@ -140,7 +144,7 @@ layout activity_profile
 layout activity_tabbed
 layout activity_user
 layout add_node
-layout dialog_chart_data
+layout chart_tabbed
 layout dialog_create_animal
 layout dialog_remove_animal
 layout edit_nodes

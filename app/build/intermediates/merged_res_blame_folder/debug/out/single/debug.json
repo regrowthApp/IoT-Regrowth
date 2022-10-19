@@ -200,10 +200,6 @@
         "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-57:\\layout\\item_tab.xml"
     },
     {
-        "merged": "com.iot.technion.regrowth.app-merged_res-55:/layout_edit_nodes.xml.flat",
-        "source": "com.iot.technion.regrowth.app-main-57:/layout/edit_nodes.xml"
-    },
-    {
         "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-55:\\drawable_nationality.png.flat",
         "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-57:\\drawable\\nationality.png"
     },
@@ -226,6 +222,10 @@
     {
         "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-55:\\drawable_ic_baseline_analytics_24.xml.flat",
         "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-57:\\drawable\\ic_baseline_analytics_24.xml"
+    },
+    {
+        "merged": "com.iot.technion.regrowth.app-merged_res-55:/layout_chart_tabbed.xml.flat",
+        "source": "com.iot.technion.regrowth.app-main-57:/layout/chart_tabbed.xml"
     },
     {
         "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-55:\\drawable_ic_profile.xml.flat",
@@ -282,6 +282,10 @@
     {
         "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-55:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-57:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-55:\\layout_chart_tabbed.xml.flat",
+        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-57:\\layout\\chart_tabbed.xml"
     },
     {
         "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-55:\\mipmap-xxhdpi_ic_launcher_user_img.png.flat",

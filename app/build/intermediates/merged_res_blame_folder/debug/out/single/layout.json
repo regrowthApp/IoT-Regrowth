@@ -32,10 +32,6 @@
         "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-57:\\layout\\activity_tabbed.xml"
     },
     {
-        "merged": "com.iot.technion.regrowth.app-mergeDebugResources-54:/layout/edit_nodes.xml",
-        "source": "com.iot.technion.regrowth.app-main-57:/layout/edit_nodes.xml"
-    },
-    {
         "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-mergeDebugResources-54:\\layout\\dialog_create_animal.xml",
         "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-57:\\layout\\dialog_create_animal.xml"
     },
@@ -44,12 +40,20 @@
         "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-57:\\layout\\item_node.xml"
     },
     {
+        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-mergeDebugResources-54:\\layout\\chart_tabbed.xml",
+        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-57:\\layout\\chart_tabbed.xml"
+    },
+    {
         "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-mergeDebugResources-54:\\layout\\dialog_remove_animal.xml",
         "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-57:\\layout\\dialog_remove_animal.xml"
     },
     {
         "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-mergeDebugResources-54:\\layout\\add_node.xml",
         "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-57:\\layout\\add_node.xml"
+    },
+    {
+        "merged": "com.iot.technion.regrowth.app-mergeDebugResources-54:/layout/chart_tabbed.xml",
+        "source": "com.iot.technion.regrowth.app-main-57:/layout/chart_tabbed.xml"
     },
     {
         "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-mergeDebugResources-54:\\layout\\item_tab.xml",

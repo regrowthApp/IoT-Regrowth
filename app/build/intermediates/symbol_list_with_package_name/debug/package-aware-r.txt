@@ -2764,6 +2764,7 @@ id action_mode_close_button
 id action_text
 id actions
 id activity_chart
+id activity_chart_tabbed
 id activity_chooser_view_content
 id add
 id address
@@ -2972,6 +2973,7 @@ id jumpToEnd
 id jumpToStart
 id labeled
 id layout
+id least_active
 id left
 id leftToRight
 id legacy
@@ -3021,6 +3023,7 @@ id month_navigation_fragment_toggle
 id month_navigation_next
 id month_navigation_previous
 id month_title
+id most_active
 id motion_base
 id mtrl_anchor_parent
 id mtrl_calendar_day_selector_frame
@@ -3223,6 +3226,7 @@ id toggle
 id top
 id topPanel
 id top_navi_bar
+id total_activites
 id touch_outside
 id transitionToEnd
 id transitionToStart
@@ -3366,6 +3370,7 @@ layout activity_user
 layout add_node
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
+layout chart_tabbed
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -3382,7 +3387,6 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
-layout dialog_chart_data
 layout dialog_create_animal
 layout dialog_remove_animal
 layout edit_nodes
