@@ -30,14 +30,14 @@ class MainActivity : AppCompatActivity() {
     val TAG = "TabbedActivity"
     var database = FirebaseDatabase.getInstance()
     lateinit var myRef: DatabaseReference
-    private var uid: String = "regrowth"
+    private var uid: String = ""
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         binding = ActivityTabbedBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-//        uid = intent.getStringExtra("id").toString()
+        uid = intent.getStringExtra("id").toString()
         myRef = database.getReference("users/${uid}")
 
         getFromFirebase()
@@ -235,7 +235,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun moveToProfile(){
         val intent = Intent(this@MainActivity,ProfileActivity::class.java)
-        intent.putExtra("id","regrowth")
+        intent.putExtra("id",uid)
         startActivity(intent)
     }
 

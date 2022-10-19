@@ -228,31 +228,31 @@ ADDED from D:\Regrowth\app\src\main\AndroidManifest.xml:23:9-25:49
 	android:name
 		ADDED from D:\Regrowth\app\src\main\AndroidManifest.xml:24:13-41
 activity#com.iot.technion.regrowth.LoginActivity
-ADDED from D:\Regrowth\app\src\main\AndroidManifest.xml:26:9-30:20
+ADDED from D:\Regrowth\app\src\main\AndroidManifest.xml:26:9-34:20
 	android:label
 		ADDED from D:\Regrowth\app\src\main\AndroidManifest.xml:29:13-37
 	android:exported
-		ADDED from D:\Regrowth\app\src\main\AndroidManifest.xml:28:13-37
+		ADDED from D:\Regrowth\app\src\main\AndroidManifest.xml:28:13-36
 	android:name
 		ADDED from D:\Regrowth\app\src\main\AndroidManifest.xml:27:13-42
-activity#com.iot.technion.regrowth.MainActivity
-ADDED from D:\Regrowth\app\src\main\AndroidManifest.xml:31:9-39:20
-	android:exported
-		ADDED from D:\Regrowth\app\src\main\AndroidManifest.xml:33:13-36
-	android:theme
-		ADDED from D:\Regrowth\app\src\main\AndroidManifest.xml:34:13-62
-	android:name
-		ADDED from D:\Regrowth\app\src\main\AndroidManifest.xml:32:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\Regrowth\app\src\main\AndroidManifest.xml:35:13-38:29
+ADDED from D:\Regrowth\app\src\main\AndroidManifest.xml:30:13-33:29
 action#android.intent.action.MAIN
-ADDED from D:\Regrowth\app\src\main\AndroidManifest.xml:36:17-69
+ADDED from D:\Regrowth\app\src\main\AndroidManifest.xml:31:17-69
 	android:name
-		ADDED from D:\Regrowth\app\src\main\AndroidManifest.xml:36:25-66
+		ADDED from D:\Regrowth\app\src\main\AndroidManifest.xml:31:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\Regrowth\app\src\main\AndroidManifest.xml:37:17-77
+ADDED from D:\Regrowth\app\src\main\AndroidManifest.xml:32:17-77
 	android:name
-		ADDED from D:\Regrowth\app\src\main\AndroidManifest.xml:37:27-74
+		ADDED from D:\Regrowth\app\src\main\AndroidManifest.xml:32:27-74
+activity#com.iot.technion.regrowth.MainActivity
+ADDED from D:\Regrowth\app\src\main\AndroidManifest.xml:35:9-39:20
+	android:exported
+		ADDED from D:\Regrowth\app\src\main\AndroidManifest.xml:37:13-37
+	android:theme
+		ADDED from D:\Regrowth\app\src\main\AndroidManifest.xml:38:13-62
+	android:name
+		ADDED from D:\Regrowth\app\src\main\AndroidManifest.xml:36:13-41
 uses-sdk
 INJECTED from D:\Regrowth\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\Regrowth\app\src\main\AndroidManifest.xml

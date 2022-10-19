@@ -44,6 +44,7 @@ class UserActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         uid = intent.getStringExtra("id")!!.toString()
+        uid.replace(".","-")
         intent_type = intent.getStringExtra("type")!!.toString()
 
         dialog = AlertDialog.Builder(this)

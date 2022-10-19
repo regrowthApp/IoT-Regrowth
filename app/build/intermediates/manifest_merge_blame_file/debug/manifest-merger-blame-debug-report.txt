@@ -97,32 +97,32 @@
 57            android:exported="false" />
 57-->D:\Regrowth\app\src\main\AndroidManifest.xml:25:13-37
 58        <activity
-58-->D:\Regrowth\app\src\main\AndroidManifest.xml:26:9-30:20
+58-->D:\Regrowth\app\src\main\AndroidManifest.xml:26:9-34:20
 59            android:name="com.iot.technion.regrowth.LoginActivity"
 59-->D:\Regrowth\app\src\main\AndroidManifest.xml:27:13-42
-60            android:exported="false"
-60-->D:\Regrowth\app\src\main\AndroidManifest.xml:28:13-37
+60            android:exported="true"
+60-->D:\Regrowth\app\src\main\AndroidManifest.xml:28:13-36
 61            android:label="Regrowth" >
 61-->D:\Regrowth\app\src\main\AndroidManifest.xml:29:13-37
-62        </activity>
-63        <activity
-63-->D:\Regrowth\app\src\main\AndroidManifest.xml:31:9-39:20
-64            android:name="com.iot.technion.regrowth.MainActivity"
-64-->D:\Regrowth\app\src\main\AndroidManifest.xml:32:13-41
-65            android:exported="true"
-65-->D:\Regrowth\app\src\main\AndroidManifest.xml:33:13-36
-66            android:theme="@style/Theme.Regrowth.NoActionBar" >
-66-->D:\Regrowth\app\src\main\AndroidManifest.xml:34:13-62
-67            <intent-filter>
-67-->D:\Regrowth\app\src\main\AndroidManifest.xml:35:13-38:29
-68                <action android:name="android.intent.action.MAIN" />
-68-->D:\Regrowth\app\src\main\AndroidManifest.xml:36:17-69
-68-->D:\Regrowth\app\src\main\AndroidManifest.xml:36:25-66
-69
-70                <category android:name="android.intent.category.LAUNCHER" />
-70-->D:\Regrowth\app\src\main\AndroidManifest.xml:37:17-77
-70-->D:\Regrowth\app\src\main\AndroidManifest.xml:37:27-74
-71            </intent-filter>
+62            <intent-filter>
+62-->D:\Regrowth\app\src\main\AndroidManifest.xml:30:13-33:29
+63                <action android:name="android.intent.action.MAIN" />
+63-->D:\Regrowth\app\src\main\AndroidManifest.xml:31:17-69
+63-->D:\Regrowth\app\src\main\AndroidManifest.xml:31:25-66
+64
+65                <category android:name="android.intent.category.LAUNCHER" />
+65-->D:\Regrowth\app\src\main\AndroidManifest.xml:32:17-77
+65-->D:\Regrowth\app\src\main\AndroidManifest.xml:32:27-74
+66            </intent-filter>
+67        </activity>
+68        <activity
+68-->D:\Regrowth\app\src\main\AndroidManifest.xml:35:9-39:20
+69            android:name="com.iot.technion.regrowth.MainActivity"
+69-->D:\Regrowth\app\src\main\AndroidManifest.xml:36:13-41
+70            android:exported="false"
+70-->D:\Regrowth\app\src\main\AndroidManifest.xml:37:13-37
+71            android:theme="@style/Theme.Regrowth.NoActionBar" >
+71-->D:\Regrowth\app\src\main\AndroidManifest.xml:38:13-62
 72        </activity>
 73        <!-- Needs to be explicitly declared on P+ -->
 74        <uses-library
