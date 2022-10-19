@@ -109,6 +109,7 @@ id logo_img
 id main_layout
 id mapView
 id nav_graph
+id node_available
 id node_btn
 id node_connection
 id node_id
@@ -139,11 +140,14 @@ layout activity_profile
 layout activity_tabbed
 layout activity_user
 layout add_node
+layout dialog_chart_data
 layout dialog_create_animal
 layout dialog_remove_animal
+layout edit_nodes
 layout fragment_tabbed
 layout item_node
 layout item_tab
+layout remove_node
 menu top_bar
 mipmap background_button
 mipmap background_button_round

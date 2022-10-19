@@ -5,9 +5,11 @@ import android.graphics.Color
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import android.widget.ArrayAdapter
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.recyclerview.widget.RecyclerView
+import com.github.mikephil.charting.components.Legend
 import com.github.mikephil.charting.components.XAxis
 import com.github.mikephil.charting.data.*
 import com.github.mikephil.charting.formatter.IndexAxisValueFormatter
@@ -18,8 +20,10 @@ import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
 import com.iot.technion.regrowth.databinding.AddNodeBinding
 import com.iot.technion.regrowth.databinding.FragmentTabbedBinding
+import com.iot.technion.regrowth.databinding.RemoveNodeBinding
 import com.iot.technion.regrowth.model.AnimalModel
 import com.iot.technion.regrowth.model.NodeModel
+import kotlinx.android.synthetic.main.remove_node.view.*
 import org.nield.kotlinstatistics.median
 import java.time.LocalDate
 import java.time.LocalTime
@@ -38,8 +42,10 @@ class AnimalsAdapter(private val context: Context, private val animalList: Array
     var animals: ArrayList<AnimalModel> = ArrayList<AnimalModel>()
     val activity: MainActivity = context as MainActivity
 
-    val currentDate = LocalDate.now().format(DateTimeFormatter.ofPattern("dd-MM-yyyy"))
+//    val currentDate = LocalDate.now().format(DateTimeFormatter.ofPattern("dd-MM-yyyy"))
+    val currentDate = "18-10-2022"
     val currentTime = LocalTime.now().hour
+
 
     val database = FirebaseDatabase.getInstance()
 
@@ -62,20 +68,73 @@ class AnimalsAdapter(private val context: Context, private val animalList: Array
             holder.binding.root.setBackgroundColor(Color.parseColor(animal.color))
             setupCharts(holder.binding,animal.name)
             holder.binding.nodeBtn.setOnClickListener {
-                addNode(animal)
+                setupNodes(holder.binding,context,animal)
             }
-            setUpNodes(holder.binding, animal,context)
+            setUpNodes(holder.binding,animal,context)
         }
+    }
+
+    private fun setupNodes(binding: FragmentTabbedBinding, context: Context,animal: AnimalModel){
+        AlertDialog.Builder(context)
+            .setTitle("Edit Nodes")
+            .setView(R.layout.edit_nodes)
+            .setNeutralButton("Cancel"){dialog,which->
+                dialog.dismiss()
+            }
+            .setPositiveButton("Add Node"){dialog,which->
+                addNode(animal.name)
+                dialog.dismiss()
+            }
+            .setNegativeButton("Remove Node"){dialog, which->
+                deleteNode(animal.name)
+                dialog.dismiss()
+            }
+            .show()
     }
 
     private fun setUpNodes(binding: FragmentTabbedBinding, animal: AnimalModel, context: Context) {
 
-        val adapter = NodesAdapter(context, animal.nodes)
+        val adapter = NodesAdapter(context,animal.name ,animal.nodes, uid)
         binding.nodesRecyclerView.layoutManager = androidx.recyclerview.widget.LinearLayoutManager(context)
         binding.nodesRecyclerView.adapter = adapter
     }
 
-    private fun addNode(animal: AnimalModel) {
+    private fun deleteNode(animal: String){
+        var b=RemoveNodeBinding.inflate(LayoutInflater.from(context))
+        val dialog = AlertDialog.Builder(context)
+        dialog.setTitle("Remove Node")
+        database.reference.child("users/${uid}/${animal}").addValueEventListener(
+            object : ValueEventListener {
+                override fun onDataChange(dataSnapshot: DataSnapshot) {
+                    val nodes = ArrayAdapter<String>(context,android.R.layout.simple_spinner_dropdown_item)
+                    if(dataSnapshot.hasChild("nodes")){
+                        dataSnapshot.child("nodes").children.forEach {
+                            nodes.add(it.key)
+                        }
+                    }
+                    b.nodeAvailable.adapter = nodes
+                }
+
+                override fun onCancelled(error: DatabaseError) {
+                    // Failed to read value
+                    Log.w(TAG, "Failed to read value.", error.toException())
+                }
+            }
+        )
+        b.nodeAvailable
+        dialog.setView(b.root)
+        dialog.setPositiveButton("Delete"){dialog, which->
+            val node_id = b.nodeAvailable.selectedItem.toString()
+            database.reference.child("users/${uid}/${animal}/nodes/${node_id}").removeValue()
+            dialog.dismiss()
+        }
+        dialog.setNegativeButton("Cancel"){dialog, which ->
+                dialog.dismiss()
+        }
+        dialog.show()
+    }
+
+    private fun addNode(animal: String) {
         var b=AddNodeBinding.inflate(LayoutInflater.from(context))
         var node=NodeModel()
         AlertDialog.Builder(context)
@@ -84,30 +143,24 @@ class AnimalsAdapter(private val context: Context, private val animalList: Array
             .setPositiveButton("Add") { dialog, which ->
                 if (b.nodeId.text.toString().isEmpty()) {
                     Toast.makeText(context, "Please enter a node id", Toast.LENGTH_SHORT).show()
-                }else if (b.batteryPercentage.text.toString().isEmpty()) {
-                    Toast.makeText(context, "Please enter a battery percentage", Toast.LENGTH_SHORT).show()
-                }else if (b.batteryTension.text.toString().isEmpty()) {
-                    Toast.makeText(context, "Please enter a battery tension", Toast.LENGTH_SHORT).show()
                 }else{
                     node.gatewayId=b.nodeId.text.toString()
-                    node.battery=b.batteryPercentage.text.toString().toInt()
-                    node.tension=b.batteryTension.text.toString().toFloat()
+                    node.battery= -1
+                    node.tension= -1f
                     node.connection=b.nodeConnection.selectedItem.toString()
                     Log.e(TAG, "addNode:${node.connection}", )
-
-
                     var database = FirebaseDatabase.getInstance()
-                    var myRef = database.getReference("users/${uid}/${animal.name}/nodes/${node.gatewayId}")
+                    var myRef = database.getReference("users/${uid}/${animal}/nodes/${node.gatewayId}")
                     myRef.setValue(node).addOnSuccessListener {
                         Toast.makeText(context, "Node added successfully", Toast.LENGTH_SHORT).show()
                     }.addOnFailureListener {
                         Log.e(TAG, "addNode: ${it.message}", )
                     }
                 }
-
+                dialog.dismiss()
             }
             .setNegativeButton("Cancel") { dialog, which ->
-                dialog.cancel()
+                dialog.dismiss()
             }
             .show()
     }
@@ -134,32 +187,39 @@ class AnimalsAdapter(private val context: Context, private val animalList: Array
         database.reference.child("users/${uid}/Data/${animal}").orderByKey().addValueEventListener(
             object : ValueEventListener {
                 override fun onDataChange(dataSnapshot: DataSnapshot) {
+                    var x_id = 0F
                     dataSnapshot.children.forEach {
                         if (it.hasChild(currentDate)) {
-                            val animal_id = it.key.toString().toFloat()
+                            val animal_id = it.key.toString()
                             val singleAnimal_activity =
                                 it.child("${currentDate}/activity").value.toString()
                             val singleAnimal_weight =
                                 it.child("${currentDate}/weight").value.toString().toFloat()
-                            xAxis.add(animal_id.toString())
+                            xAxis.add(it.key.toString())
                             weights.add(singleAnimal_weight)
+
+                            /// check thresh hold for notifications
+//                            if(singleAnimal_weight < 20 || singleAnimal_weight > 60){
+//                                sendnotification()
+//                            }
 
                             barlist1.add(
                                 BarEntry(
-                                    animal_id,
+                                    x_id,
                                     singleAnimal_weight,
-                                    animal_id.toString()
+                                    animal_id
                                 )
                             )
 
                             barlist2.add(
                                 BarEntry(
-                                    animal_id,
+                                    x_id,
                                     singleAnimal_activity.toFloat(),
-                                    animal_id.toString()
+                                    animal_id
                                 )
                             )
 
+                            x_id = x_id+1
                             totalActivity += singleAnimal_activity.toInt()
                             activities.add(singleAnimal_activity.toInt())
                         }
@@ -189,25 +249,42 @@ class AnimalsAdapter(private val context: Context, private val animalList: Array
         val chart = binding.animalsChart
         val barDataSet1 = BarDataSet(barlist1, "weight")
         barDataSet1.color = Color.parseColor("#006400")
+        barDataSet1.valueTextSize = 10f
         val barDataSet2 = BarDataSet(barlist2, "activity")
         barDataSet2.color = Color.parseColor("#F44336")
+        barDataSet2.valueTextSize = 10f
         val barData = BarData(barDataSet1, barDataSet2)
 
-        val barSpace = 0.2f
-        val groupSpace = 0.03f
-        barData.barWidth = 0.4f
+        val barSpace = 0.02f
+        val groupSpace = 0.15f
+        barData.barWidth = 0.2f
 
         chart.data = barData
         chart.xAxis.axisMinimum = 0f
         chart.axisLeft.axisMinimum = 0f
         chart.xAxis.valueFormatter = IndexAxisValueFormatter(xAxis)
+        chart.xAxis.setCenterAxisLabels(true)
+        chart.xAxis.granularity = 1F
+        chart.xAxis.isGranularityEnabled = true
+        chart.setVisibleXRangeMaximum(4F)
+        chart.setDrawGridBackground(false)
         chart.xAxis.position = XAxis.XAxisPosition.BOTTOM
         chart.groupBars(0f,groupSpace,barSpace)
         chart.enableScroll()
         chart.isDragEnabled = true
         chart.isScrollContainer = true
         chart.isClickable = false
-        chart.animateXY(0,500)
+        chart.setFitBars(true)
+        chart.description.text = ""
+        chart.animateY(600)
+        chart.isClickable = false
+
+        val legend = chart.legend
+        legend.horizontalAlignment = Legend.LegendHorizontalAlignment.RIGHT
+        legend.verticalAlignment = Legend.LegendVerticalAlignment.TOP
+        legend.textSize = 10f
+        legend.orientation = Legend.LegendOrientation.HORIZONTAL
+
         chart.invalidate()
     }
 

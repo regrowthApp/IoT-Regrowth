@@ -28,7 +28,7 @@
     <string name="notifications">notifications</string>
     <string name="profile">profile</string>
     <string name="menu">menu</string>
-    <string name="add_node">Add Node</string>
+    <string name="add_node">Edit Nodes</string>
     <string name="battery">Battery</string>
     <string name="gateway_id">GATEWAY ID</string>
     <string name="tension">Tension</string>

@@ -3061,6 +3061,7 @@ id neverCompleteToEnd
 id neverCompleteToStart
 id noScroll
 id noState
+id node_available
 id node_btn
 id node_connection
 id node_id
@@ -3381,8 +3382,10 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout dialog_chart_data
 layout dialog_create_animal
 layout dialog_remove_animal
+layout edit_nodes
 layout fragment_tabbed
 layout item_node
 layout item_tab
@@ -3440,6 +3443,7 @@ layout notification_template_custom_big
 layout notification_template_icon_group
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout remove_node
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
