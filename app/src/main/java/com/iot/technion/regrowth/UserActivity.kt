@@ -58,6 +58,9 @@ class UserActivity : AppCompatActivity() {
         if(intent_type.equals("edit")){
             fillFromFirebase()
         }
+        else{
+            binding.cancel.text = "Do it Later"
+        }
 
         binding.backgroundImg.setOnClickListener{
             val intent = Intent()

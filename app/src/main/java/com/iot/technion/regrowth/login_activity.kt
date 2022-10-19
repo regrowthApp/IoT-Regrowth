@@ -39,20 +39,42 @@ class User {
 }
 
 var my_user = User()
-var flag1: Boolean? = false
 class LoginActivity : AppCompatActivity() {
     private lateinit var auth: FirebaseAuth
     private lateinit var mGoogleSignInClient: GoogleSignInClient
     private lateinit var database: DatabaseReference
     private lateinit var account: GoogleSignInAccount
     private lateinit var binding: ActivityLoginBinding
-    private var mStorageRef: StorageReference? = null
-    lateinit var imageView: ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        auth = FirebaseAuth.getInstance()
+        binding.loginbtn.setOnClickListener {
+            val email = binding.email.text.toString().trim()
+            val password = binding.password.text.toString().trim()
+            val user_id = email.substringBefore("@").replace(".","-")
+            auth.signInWithEmailAndPassword(email, password)
+                .addOnCompleteListener() { it ->
+                    if (it.isSuccessful) {
+                        database.ref.child("users").get()
+                            .addOnCompleteListener {
+                                if (it.result.hasChild(user_id)) {
+                                    val intent = Intent(this@LoginActivity, MainActivity::class.java)
+                                    intent.putExtra("id", user_id)
+                                    startActivity(intent)
+                                }
+                            }
+                    }
+                    else{
+                        val intent = Intent(this@LoginActivity, UserActivity::class.java)
+                        intent.putExtra("id", user_id)
+                        intent.putExtra("type","create")
+                        startActivity(intent)
+                    }
+                }
+        }
 
         // Google auth
         val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
@@ -60,9 +82,6 @@ class LoginActivity : AppCompatActivity() {
             .requestIdToken("248185106763-ildj0j39c5t1ccvn19am6or45snkuvi5.apps.googleusercontent.com")
             .build()
         mGoogleSignInClient = GoogleSignIn.getClient(this, gso);
-
-        mStorageRef = FirebaseStorage.getInstance().reference;
-        val riversRef: StorageReference = mStorageRef!!.child("DSC08005.jpg")
 
         Firebase.database.setPersistenceEnabled(true)
         database = Firebase.database.reference
@@ -73,21 +92,6 @@ class LoginActivity : AppCompatActivity() {
         }
 
 
-    }
-
-    private fun getFile(riversRef: StorageReference) {
-        val localFile: File = File.createTempFile("images", "jpg")
-        riversRef.getFile(localFile)
-            .addOnSuccessListener(OnSuccessListener<FileDownloadTask.TaskSnapshot?> {
-                // Successfully downloaded data to local file
-                // ...
-                //var btm: Bitmap = BitmapFactory.decodeFile(localFile.absolutePath)
-                //imageView.setImageBitmap(btm)
-            }).addOnFailureListener(OnFailureListener {
-                // Handle failed download
-                // ...
-                Toast.makeText(this, "failed", Toast.LENGTH_SHORT).show()
-            })
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
@@ -141,28 +145,3 @@ class LoginActivity : AppCompatActivity() {
         }
     }
 }
-
-//binding.loginbtn.setOnClickListener {
-//    val email = binding.email.text.toString().trim()
-//    val password = binding.password.text.toString().trim()
-//    uid = email.substringBefore("@").replace(".","-")
-//    auth.signInWithEmailAndPassword(email, password)
-//        .addOnCompleteListener() { it ->
-//            if (it.isSuccessful) {
-//                database.reference.child("users").get()
-//                    .addOnCompleteListener {
-//                        if (it.result.hasChild(uid)) {
-//                            val intent = Intent(this@LoginActivity, MainActivity::class.java)
-//                            intent.putExtra("id", uid)
-//                            startActivity(intent)
-//                        }
-//                    }
-//            }
-//            else{
-//                val intent = Intent(this@LoginActivity, UserActivity::class.java)
-//                intent.putExtra("id", uid)
-//                intent.putExtra("type","create")
-//                startActivity(intent)
-//            }
-//        }
-//}
