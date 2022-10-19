@@ -46,8 +46,7 @@ class AnimalsAdapter(private val context: Context, private val animalList: Array
     var animals: ArrayList<AnimalModel> = ArrayList<AnimalModel>()
     val activity: MainActivity = context as MainActivity
 
-//    val currentDate = LocalDate.now().format(DateTimeFormatter.ofPattern("dd-MM-yyyy"))
-    val currentDate = "18-10-2022"
+    val currentDate = LocalDate.now().format(DateTimeFormatter.ofPattern("dd-MM-yyyy"))
     val currentTime = LocalTime.now().hour
 
     val database = FirebaseDatabase.getInstance()
