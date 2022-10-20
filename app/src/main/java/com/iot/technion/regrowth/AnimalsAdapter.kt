@@ -433,7 +433,7 @@ class AnimalsAdapter(private val context: Context, private val animalList: Array
                             pieEntries.add(PieEntry(temperature))
                             pieEntries.add(PieEntry(humidity))
 
-                            pieChart.centerText = "$temperature\n$humidity"
+                            pieChart.centerText = "$temperature" + "C" + "\n" + "$humidity" + "%"
                             val pieDataSet = PieDataSet(pieEntries, "")
                             pieDataSet.setColors(Color.RED, Color.parseColor("#FFA500"))
                             val pieData = PieData(pieDataSet)
