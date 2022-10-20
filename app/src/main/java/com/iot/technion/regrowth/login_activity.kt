@@ -17,6 +17,7 @@ import com.google.firebase.auth.ktx.auth
 import com.google.firebase.database.*
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
+import com.google.firebase.messaging.FirebaseMessaging
 import com.iot.technion.regrowth.databinding.ActivityLoginBinding
 
 
@@ -39,6 +40,7 @@ class LoginActivity : AppCompatActivity() {
             auth.signInWithEmailAndPassword(email, password)
                 .addOnCompleteListener() { it ->
                     if (it.isSuccessful) {
+                        FirebaseMessaging.getInstance().subscribeToTopic(user_id)
                         database.ref.child("users").get()
                             .addOnCompleteListener {
                                 if (it.isSuccessful and it.result.hasChild(user_id)) {
@@ -49,6 +51,7 @@ class LoginActivity : AppCompatActivity() {
                             }
                     }
                     else{
+                        FirebaseMessaging.getInstance().subscribeToTopic(user_id)
                         val intent = Intent(this@LoginActivity, UserActivity::class.java)
                         intent.putExtra("id", user_id)
                         intent.putExtra("type","create")
@@ -95,6 +98,7 @@ class LoginActivity : AppCompatActivity() {
                                 .addOnCompleteListener {
                                     if(it.isSuccessful) {
                                         if (it.result.hasChild(uid)) {
+                                            FirebaseMessaging.getInstance().subscribeToTopic(uid)
                                             val intent =
                                                 Intent(this@LoginActivity, MainActivity::class.java)
                                             intent.putExtra("id", uid)

@@ -12,6 +12,7 @@ import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
+import com.google.firebase.messaging.FirebaseMessaging
 import com.google.firebase.storage.FirebaseStorage
 import com.iot.technion.regrowth.databinding.ActivityUserBinding
 import com.iot.technion.regrowth.model.ProfileModel
@@ -132,6 +133,7 @@ class UserActivity : AppCompatActivity() {
         val profile = ProfileModel(name, farmImgPath, logoImgPath, phone, email,address)
         database.reference.child("users/${uid}/profile")
             .setValue(profile).addOnSuccessListener {
+                FirebaseMessaging.getInstance().subscribeToTopic(uid)
                 Toast.makeText(
                     this@UserActivity,
                     "Profile Saved!",

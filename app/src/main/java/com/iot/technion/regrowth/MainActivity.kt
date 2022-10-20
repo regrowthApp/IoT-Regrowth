@@ -16,6 +16,7 @@ import com.iot.technion.regrowth.model.NodeModel
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 import com.google.firebase.database.*
+import com.iot.technion.regrowth.adapters.AnimalsAdapter
 import kotlinx.android.synthetic.main.dialog_create_animal.view.*
 import kotlinx.android.synthetic.main.item_tab.view.*
 
@@ -137,6 +138,16 @@ class MainActivity : AppCompatActivity() {
             true
         }
 
+        binding.topNaviBar.setOnItemSelectedListener {
+            when(it.itemId){
+                R.id.profile -> {
+                    moveToProfile()
+                }
+                R.id.notification -> {
+                    moveToNotification()}
+            }
+            true
+        }
     }
 
     private fun addAnimalToFirebase(animalModel: AnimalModel) {
@@ -240,6 +251,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun moveToNotification(){
-
+        val intent = Intent(this@MainActivity,NotificationListActivity::class.java)
+        intent.putExtra("id",uid)
+        startActivity(intent)
     }
 }

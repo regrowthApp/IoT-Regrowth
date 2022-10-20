@@ -183,8 +183,6 @@ class AnimalsAdapter(private val context: Context, private val animalList: Array
         val weights = ArrayList<Float>()
         val xAxis = ArrayList<String>()
         var totalActivity = 0
-        val mostActiveAnimal = 0
-        val leastActiveAnimal = 0
         val activities = arrayListOf<Int>()
 
         val database = FirebaseDatabase.getInstance()
@@ -202,7 +200,7 @@ class AnimalsAdapter(private val context: Context, private val animalList: Array
                             xAxis.add(it.key.toString())
                             weights.add(singleAnimal_weight)
 
-                            /// check thresh hold for notifications
+                            // check thresh hold for notifications
 //                            if(singleAnimal_weight < 20 || singleAnimal_weight > 60){
 //                                sendnotification()
 //                            }
@@ -239,7 +237,7 @@ class AnimalsAdapter(private val context: Context, private val animalList: Array
                         }
 
                         if(!activities.isEmpty()){
-                        loadActivityChart(binding, activities,totalActivity,xAxis[max_active!!.index],
+                            loadActivityChart(binding, activities,totalActivity,xAxis[max_active!!.index],
                             max_active.value,xAxis[min_active!!.index],min_active.value)
                         }
 
