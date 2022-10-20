@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.iot.technion.regrowth.app-mergeDebugResources-53:/values-zh-rTW/values-zh-rTW.xml",
+            "outputFile": "com.iot.technion.regrowth.app-mergeDebugResources-54:/values-zh-rTW/values-zh-rTW.xml",
             "map": [
                 {
                     "source": "C:\\Users\\WIN10\\.gradle\\caches\\transforms-3\\296f84479b2f358744ab631ded31d7fc\\transformed\\appcompat-1.5.1\\res\\values-zh-rTW\\values-zh-rTW.xml",

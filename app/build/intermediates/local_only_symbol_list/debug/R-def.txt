@@ -47,6 +47,7 @@ drawable grey_background
 drawable ic_background_picture
 drawable ic_baseline_add_24
 drawable ic_baseline_analytics_24
+drawable ic_baseline_arrow_back_24
 drawable ic_baseline_info_24
 drawable ic_baseline_person_outline_24
 drawable ic_baseline_remove_24
@@ -90,6 +91,10 @@ id email_address
 id fab
 id farm_name
 id gateway
+id gatewayId
+id gateway_battery
+id gateway_connection
+id gateway_tension
 id google_btn
 id heat_chart
 id horizontal_line0
@@ -102,6 +107,7 @@ id horizontal_line.65
 id horizontal_line.7
 id horizontal_line.9
 id horizontal_line.92
+id ic_cross
 id itemRoot
 id least_active
 id login_logo
@@ -110,6 +116,8 @@ id logo_btn
 id logo_img
 id main_layout
 id mapView
+id maximum_weight
+id minium_weight
 id most_active
 id nav_graph
 id node_available
@@ -124,12 +132,16 @@ id others
 id password
 id phone_number
 id profile
+id rvNotificationList
 id save_profile_btn
 id socialicons
 id tableRowHeading
 id tabs
 id top_navi_bar
 id total_activites
+id tvMessage
+id tvTime
+id tvTitle
 id vertical_line.15
 id vertical_line.3
 id vertical_line.5
@@ -140,6 +152,7 @@ id vertical_line.92
 id view_pager
 id weight_chart
 layout activity_login
+layout activity_notification_list
 layout activity_profile
 layout activity_tabbed
 layout activity_user
@@ -150,8 +163,10 @@ layout dialog_remove_animal
 layout edit_nodes
 layout fragment_tabbed
 layout item_node
+layout item_notification
 layout item_tab
 layout remove_node
+layout thresh_holds
 menu top_bar
 mipmap background_button
 mipmap background_button_round

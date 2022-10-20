@@ -2616,6 +2616,7 @@ drawable grey_background
 drawable ic_background_picture
 drawable ic_baseline_add_24
 drawable ic_baseline_analytics_24
+drawable ic_baseline_arrow_back_24
 drawable ic_baseline_info_24
 drawable ic_baseline_person_outline_24
 drawable ic_baseline_remove_24
@@ -2926,6 +2927,10 @@ id fragment_container_view_tag
 id frost
 id fullscreen_header
 id gateway
+id gatewayId
+id gateway_battery
+id gateway_connection
+id gateway_tension
 id ghost_view
 id ghost_view_holder
 id gone
@@ -2954,6 +2959,7 @@ id horizontal_line0
 id horizontal_line1
 id horizontal_only
 id hybrid
+id ic_cross
 id icon
 id icon_group
 id icon_only
@@ -3014,9 +3020,11 @@ id material_timepicker_ok_button
 id material_timepicker_view
 id material_value_index
 id matrix
+id maximum_weight
 id message
 id middle
 id mini
+id minium_weight
 id month_grid
 id month_navigation_bar
 id month_navigation_fragment_toggle
@@ -3115,6 +3123,7 @@ id right_side
 id rounded
 id row_index_key
 id rtl
+id rvNotificationList
 id satellite
 id save_non_transition_alpha
 id save_overlay_view
@@ -3236,6 +3245,9 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id tvMessage
+id tvTime
+id tvTitle
 id unchecked
 id uniform
 id unlabeled
@@ -3364,6 +3376,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_login
+layout activity_notification_list
 layout activity_profile
 layout activity_tabbed
 layout activity_user
@@ -3392,6 +3405,7 @@ layout dialog_remove_animal
 layout edit_nodes
 layout fragment_tabbed
 layout item_node
+layout item_notification
 layout item_tab
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
@@ -3468,6 +3482,7 @@ layout text_view_with_line_height_from_layout
 layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
+layout thresh_holds
 menu top_bar
 mipmap background_button
 mipmap background_button_round
@@ -3555,6 +3570,7 @@ string fab_transformation_sheet_behavior
 string fallback_menu_item_copy_link
 string fallback_menu_item_open_in_browser
 string fallback_menu_item_share_link
+string fcm_fallback_notification_channel_label
 string firebase_database_url
 string first_fragment_label
 string gateway_id

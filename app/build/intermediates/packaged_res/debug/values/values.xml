@@ -112,7 +112,7 @@
     <string name="title_activity_tabbed">TabbedActivity</string>
     <string name="webclient_id">"248185106763-sm8tco5ioh9rc6paci899tt52hdi5m2c.apps.googleusercontent.com"</string>
     <string name="welcome">"Welcome !"</string>
-    <style name="Theme.Regrowth" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="Theme.Regrowth" parent="Theme.MaterialComponents.Light.DarkActionBar">
         
         <item name="colorPrimary">@color/Sheep_Tab_Color</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>

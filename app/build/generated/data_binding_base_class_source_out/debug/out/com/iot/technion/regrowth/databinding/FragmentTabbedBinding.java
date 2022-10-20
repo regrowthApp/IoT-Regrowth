@@ -44,6 +44,18 @@ public final class FragmentTabbedBinding implements ViewBinding {
   public final BarChart animalsChart;
 
   @NonNull
+  public final TextView gatewayBattery;
+
+  @NonNull
+  public final TextView gatewayConnection;
+
+  @NonNull
+  public final TextView gatewayId;
+
+  @NonNull
+  public final TextView gatewayTension;
+
+  @NonNull
   public final PieChart heatChart;
 
   @NonNull
@@ -105,7 +117,9 @@ public final class FragmentTabbedBinding implements ViewBinding {
 
   private FragmentTabbedBinding(@NonNull ScrollView rootView, @NonNull TextView Activity,
       @NonNull TextView HeatStress, @NonNull TextView Weight, @NonNull PieChart activityChart,
-      @NonNull BarChart animalsChart, @NonNull PieChart heatChart,
+      @NonNull BarChart animalsChart, @NonNull TextView gatewayBattery,
+      @NonNull TextView gatewayConnection, @NonNull TextView gatewayId,
+      @NonNull TextView gatewayTension, @NonNull PieChart heatChart,
       @NonNull Guideline horizontalLine0, @NonNull Guideline horizontalLine1,
       @NonNull Guideline horizontalLine11, @NonNull Guideline horizontalLine3,
       @NonNull Guideline horizontalLine65, @NonNull Guideline horizontalLine7,
@@ -122,6 +136,10 @@ public final class FragmentTabbedBinding implements ViewBinding {
     this.Weight = Weight;
     this.activityChart = activityChart;
     this.animalsChart = animalsChart;
+    this.gatewayBattery = gatewayBattery;
+    this.gatewayConnection = gatewayConnection;
+    this.gatewayId = gatewayId;
+    this.gatewayTension = gatewayTension;
     this.heatChart = heatChart;
     this.horizontalLine0 = horizontalLine0;
     this.horizontalLine1 = horizontalLine1;
@@ -198,6 +216,30 @@ public final class FragmentTabbedBinding implements ViewBinding {
       id = R.id.animals_chart;
       BarChart animalsChart = ViewBindings.findChildViewById(rootView, id);
       if (animalsChart == null) {
+        break missingId;
+      }
+
+      id = R.id.gateway_battery;
+      TextView gatewayBattery = ViewBindings.findChildViewById(rootView, id);
+      if (gatewayBattery == null) {
+        break missingId;
+      }
+
+      id = R.id.gateway_connection;
+      TextView gatewayConnection = ViewBindings.findChildViewById(rootView, id);
+      if (gatewayConnection == null) {
+        break missingId;
+      }
+
+      id = R.id.gatewayId;
+      TextView gatewayId = ViewBindings.findChildViewById(rootView, id);
+      if (gatewayId == null) {
+        break missingId;
+      }
+
+      id = R.id.gateway_tension;
+      TextView gatewayTension = ViewBindings.findChildViewById(rootView, id);
+      if (gatewayTension == null) {
         break missingId;
       }
 
@@ -322,10 +364,11 @@ public final class FragmentTabbedBinding implements ViewBinding {
       }
 
       return new FragmentTabbedBinding((ScrollView) rootView, Activity, HeatStress, Weight,
-          activityChart, animalsChart, heatChart, horizontalLine0, horizontalLine1,
-          horizontalLine11, horizontalLine3, horizontalLine65, horizontalLine7, horizontalLine9,
-          mainLayout, nodeBtn, nodesImg, nodesRecyclerView, nodesTable, tableRowHeading,
-          verticalLine15, verticalLine3, verticalLine6, verticalLine7, verticalLine9, weightChart);
+          activityChart, animalsChart, gatewayBattery, gatewayConnection, gatewayId, gatewayTension,
+          heatChart, horizontalLine0, horizontalLine1, horizontalLine11, horizontalLine3,
+          horizontalLine65, horizontalLine7, horizontalLine9, mainLayout, nodeBtn, nodesImg,
+          nodesRecyclerView, nodesTable, tableRowHeading, verticalLine15, verticalLine3,
+          verticalLine6, verticalLine7, verticalLine9, weightChart);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

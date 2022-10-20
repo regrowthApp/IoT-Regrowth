@@ -10,6 +10,7 @@ import android.widget.ArrayAdapter
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.get
 import com.iot.technion.regrowth.databinding.ActivityTabbedBinding
 import com.iot.technion.regrowth.model.AnimalModel
 import com.iot.technion.regrowth.model.NodeModel
@@ -17,7 +18,10 @@ import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 import com.google.firebase.database.*
 import com.iot.technion.regrowth.adapters.AnimalsAdapter
+import com.iot.technion.regrowth.databinding.FragmentTabbedBinding
+import kotlinx.android.synthetic.main.activity_tabbed.view.*
 import kotlinx.android.synthetic.main.dialog_create_animal.view.*
+import kotlinx.android.synthetic.main.fragment_tabbed.view.*
 import kotlinx.android.synthetic.main.item_tab.view.*
 
 
@@ -32,6 +36,7 @@ class MainActivity : AppCompatActivity() {
     var database = FirebaseDatabase.getInstance()
     lateinit var myRef: DatabaseReference
     private var uid: String = ""
+    var animals_list = ArrayList<String>()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -42,6 +47,11 @@ class MainActivity : AppCompatActivity() {
         myRef = database.getReference("users/${uid}")
 
         getFromFirebase()
+
+        fillAnimalsList()
+        for(animal in animals_list){
+            getGateWay(animal)
+        }
 
         tabs = binding.tabs
 
@@ -89,6 +99,7 @@ class MainActivity : AppCompatActivity() {
                                 return@setPositiveButton
                             }
                             animalModel.icon = getAnimalIcon(animalModel.name)
+                            animals_list.add(animalModel.name)
                             addAnimalToFirebase(animalModel)
                         }
                         dialog.setNegativeButton("Cancel") { dialog, which ->
@@ -110,8 +121,10 @@ class MainActivity : AppCompatActivity() {
 
                         dialog.setView(view)
                         dialog.setPositiveButton("Delete") { dialog, which ->
-                            myRef.child(view.animalNameSpinner.selectedItem.toString())
+                            val removed_animal = view.animalNameSpinner.selectedItem.toString()
+                            myRef.child(removed_animal)
                                 .removeValue()
+                            animals_list.remove(removed_animal)
                             dialog.dismiss()
                         }
                         dialog.setNegativeButton("Cancel") { dialog, which ->
@@ -126,6 +139,21 @@ class MainActivity : AppCompatActivity() {
 
             }
         )
+
+        binding.fab.setOnClickListener {
+            var dialog = AlertDialog.Builder(this@MainActivity)
+            dialog.setTitle("Set Thresh holds")
+            var view = layoutInflater.inflate(R.layout.thresh_holds,null)
+            dialog.setNegativeButton("Cancel"){ dialog,which ->
+                dialog.dismiss()
+            }
+            dialog.setPositiveButton("Save"){dialog,which ->
+                dialog.dismiss()
+            }
+            dialog.setView(view)
+            dialog.show()
+        }
+
         binding.topNaviBar.setOnItemSelectedListener {
             when(it.itemId){
                 R.id.profile -> {
@@ -255,4 +283,47 @@ class MainActivity : AppCompatActivity() {
         intent.putExtra("id",uid)
         startActivity(intent)
     }
+
+    private fun fillAnimalsList(){
+        database.reference.child("users/$uid").get().addOnCompleteListener {
+            it.result.children.forEach {
+                if(checkIfAnimal(it.key)){
+                    it.key?.let { it1 -> animals_list.add(it1) }
+                }
+            }
+        }
+    }
+
+    private fun getGateWay(animal_name: String){
+        database.reference.child("users/$uid").addValueEventListener(
+            object : ValueEventListener {
+                override fun onDataChange(dataSnapshot: DataSnapshot) {
+                    if(dataSnapshot.hasChild(animal_name+"/gateway"))
+                    {
+                        val path = animal_name + "/gateway"
+                        if(dataSnapshot.hasChild(path+"/id")){
+                            binding.viewPager.tableRowHeading.gatewayId.text = dataSnapshot.child(path+"/id").value.toString()
+//                            binding.viewPager.tableRowHeading.gatewayId.setText(database.reference.child(full_path + "/id").get().result.value.toString())
+                        }
+
+                        if(dataSnapshot.hasChild(path+"/battery")){
+                            binding.viewPager.tableRowHeading.gateway_battery.setText(dataSnapshot.child(path+"/battery").value.toString())
+                        }
+
+                        if(dataSnapshot.hasChild(path+"/tension")){
+                            binding.viewPager.tableRowHeading.gateway_tension.setText(dataSnapshot.child(path+"/tension").value.toString())
+                        }
+
+                        binding.viewPager.tableRowHeading.gateway_connection.setText("connected: yes")
+                    }
+                }
+
+                override fun onCancelled(error: DatabaseError) {
+                    // Failed to read value
+                    Log.w(TAG, "Failed to read value.", error.toException())
+                }
+            }
+        )
+    }
 }
+

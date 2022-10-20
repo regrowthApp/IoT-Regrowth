@@ -27,6 +27,7 @@ import com.iot.technion.regrowth.databinding.FragmentTabbedBinding
 import com.iot.technion.regrowth.databinding.RemoveNodeBinding
 import com.iot.technion.regrowth.model.AnimalModel
 import com.iot.technion.regrowth.model.NodeModel
+import kotlinx.android.synthetic.main.fragment_tabbed.view.*
 import kotlinx.android.synthetic.main.remove_node.view.*
 import org.nield.kotlinstatistics.median
 import java.time.LocalDate
@@ -199,11 +200,6 @@ class AnimalsAdapter(private val context: Context, private val animalList: Array
                                 it.child("${currentDate}/weight").value.toString().toFloat()
                             xAxis.add(it.key.toString())
                             weights.add(singleAnimal_weight)
-
-                            // check thresh hold for notifications
-//                            if(singleAnimal_weight < 20 || singleAnimal_weight > 60){
-//                                sendnotification()
-//                            }
 
                             barlist1.add(
                                 BarEntry(

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.iot.technion.regrowth.app-mergeDebugResources-53:/values-sl/values-sl.xml",
+            "outputFile": "com.iot.technion.regrowth.app-mergeDebugResources-54:/values-sl/values-sl.xml",
             "map": [
                 {
                     "source": "C:\\Users\\WIN10\\.gradle\\caches\\transforms-3\\975c77b6a5e9c38aec3061064b69f327\\transformed\\play-services-basement-18.1.0\\res\\values-sl\\values.xml",

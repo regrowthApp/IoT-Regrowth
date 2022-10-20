@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.iot.technion.regrowth.app-mergeDebugResources-53:/values-km/values-km.xml",
+            "outputFile": "com.iot.technion.regrowth.app-mergeDebugResources-54:/values-km/values-km.xml",
             "map": [
                 {
                     "source": "C:\\Users\\WIN10\\.gradle\\caches\\transforms-3\\b2175fe05326dcdc2d092fdf72c9f886\\transformed\\core-1.9.0\\res\\values-km\\values-km.xml",
