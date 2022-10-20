@@ -28,7 +28,7 @@ admin.database().ref('/users/').on('value', (snapshot) => {
                 // console.log(animal.val());
 
                 animal.forEach((animalData) => {
-                    $animalName = animalData.key;
+                    var animalName = animalData.key;
 
                     animalData.forEach((animalIDTrack) => {
                         console.log(animalIDTrack.key);
@@ -47,19 +47,19 @@ admin.database().ref('/users/').on('value', (snapshot) => {
                             if (diffDays > 1) {
                                 $notificationID = userId + animalData.key + animalID + 'moreThanOneDay';
                                 $title = 'Activity Issue';
-                                $body = $animalName + ' with ID ' + animalID + ' has not been active for more than one day';
+                                $body = animalName + ' with ID ' + animalID + ' has not been active for more than one day';
                                 sendNotification(userId, $notificationID, $title, $body);
                             }
                             if (animalWeight > maxWeight) {
                                 $notificationID = userId + animalData.key + animalID + 'overWeight';
                                 $title = 'Weight Issue';
-                                $body = $animalName + ' with ID ' + animalID + ' is above threshold weight';
+                                $body = animalName + ' with ID ' + animalID + ' is above threshold weight';
                                 sendNotification(userId, $notificationID, $title, $body);
                             }
                             if (animalWeight < minWeight) {
                                 $notificationID = userId + animalData.key + animalID + 'underWeight';
                                 $title = 'Weight Issue';
-                                $body = $animalName + ' with ID ' + animalID + ' is below threshold weight';
+                                $body = animalName + ' with ID ' + animalID + ' is below threshold weight';
                                 sendNotification(userId, $notificationID, $title, $body);
                             } else {
                                 console.log('no issues. Animal weight is:' + animalWeightString + ' and animal ID is:' + animalID);
