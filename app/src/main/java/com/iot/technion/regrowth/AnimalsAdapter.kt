@@ -71,13 +71,13 @@ class AnimalsAdapter(private val context: Context, private val animalList: Array
             holder.binding.root.setBackgroundColor(Color.parseColor(animal.color))
             setupCharts(holder.binding,animal.name)
             holder.binding.nodeBtn.setOnClickListener {
-                setupNodes(holder.binding,context,animal)
+                setupNodes(context,animal)
             }
             setUpNodes(holder.binding,animal,context)
         }
     }
 
-    private fun setupNodes(binding: FragmentTabbedBinding, context: Context,animal: AnimalModel){
+    private fun setupNodes(context: Context,animal: AnimalModel){
         AlertDialog.Builder(context)
             .setTitle("Edit Nodes")
             .setView(R.layout.edit_nodes)

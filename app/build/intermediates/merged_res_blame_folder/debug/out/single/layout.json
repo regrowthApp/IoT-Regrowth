@@ -16,6 +16,10 @@
         "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-58:\\layout\\remove_node.xml"
     },
     {
+        "merged": "com.iot.technion.regrowth.app-mergeDebugResources-55:/layout/fragment_tabbed.xml",
+        "source": "com.iot.technion.regrowth.app-main-58:/layout/fragment_tabbed.xml"
+    },
+    {
         "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-mergeDebugResources-55:\\layout\\activity_tabbed.xml",
         "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-58:\\layout\\activity_tabbed.xml"
     },
@@ -62,9 +66,5 @@
     {
         "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-mergeDebugResources-55:\\layout\\chart_tabbed.xml",
         "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-58:\\layout\\chart_tabbed.xml"
-    },
-    {
-        "merged": "com.iot.technion.regrowth.app-mergeDebugResources-55:/layout/thresh_holds.xml",
-        "source": "com.iot.technion.regrowth.app-main-58:/layout/thresh_holds.xml"
     }
 ]

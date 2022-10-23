@@ -112,9 +112,8 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/animals_chart" />
 
+
         <!--This section belong to end of the nodes UI-->
-
-
         <TableLayout
             android:id="@+id/nodes_table"
             android:layout_width="0dp"
@@ -179,9 +178,10 @@
                     android:fontFamily="Fira Sans Condensed"
                     android:gravity="center_horizontal"
                     android:autoSizeTextType="uniform"
-                    android:text="@string/connection"
+                    android:padding="10sp"
+                    android:text="Not Connected"
                     android:textColor="@android:color/black"
-                    android:textSize="12sp" />
+                    android:textSize="14sp" />
 
             </TableRow>
         </TableLayout>

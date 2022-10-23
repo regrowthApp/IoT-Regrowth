@@ -12,7 +12,14 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ce2cf5e8-d5a1-402e-b21a-226786a2f2f5" name="Changes" comment="" />
+    <list default="true" id="ce2cf5e8-d5a1-402e-b21a-226786a2f2f5" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/iot/technion/regrowth/AnimalsAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/iot/technion/regrowth/AnimalsAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/iot/technion/regrowth/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/iot/technion/regrowth/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_tabbed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_tabbed.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/thresh_holds.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/thresh_holds.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -63,9 +70,9 @@
       <list>
         <option value="resourceFile" />
         <option value="Kotlin Worksheet" />
+        <option value="layoutResourceFile" />
         <option value="Class" />
         <option value="Kotlin Class" />
-        <option value="layoutResourceFile" />
       </list>
     </option>
   </component>
