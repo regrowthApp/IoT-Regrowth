@@ -8,7 +8,8 @@ class AnimalModel:Serializable {
     var icon: Int = R.drawable.top_background
     var color: String = "#00ff00"
     var nodes: MutableMap<String,NodeModel> = mutableMapOf()
-
+    var gateway : NodeModel = NodeModel()
+    val thresh_holds : ThreshHoldsModel = ThreshHoldsModel()
 
     constructor(name: String, icon: Int, color: String) {
         this.name = name

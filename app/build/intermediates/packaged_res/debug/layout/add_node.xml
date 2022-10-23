@@ -23,19 +23,6 @@
         app:layout_constraintTop_toTopOf="parent"/>
 
 
-    <Spinner
-        android:id="@+id/node_connection"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:minWidth="48dp"
-        android:entries="@array/node_connections"
-        android:contentDescription="@string/connection"
-        app:layout_constraintTop_toBottomOf="@id/node_id"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-    </Spinner>
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

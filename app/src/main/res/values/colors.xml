@@ -27,9 +27,4 @@
     <!--BarCharts Colors-->
     <color name="Weight_Bar_Color">#006400</color>
     <color name="Activity_Bar_Color">#F44336</color>
-
-    <!--PieCharts Colors-->
-    <!--    <color name="Activity_Chart_Color"></color>-->
-    <!--    <color name="Heat_Chart_Color"></color>-->
-    <!--    <color name="Weight_Chart_Color"></color>-->
 </resources>

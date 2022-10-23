@@ -2927,10 +2927,7 @@ id fragment_container_view_tag
 id frost
 id fullscreen_header
 id gateway
-id gatewayId
-id gateway_battery
-id gateway_connection
-id gateway_tension
+id gateway_recycler_view
 id ghost_view
 id ghost_view_holder
 id gone
@@ -2996,6 +2993,7 @@ id logo_btn
 id logo_img
 id ltr
 id main_layout
+id main_thresh
 id mapView
 id masked
 id match_constraint
@@ -3088,7 +3086,6 @@ id node_connection
 id node_id
 id nodes_img
 id nodes_recycler_view
-id nodes_table
 id none
 id normal
 id north
@@ -3201,7 +3198,6 @@ id submenuarrow
 id submit_area
 id supportScrollUp
 id tabMode
-id tableRowHeading
 id tabs
 id tag_accessibility_actions
 id tag_accessibility_clickable_spans

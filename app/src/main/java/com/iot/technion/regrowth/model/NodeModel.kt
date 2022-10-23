@@ -1,23 +1,28 @@
 package com.iot.technion.regrowth.model
 
 import java.io.Serializable
+import java.sql.Timestamp
+import java.time.Instant
+import java.time.LocalDate
+import java.time.LocalTime
+import java.time.ZoneOffset
+import java.time.format.DateTimeFormatter
 
 class NodeModel :Serializable{
 
-    var gatewayId: String = ""
-    var battery: Int = 0
-    var tension: Float = 0f
-    var connection:String = ""
+    var nodeId: String = ""
+    var battery: String = ""
+    var tension: String = ""
+    var time : String = LocalDate.now().format(DateTimeFormatter.ofPattern("dd-MM-yyyy"))
 
-    constructor(gatewayId: String, battery: Int, tension: Float, connection: String) {
-        this.gatewayId = gatewayId
+    constructor(gatewayId: String, battery: String, tension: String) {
+        this.nodeId = gatewayId
         this.battery = battery
         this.tension = tension
-        this.connection = connection
     }
 
     constructor(gatewayId: String) {
-        this.gatewayId = gatewayId
+        this.nodeId = gatewayId
     }
 
     constructor()

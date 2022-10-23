@@ -67,7 +67,7 @@ class LoginActivity : AppCompatActivity() {
             .build()
         mGoogleSignInClient = GoogleSignIn.getClient(this, gso);
 
-        Firebase.database.setPersistenceEnabled(true)
+//        Firebase.database.setPersistenceEnabled(true)
         database = Firebase.database.reference
 
         binding.googleBtn.setOnClickListener {

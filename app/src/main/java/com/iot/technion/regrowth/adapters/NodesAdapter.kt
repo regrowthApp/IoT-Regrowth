@@ -20,7 +20,7 @@ import com.iot.technion.regrowth.model.NodeModel
  */
 class NodesAdapter(private val context: Context, private val animal_name : String, private val nodelist: MutableMap<String, NodeModel>,private val uid: String):
     RecyclerView.Adapter<NodesAdapter.MyVH>() {
-    val TAG = "SectionsPagerAdapter"
+    val TAG = "NodesPagerAdapter"
     var nodes: MutableMap<String,NodeModel> = nodelist
     var animal : String = animal_name
     val activity:MainActivity = context as MainActivity
@@ -32,31 +32,34 @@ class NodesAdapter(private val context: Context, private val animal_name : Strin
 
     override fun onBindViewHolder(holder: MyVH, position: Int) {
         var node=nodes.toList()[position].second
+        var battery_sent = false
+        var tension_sent = false
         ref.reference.child("users/${uid}/${animal}").addValueEventListener(
             object : ValueEventListener {
                 override fun onDataChange(dataSnapshot: DataSnapshot) {
-                    if (dataSnapshot.hasChild("nodes/${node.gatewayId}")){
-                        val tmp_ref = dataSnapshot.child("nodes/${node.gatewayId}")
-                        if(tmp_ref.child("battery").value.toString().toFloat() != -1f){
+                    if (dataSnapshot.hasChild("nodes/${node.nodeId}")){
+                        val tmp_ref = dataSnapshot.child("nodes/${node.nodeId}")
+                        if(tmp_ref.child("battery").value.toString() != ""){
                             holder.binding.batteryPercentage.text = tmp_ref.child("battery").value.toString()
+                            battery_sent = true
                         }
-                        if(tmp_ref.child("tension").value.toString().toFloat() != -1f){
+                        if(tmp_ref.child("tension").value.toString()  != ""){
                             holder.binding.batteryTension.text = tmp_ref.child("tension").value.toString()
-
+                            tension_sent = true
                         }
 
+                        if(battery_sent and tension_sent){
+                            holder.binding.nodeConnection.text = "connected"
+                        }
                     }
                 }
 
                 override fun onCancelled(error: DatabaseError) {
                     // Failed to read value
                     Log.w(TAG, "Failed to read value.", error.toException())
-
                 }
             }
         )
-        holder.binding.gateway.text = node.gatewayId
-        holder.binding.nodeConnection.text = node.connection
     }
 
     class MyVH(view: ItemNodeBinding) : RecyclerView.ViewHolder(view.root) {

@@ -91,10 +91,7 @@ id email_address
 id fab
 id farm_name
 id gateway
-id gatewayId
-id gateway_battery
-id gateway_connection
-id gateway_tension
+id gateway_recycler_view
 id google_btn
 id heat_chart
 id horizontal_line0
@@ -115,6 +112,7 @@ id loginbtn
 id logo_btn
 id logo_img
 id main_layout
+id main_thresh
 id mapView
 id max_hum
 id max_temp
@@ -136,7 +134,6 @@ id node_connection
 id node_id
 id nodes_img
 id nodes_recycler_view
-id nodes_table
 id notification
 id others
 id password
@@ -145,7 +142,6 @@ id profile
 id rvNotificationList
 id save_profile_btn
 id socialicons
-id tableRowHeading
 id tabs
 id top_navi_bar
 id total_activites

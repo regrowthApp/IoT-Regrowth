@@ -114,77 +114,17 @@
 
 
         <!--This section belong to end of the nodes UI-->
-        <TableLayout
-            android:id="@+id/nodes_table"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="5dp"
-            android:layout_marginEnd="5dp"
-            android:background="@android:color/white"
-            android:divider="@color/black"
-            android:showDividers="middle"
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/gateway_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/green"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/node_btn">
-
-            <!-- Table Heading -->
-
-            <TableRow
-                android:id="@+id/tableRowHeading"
-                android:background="@color/green">
-
-                <TextView
-                    android:id="@+id/gatewayId"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="4"
-                    android:fontFamily="Fira Sans Condensed"
-                    android:gravity="center_horizontal"
-                    android:padding="10sp"
-                    android:autoSizeTextType="uniform"
-                    android:text="@string/gateway_id"
-                    android:textColor="@android:color/black"
-                    android:textSize="14sp" />
-
-                <TextView
-                    android:id="@+id/gateway_battery"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="3"
-                    android:fontFamily="Fira Sans Condensed"
-                    android:gravity="center_horizontal"
-                    android:autoSizeTextType="uniform"
-                    android:padding="10sp"
-                    android:text="@string/battery"
-                    android:textColor="@android:color/black" />
-
-                <TextView
-                    android:id="@+id/gateway_tension"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="3"
-                    android:fontFamily="Fira Sans Condensed"
-                    android:gravity="center_horizontal"
-                    android:autoSizeTextType="uniform"
-                    android:padding="10sp"
-                    android:text="@string/tension"
-                    android:textColor="@android:color/black" />
-
-                <TextView
-                    android:id="@+id/gateway_connection"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="3"
-                    android:fontFamily="Fira Sans Condensed"
-                    android:gravity="center_horizontal"
-                    android:autoSizeTextType="uniform"
-                    android:padding="10sp"
-                    android:text="Not Connected"
-                    android:textColor="@android:color/black"
-                    android:textSize="14sp" />
-
-            </TableRow>
-        </TableLayout>
+            app:layout_constraintTop_toBottomOf="@id/node_btn"
+            tools:listitem="@layout/item_node"/>
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/nodes_recycler_view"
@@ -193,7 +133,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/nodes_table"
+            app:layout_constraintTop_toBottomOf="@id/gateway_recycler_view"
             tools:listitem="@layout/item_node" />
 
         <!--Start of the Guidelines-->

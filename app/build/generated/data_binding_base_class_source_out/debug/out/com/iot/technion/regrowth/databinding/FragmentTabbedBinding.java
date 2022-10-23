@@ -6,8 +6,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.ScrollView;
-import android.widget.TableLayout;
-import android.widget.TableRow;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -44,16 +42,7 @@ public final class FragmentTabbedBinding implements ViewBinding {
   public final BarChart animalsChart;
 
   @NonNull
-  public final TextView gatewayBattery;
-
-  @NonNull
-  public final TextView gatewayConnection;
-
-  @NonNull
-  public final TextView gatewayId;
-
-  @NonNull
-  public final TextView gatewayTension;
+  public final RecyclerView gatewayRecyclerView;
 
   @NonNull
   public final PieChart heatChart;
@@ -92,12 +81,6 @@ public final class FragmentTabbedBinding implements ViewBinding {
   public final RecyclerView nodesRecyclerView;
 
   @NonNull
-  public final TableLayout nodesTable;
-
-  @NonNull
-  public final TableRow tableRowHeading;
-
-  @NonNull
   public final Guideline verticalLine15;
 
   @NonNull
@@ -117,29 +100,23 @@ public final class FragmentTabbedBinding implements ViewBinding {
 
   private FragmentTabbedBinding(@NonNull ScrollView rootView, @NonNull TextView Activity,
       @NonNull TextView HeatStress, @NonNull TextView Weight, @NonNull PieChart activityChart,
-      @NonNull BarChart animalsChart, @NonNull TextView gatewayBattery,
-      @NonNull TextView gatewayConnection, @NonNull TextView gatewayId,
-      @NonNull TextView gatewayTension, @NonNull PieChart heatChart,
-      @NonNull Guideline horizontalLine0, @NonNull Guideline horizontalLine1,
-      @NonNull Guideline horizontalLine11, @NonNull Guideline horizontalLine3,
-      @NonNull Guideline horizontalLine65, @NonNull Guideline horizontalLine7,
-      @NonNull Guideline horizontalLine9, @NonNull ConstraintLayout mainLayout,
-      @NonNull MaterialButton nodeBtn, @NonNull ImageView nodesImg,
-      @NonNull RecyclerView nodesRecyclerView, @NonNull TableLayout nodesTable,
-      @NonNull TableRow tableRowHeading, @NonNull Guideline verticalLine15,
-      @NonNull Guideline verticalLine3, @NonNull Guideline verticalLine6,
-      @NonNull Guideline verticalLine7, @NonNull Guideline verticalLine9,
-      @NonNull PieChart weightChart) {
+      @NonNull BarChart animalsChart, @NonNull RecyclerView gatewayRecyclerView,
+      @NonNull PieChart heatChart, @NonNull Guideline horizontalLine0,
+      @NonNull Guideline horizontalLine1, @NonNull Guideline horizontalLine11,
+      @NonNull Guideline horizontalLine3, @NonNull Guideline horizontalLine65,
+      @NonNull Guideline horizontalLine7, @NonNull Guideline horizontalLine9,
+      @NonNull ConstraintLayout mainLayout, @NonNull MaterialButton nodeBtn,
+      @NonNull ImageView nodesImg, @NonNull RecyclerView nodesRecyclerView,
+      @NonNull Guideline verticalLine15, @NonNull Guideline verticalLine3,
+      @NonNull Guideline verticalLine6, @NonNull Guideline verticalLine7,
+      @NonNull Guideline verticalLine9, @NonNull PieChart weightChart) {
     this.rootView = rootView;
     this.Activity = Activity;
     this.HeatStress = HeatStress;
     this.Weight = Weight;
     this.activityChart = activityChart;
     this.animalsChart = animalsChart;
-    this.gatewayBattery = gatewayBattery;
-    this.gatewayConnection = gatewayConnection;
-    this.gatewayId = gatewayId;
-    this.gatewayTension = gatewayTension;
+    this.gatewayRecyclerView = gatewayRecyclerView;
     this.heatChart = heatChart;
     this.horizontalLine0 = horizontalLine0;
     this.horizontalLine1 = horizontalLine1;
@@ -152,8 +129,6 @@ public final class FragmentTabbedBinding implements ViewBinding {
     this.nodeBtn = nodeBtn;
     this.nodesImg = nodesImg;
     this.nodesRecyclerView = nodesRecyclerView;
-    this.nodesTable = nodesTable;
-    this.tableRowHeading = tableRowHeading;
     this.verticalLine15 = verticalLine15;
     this.verticalLine3 = verticalLine3;
     this.verticalLine6 = verticalLine6;
@@ -219,27 +194,9 @@ public final class FragmentTabbedBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.gateway_battery;
-      TextView gatewayBattery = ViewBindings.findChildViewById(rootView, id);
-      if (gatewayBattery == null) {
-        break missingId;
-      }
-
-      id = R.id.gateway_connection;
-      TextView gatewayConnection = ViewBindings.findChildViewById(rootView, id);
-      if (gatewayConnection == null) {
-        break missingId;
-      }
-
-      id = R.id.gatewayId;
-      TextView gatewayId = ViewBindings.findChildViewById(rootView, id);
-      if (gatewayId == null) {
-        break missingId;
-      }
-
-      id = R.id.gateway_tension;
-      TextView gatewayTension = ViewBindings.findChildViewById(rootView, id);
-      if (gatewayTension == null) {
+      id = R.id.gateway_recycler_view;
+      RecyclerView gatewayRecyclerView = ViewBindings.findChildViewById(rootView, id);
+      if (gatewayRecyclerView == null) {
         break missingId;
       }
 
@@ -315,18 +272,6 @@ public final class FragmentTabbedBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.nodes_table;
-      TableLayout nodesTable = ViewBindings.findChildViewById(rootView, id);
-      if (nodesTable == null) {
-        break missingId;
-      }
-
-      id = R.id.tableRowHeading;
-      TableRow tableRowHeading = ViewBindings.findChildViewById(rootView, id);
-      if (tableRowHeading == null) {
-        break missingId;
-      }
-
       id = R.id.vertical_line_15;
       Guideline verticalLine15 = ViewBindings.findChildViewById(rootView, id);
       if (verticalLine15 == null) {
@@ -364,11 +309,10 @@ public final class FragmentTabbedBinding implements ViewBinding {
       }
 
       return new FragmentTabbedBinding((ScrollView) rootView, Activity, HeatStress, Weight,
-          activityChart, animalsChart, gatewayBattery, gatewayConnection, gatewayId, gatewayTension,
-          heatChart, horizontalLine0, horizontalLine1, horizontalLine11, horizontalLine3,
-          horizontalLine65, horizontalLine7, horizontalLine9, mainLayout, nodeBtn, nodesImg,
-          nodesRecyclerView, nodesTable, tableRowHeading, verticalLine15, verticalLine3,
-          verticalLine6, verticalLine7, verticalLine9, weightChart);
+          activityChart, animalsChart, gatewayRecyclerView, heatChart, horizontalLine0,
+          horizontalLine1, horizontalLine11, horizontalLine3, horizontalLine65, horizontalLine7,
+          horizontalLine9, mainLayout, nodeBtn, nodesImg, nodesRecyclerView, verticalLine15,
+          verticalLine3, verticalLine6, verticalLine7, verticalLine9, weightChart);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

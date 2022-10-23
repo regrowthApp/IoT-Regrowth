@@ -28,6 +28,8 @@ import com.iot.technion.regrowth.databinding.FragmentTabbedBinding
 import com.iot.technion.regrowth.databinding.RemoveNodeBinding
 import com.iot.technion.regrowth.model.AnimalModel
 import com.iot.technion.regrowth.model.NodeModel
+import kotlinx.android.synthetic.main.activity_tabbed.view.*
+import kotlinx.android.synthetic.main.fragment_tabbed.view.*
 import kotlinx.android.synthetic.main.remove_node.view.*
 import org.nield.kotlinstatistics.median
 import java.time.LocalDate
@@ -98,8 +100,11 @@ class AnimalsAdapter(private val context: Context, private val animalList: Array
     private fun setUpNodes(binding: FragmentTabbedBinding, animal: AnimalModel, context: Context) {
 
         val adapter = NodesAdapter(context,animal.name ,animal.nodes, uid)
+        val gateway_adapter = GatewayAdapter(context,animal.name,uid)
         binding.nodesRecyclerView.layoutManager = androidx.recyclerview.widget.LinearLayoutManager(context)
         binding.nodesRecyclerView.adapter = adapter
+        binding.gatewayRecyclerView.layoutManager = androidx.recyclerview.widget.LinearLayoutManager(context)
+        binding.gatewayRecyclerView.adapter = gateway_adapter
     }
 
     private fun deleteNode(animal: String){
@@ -147,13 +152,9 @@ class AnimalsAdapter(private val context: Context, private val animalList: Array
                 if (b.nodeId.text.toString().isEmpty()) {
                     Toast.makeText(context, "Please enter a node id", Toast.LENGTH_SHORT).show()
                 }else{
-                    node.gatewayId=b.nodeId.text.toString()
-                    node.battery= -1
-                    node.tension= -1f
-                    node.connection=b.nodeConnection.selectedItem.toString()
-                    Log.e(TAG, "addNode:${node.connection}", )
+                    node.nodeId=b.nodeId.text.toString()
                     var database = FirebaseDatabase.getInstance()
-                    var myRef = database.getReference("users/${uid}/${animal}/nodes/${node.gatewayId}")
+                    var myRef = database.getReference("users/${uid}/${animal}/nodes/${node.nodeId}")
                     myRef.setValue(node).addOnSuccessListener {
                         Toast.makeText(context, "Node added successfully", Toast.LENGTH_SHORT).show()
                     }.addOnFailureListener {
@@ -200,11 +201,6 @@ class AnimalsAdapter(private val context: Context, private val animalList: Array
                                 it.child("${currentDate}/weight").value.toString().toFloat()
                             xAxis.add(it.key.toString())
                             weights.add(singleAnimal_weight)
-
-                            // check thresh hold for notifications
-//                            if(singleAnimal_weight < 20 || singleAnimal_weight > 60){
-//                                sendnotification()
-//                            }
 
                             barlist1.add(
                                 BarEntry(
@@ -472,5 +468,4 @@ class AnimalsAdapter(private val context: Context, private val animalList: Array
             return "am"
         }
     }
-
-    }
+}
