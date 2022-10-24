@@ -16,9 +16,9 @@ This project was created in Summer 2022, as a part of the Iot course (236332/3) 
 - Najwan Nassar
 
 
-<img src="docs/pics/1.jpg" alt="1" width="200"/> <img src="docs/pics/2.jpg" alt="2" width="200"/><img src="docs/pics/3.jpg" alt="2" width="200"/><img src="docs/pics/4.jpg" alt="2" width="200"/>
-<img src="docs/pics/5.jpg" alt="1" width="200"/> <img src="docs/pics/6.jpg" alt="2" width="200"/><img src="docs/pics/7.jpg" alt="2" width="200"/><img src="docs/pics/8.jpg" alt="2" width="200"/>
-<img src="docs/pics/9.jpg" alt="1" width="200"/> <img src="docs/pics/10.jpg" alt="2" width="200"/><img src="docs/pics/11.jpg" alt="2" width="200"/><img src="docs/pics/12.jpg" alt="2" width="200"/>
+<img src="docs/pics/1.jpg" alt="1" width="150"/> <img src="docs/pics/2.jpg" alt="2" width="150"/><img src="docs/pics/3.jpg" alt="2" width="150"/><img src="docs/pics/4.jpg" alt="2" width="150"/>
+<img src="docs/pics/5.jpg" alt="1" width="150"/> <img src="docs/pics/6.jpg" alt="2" width="150"/><img src="docs/pics/7.jpg" alt="2" width="150"/><img src="docs/pics/8.jpg" alt="2" width="150"/>
+<img src="docs/pics/9.jpg" alt="1" width="150"/> <img src="docs/pics/10.jpg" alt="2" width="150"/><img src="docs/pics/11.jpg" alt="2" width="150"/>
 
 
 
