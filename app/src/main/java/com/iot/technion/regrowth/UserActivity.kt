@@ -118,7 +118,7 @@ class UserActivity : AppCompatActivity() {
             val farmRef = reference.child("farm")
             farmRef.delete()
             farmRef.putFile(farmImg).addOnSuccessListener {
-                farmImgPath = it.toString()
+                farmImgPath = "exist"
             }
         }
 
@@ -126,14 +126,13 @@ class UserActivity : AppCompatActivity() {
             val logoRef = reference.child("logo")
             logoRef.delete()
             logoRef.putFile(logoImg).addOnSuccessListener {
-                logoImgPath = it.toString()
+                logoImgPath = "exist"
             }
         }
 
         val profile = ProfileModel(name, farmImgPath, logoImgPath, phone, email,address)
         database.reference.child("users/${uid}/profile")
             .setValue(profile).addOnSuccessListener {
-                FirebaseMessaging.getInstance().subscribeToTopic(uid)
                 Toast.makeText(
                     this@UserActivity,
                     "Profile Saved!",
@@ -154,6 +153,7 @@ class UserActivity : AppCompatActivity() {
                     var farm_name : String = ""
                     var emailAddress : String = ""
                     var phoneNumber : String = ""
+                    var address : String = ""
                     if(dataSnapshot.hasChild("farm_name")){
                         farm_name = dataSnapshot.child("farm_name").value!!.toString()
                     }
@@ -164,6 +164,10 @@ class UserActivity : AppCompatActivity() {
 
                     if(dataSnapshot.hasChild("phone_number")){
                         phoneNumber = dataSnapshot.child("phone_number").value.toString()
+                    }
+
+                    if(dataSnapshot.hasChild("address")){
+                        address = dataSnapshot.child("address").value.toString()
                     }
 
                     if(dataSnapshot.child("farm_image").value.toString() != "") {
@@ -188,6 +192,7 @@ class UserActivity : AppCompatActivity() {
                     binding.farmName.setText(farm_name)
                     binding.phoneNumber.setText(phoneNumber)
                     binding.emailAddress.setText(emailAddress)
+                    binding.address.setText(address)
                 }
 
                 override fun onCancelled(error: DatabaseError) {

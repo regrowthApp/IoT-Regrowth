@@ -16,6 +16,8 @@
             android:id="@+id/max_weight"
             android:layout_width="match_parent"
             android:layout_height="30dp"
+            android:autoSizeTextType="uniform"
+            android:textColor="@color/green"
             app:layout_constraintEnd_toEndOf="@+id/maximum_weight"
             app:layout_constraintStart_toStartOf="@+id/maximum_weight"
             app:layout_constraintTop_toTopOf="parent" />
@@ -26,7 +28,6 @@
             android:layout_height="40dp"
             android:autoSizeTextType="uniform"
             android:hint="Insert Maximum Weight"
-            android:inputType="number"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/max_weight" />
@@ -36,6 +37,7 @@
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:autoSizeTextType="uniform"
+            android:textColor="@color/green"
             android:layout_marginTop="20dp"
             app:layout_constraintTop_toBottomOf="@+id/maximum_weight"
             app:layout_constraintEnd_toEndOf="parent"
@@ -47,7 +49,6 @@
             android:layout_height="40dp"
             android:autoSizeTextType="uniform"
             android:hint="Insert Minimum Weight"
-            android:inputType="number"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/min_weight" />
@@ -57,6 +58,7 @@
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:layout_marginTop="20dp"
+            android:textColor="@color/green"
             android:autoSizeTextType="uniform"
             app:layout_constraintTop_toBottomOf="@id/minimum_weight"
             app:layout_constraintStart_toStartOf="parent"
@@ -68,7 +70,6 @@
             android:layout_height="40dp"
             android:autoSizeTextType="uniform"
             android:hint="Insert Maximum Temperature"
-            android:inputType="number"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/max_temp" />
@@ -78,6 +79,7 @@
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:autoSizeTextType="uniform"
+            android:textColor="@color/green"
             android:layout_marginTop="20dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -88,8 +90,7 @@
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:autoSizeTextType="uniform"
-            android:hint="Insert Minumum Temperature"
-            android:inputType="number"
+            android:hint="Insert Minimum Temperature"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@id/min_temp" />
@@ -99,6 +100,7 @@
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:autoSizeTextType="uniform"
+            android:textColor="@color/green"
             android:layout_marginTop="20dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -110,7 +112,6 @@
             android:layout_height="40dp"
             android:autoSizeTextType="uniform"
             android:hint="Insert Maximum Humidity"
-            android:inputType="number"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@id/max_hum" />
@@ -120,6 +121,7 @@
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:autoSizeTextType="uniform"
+            android:textColor="@color/green"
             android:layout_marginTop="20dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -131,7 +133,6 @@
             android:layout_height="40dp"
             android:autoSizeTextType="uniform"
             android:hint="Insert Minimum Humidity"
-            android:inputType="number"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/min_hum" />

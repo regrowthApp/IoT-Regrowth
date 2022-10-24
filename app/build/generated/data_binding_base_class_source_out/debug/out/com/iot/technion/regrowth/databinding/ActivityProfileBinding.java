@@ -12,7 +12,6 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.constraintlayout.widget.Guideline;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
-import com.google.android.gms.maps.MapView;
 import com.google.android.material.button.MaterialButton;
 import com.iot.technion.regrowth.R;
 import de.hdodenhof.circleimageview.CircleImageView;
@@ -52,9 +51,6 @@ public final class ActivityProfileBinding implements ViewBinding {
   public final CircleImageView logoImg;
 
   @NonNull
-  public final MapView mapView;
-
-  @NonNull
   public final TextView phoneNumber;
 
   @NonNull
@@ -68,7 +64,7 @@ public final class ActivityProfileBinding implements ViewBinding {
       @NonNull MaterialButton btnEditProfile, @NonNull TextView emailAddress,
       @NonNull TextView farmName, @NonNull Guideline horizontalLine55,
       @NonNull Guideline horizontalLine58, @NonNull CircleImageView logoImg,
-      @NonNull MapView mapView, @NonNull TextView phoneNumber, @NonNull Guideline verticalLine5,
+      @NonNull TextView phoneNumber, @NonNull Guideline verticalLine5,
       @NonNull Guideline verticalLine92) {
     this.rootView = rootView;
     this.address = address;
@@ -80,7 +76,6 @@ public final class ActivityProfileBinding implements ViewBinding {
     this.horizontalLine55 = horizontalLine55;
     this.horizontalLine58 = horizontalLine58;
     this.logoImg = logoImg;
-    this.mapView = mapView;
     this.phoneNumber = phoneNumber;
     this.verticalLine5 = verticalLine5;
     this.verticalLine92 = verticalLine92;
@@ -167,12 +162,6 @@ public final class ActivityProfileBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.mapView;
-      MapView mapView = ViewBindings.findChildViewById(rootView, id);
-      if (mapView == null) {
-        break missingId;
-      }
-
       id = R.id.phone_number;
       TextView phoneNumber = ViewBindings.findChildViewById(rootView, id);
       if (phoneNumber == null) {
@@ -193,7 +182,7 @@ public final class ActivityProfileBinding implements ViewBinding {
 
       return new ActivityProfileBinding((ConstraintLayout) rootView, address, backHome,
           backgroundImg, btnEditProfile, emailAddress, farmName, horizontalLine55, horizontalLine58,
-          logoImg, mapView, phoneNumber, verticalLine5, verticalLine92);
+          logoImg, phoneNumber, verticalLine5, verticalLine92);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

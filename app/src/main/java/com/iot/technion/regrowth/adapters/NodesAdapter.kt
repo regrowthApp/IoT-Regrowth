@@ -39,6 +39,7 @@ class NodesAdapter(private val context: Context, private val animal_name : Strin
                 override fun onDataChange(dataSnapshot: DataSnapshot) {
                     if (dataSnapshot.hasChild("nodes/${node.nodeId}")){
                         val tmp_ref = dataSnapshot.child("nodes/${node.nodeId}")
+                        holder.binding.gateway.text = node.nodeId
                         if(tmp_ref.child("battery").value.toString() != ""){
                             holder.binding.batteryPercentage.text = tmp_ref.child("battery").value.toString()
                             battery_sent = true
@@ -50,6 +51,9 @@ class NodesAdapter(private val context: Context, private val animal_name : Strin
 
                         if(battery_sent and tension_sent){
                             holder.binding.nodeConnection.text = "connected"
+                        }
+                        else{
+                            holder.binding.nodeConnection.text = "not connected"
                         }
                     }
                 }

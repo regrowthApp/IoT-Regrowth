@@ -24,12 +24,12 @@
         "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-58:\\layout\\item_node.xml"
     },
     {
-        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-mergeDebugResources-55:\\layout\\dialog_create_animal.xml",
-        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-58:\\layout\\dialog_create_animal.xml"
-    },
-    {
         "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-mergeDebugResources-55:\\layout\\activity_profile.xml",
         "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-58:\\layout\\activity_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-mergeDebugResources-55:\\layout\\dialog_create_animal.xml",
+        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-58:\\layout\\dialog_create_animal.xml"
     },
     {
         "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-mergeDebugResources-55:\\layout\\item_notification.xml",

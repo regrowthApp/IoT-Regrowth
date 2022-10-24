@@ -374,7 +374,7 @@ class AnimalsAdapter(private val context: Context, private val animalList: Array
         val pieEntries = arrayListOf(PieEntry(median))
         val pieChart = binding.weightChart
 
-        pieChart.centerText = "$median"
+        pieChart.centerText = "$median"+"Kg"
         val pieDataSet = PieDataSet(pieEntries, "")
         pieDataSet.setColors(Color.BLUE, Color.parseColor("#FFFFFF"))
         val pieData = PieData(pieDataSet)
@@ -398,12 +398,12 @@ class AnimalsAdapter(private val context: Context, private val animalList: Array
                     chart.legend.isEnabled = false
                     chart.description.isEnabled = false
                     chart.animateXY(1000,1000)
-                    chart.centerText = "$median"
+                    chart.centerText = "$median"+"Kg"
                     chart.setCenterTextSize(30f)
                     chart.invalidate()
                     view.leastActive.text = "Max Animal Weight: $maxAnimalWeight wights $maxWeight"
                     view.mostActive.text = "Min Animal Weight: $minAnimalWeight weights $minWeight"
-                    view.totalActivites.text = "Weights Median : ${median}"
+                    view.totalActivites.text = "Weights Median : ${median}Kg"
 
                     val dialog = AlertDialog.Builder(context)
                     dialog.setNeutralButton("Back"){ dialog,which->
@@ -434,7 +434,7 @@ class AnimalsAdapter(private val context: Context, private val animalList: Array
                             pieEntries.add(PieEntry(temperature))
                             pieEntries.add(PieEntry(humidity))
 
-                            pieChart.centerText = "$temperature\n$humidity"
+                            pieChart.centerText = "$temperature" + "C" +"\n$humidity"+"%"
                             val pieDataSet = PieDataSet(pieEntries, "")
                             pieDataSet.setColors(Color.RED, Color.parseColor("#FFA500"))
                             val pieData = PieData(pieDataSet)

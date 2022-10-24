@@ -2994,7 +2994,6 @@ id logo_img
 id ltr
 id main_layout
 id main_thresh
-id mapView
 id masked
 id match_constraint
 id match_parent

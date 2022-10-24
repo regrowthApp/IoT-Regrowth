@@ -113,7 +113,6 @@ id logo_btn
 id logo_img
 id main_layout
 id main_thresh
-id mapView
 id max_hum
 id max_temp
 id max_weight
