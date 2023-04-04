@@ -134,7 +134,7 @@ class MainActivity : AppCompatActivity() {
 
         binding.fab.setOnClickListener {
             var dialog = AlertDialog.Builder(this@MainActivity)
-            dialog.setTitle("Edit Animals Thresh holds")
+            dialog.setTitle("Edit Animals Thresholds")
             val animals_view = layoutInflater.inflate(R.layout.dialog_remove_animal,null)
             animals_view.animalNameSpinner.adapter = ArrayAdapter<String>(
                 this@MainActivity,
