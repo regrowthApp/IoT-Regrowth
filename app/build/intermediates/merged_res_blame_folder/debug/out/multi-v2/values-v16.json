@@ -4,7 +4,7 @@
             "outputFile": "com.iot.technion.regrowth.app-mergeDebugResources-55:/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "/Users/yoosinpaddy/.gradle/caches/transforms-3/b2175fe05326dcdc2d092fdf72c9f886/transformed/core-1.9.0/res/values-v16/values-v16.xml",
+                    "source": "C:\\Users\\WIN10\\.gradle\\caches\\transforms-3\\b2175fe05326dcdc2d092fdf72c9f886\\transformed\\core-1.9.0\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "/Users/yoosinpaddy/.gradle/caches/transforms-3/296f84479b2f358744ab631ded31d7fc/transformed/appcompat-1.5.1/res/values-v16/values-v16.xml",
+                    "source": "C:\\Users\\WIN10\\.gradle\\caches\\transforms-3\\296f84479b2f358744ab631ded31d7fc\\transformed\\appcompat-1.5.1\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

@@ -4,7 +4,7 @@
             "outputFile": "com.iot.technion.regrowth.app-mergeDebugResources-55:/values-w600dp-v13/values-w600dp-v13.xml",
             "map": [
                 {
-                    "source": "/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/res/values-w600dp/dimens.xml",
+                    "source": "D:\\Regrowth_online\\IoT-Regrowth\\app\\src\\main\\res\\values-w600dp\\dimens.xml",
                     "from": {
                         "startLines": "2,1",
                         "startColumns": "4,4",

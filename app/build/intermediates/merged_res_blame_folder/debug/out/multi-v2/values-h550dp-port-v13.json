@@ -4,7 +4,7 @@
             "outputFile": "com.iot.technion.regrowth.app-mergeDebugResources-55:/values-h550dp-port-v13/values-h550dp-port-v13.xml",
             "map": [
                 {
-                    "source": "/Users/yoosinpaddy/.gradle/caches/transforms-3/ba8fcbaa52ed855ca1b7c3c417c4e9a9/transformed/material-1.6.1/res/values-h550dp-port-v13/values-h550dp-port-v13.xml",
+                    "source": "C:\\Users\\WIN10\\.gradle\\caches\\transforms-3\\ba8fcbaa52ed855ca1b7c3c417c4e9a9\\transformed\\material-1.6.1\\res\\values-h550dp-port-v13\\values-h550dp-port-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

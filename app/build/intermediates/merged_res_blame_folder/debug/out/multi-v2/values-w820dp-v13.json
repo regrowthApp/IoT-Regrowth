@@ -4,7 +4,7 @@
             "outputFile": "com.iot.technion.regrowth.app-mergeDebugResources-55:/values-w820dp-v13/values-w820dp-v13.xml",
             "map": [
                 {
-                    "source": "/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/res/values-w820dp/dimens.xml",
+                    "source": "D:\\Regrowth_online\\IoT-Regrowth\\app\\src\\main\\res\\values-w820dp\\dimens.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "4",
