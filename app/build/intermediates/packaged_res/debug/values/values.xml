@@ -82,6 +82,7 @@
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="invalid_username">Not a valid username</string>
     <string name="login_failed">"Login failed"</string>
+    <string name="map_api_key">AIzaSyBtI4xWb-bkaQmkJhWSwwfsjsu2ba0bkAs</string>
     <string name="menu">menu</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_home">Home</string>
@@ -115,7 +116,8 @@
     <style name="Theme.Regrowth" parent="Theme.MaterialComponents.Light.DarkActionBar">
         
         <item name="colorPrimary">@color/Sheep_Tab_Color</item>
-        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorPrimaryVariant">@color/white</item>
         <item name="colorOnPrimary">@color/white</item>
         
         <item name="colorSecondary">@color/teal_200</item>
@@ -129,6 +131,8 @@
     <style name="Theme.Regrowth.NoActionBar" parent="Theme.MaterialComponents.Light.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorPrimaryVariant">@color/white</item>
     </style>
     <style name="Theme.Regrowth.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
 </resources>

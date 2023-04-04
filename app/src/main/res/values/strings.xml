@@ -84,4 +84,5 @@
     <string name="login_failed">"Login failed"</string>
     <string name="webclient_id">"248185106763-sm8tco5ioh9rc6paci899tt52hdi5m2c.apps.googleusercontent.com"</string>
     <string name="title_activity_maps">MapsActivity</string>
+    <string name="map_api_key">AIzaSyBtI4xWb-bkaQmkJhWSwwfsjsu2ba0bkAs</string>
 </resources>

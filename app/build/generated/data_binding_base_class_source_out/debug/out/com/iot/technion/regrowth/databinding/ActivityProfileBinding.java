@@ -8,6 +8,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.cardview.widget.CardView;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.constraintlayout.widget.Guideline;
 import androidx.viewbinding.ViewBinding;
@@ -36,6 +37,12 @@ public final class ActivityProfileBinding implements ViewBinding {
   public final MaterialButton btnEditProfile;
 
   @NonNull
+  public final CardView cardView;
+
+  @NonNull
+  public final ImageView closeQr;
+
+  @NonNull
   public final TextView emailAddress;
 
   @NonNull
@@ -54,6 +61,18 @@ public final class ActivityProfileBinding implements ViewBinding {
   public final TextView phoneNumber;
 
   @NonNull
+  public final ImageView qrButton;
+
+  @NonNull
+  public final ConstraintLayout qrCard;
+
+  @NonNull
+  public final ImageView qrCode;
+
+  @NonNull
+  public final ImageView shareQr;
+
+  @NonNull
   public final Guideline verticalLine5;
 
   @NonNull
@@ -61,22 +80,29 @@ public final class ActivityProfileBinding implements ViewBinding {
 
   private ActivityProfileBinding(@NonNull ConstraintLayout rootView, @NonNull TextView address,
       @NonNull MaterialButton backHome, @NonNull ImageView backgroundImg,
-      @NonNull MaterialButton btnEditProfile, @NonNull TextView emailAddress,
-      @NonNull TextView farmName, @NonNull Guideline horizontalLine55,
-      @NonNull Guideline horizontalLine58, @NonNull CircleImageView logoImg,
-      @NonNull TextView phoneNumber, @NonNull Guideline verticalLine5,
-      @NonNull Guideline verticalLine92) {
+      @NonNull MaterialButton btnEditProfile, @NonNull CardView cardView,
+      @NonNull ImageView closeQr, @NonNull TextView emailAddress, @NonNull TextView farmName,
+      @NonNull Guideline horizontalLine55, @NonNull Guideline horizontalLine58,
+      @NonNull CircleImageView logoImg, @NonNull TextView phoneNumber, @NonNull ImageView qrButton,
+      @NonNull ConstraintLayout qrCard, @NonNull ImageView qrCode, @NonNull ImageView shareQr,
+      @NonNull Guideline verticalLine5, @NonNull Guideline verticalLine92) {
     this.rootView = rootView;
     this.address = address;
     this.backHome = backHome;
     this.backgroundImg = backgroundImg;
     this.btnEditProfile = btnEditProfile;
+    this.cardView = cardView;
+    this.closeQr = closeQr;
     this.emailAddress = emailAddress;
     this.farmName = farmName;
     this.horizontalLine55 = horizontalLine55;
     this.horizontalLine58 = horizontalLine58;
     this.logoImg = logoImg;
     this.phoneNumber = phoneNumber;
+    this.qrButton = qrButton;
+    this.qrCard = qrCard;
+    this.qrCode = qrCode;
+    this.shareQr = shareQr;
     this.verticalLine5 = verticalLine5;
     this.verticalLine92 = verticalLine92;
   }
@@ -132,6 +158,18 @@ public final class ActivityProfileBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.cardView;
+      CardView cardView = ViewBindings.findChildViewById(rootView, id);
+      if (cardView == null) {
+        break missingId;
+      }
+
+      id = R.id.closeQr;
+      ImageView closeQr = ViewBindings.findChildViewById(rootView, id);
+      if (closeQr == null) {
+        break missingId;
+      }
+
       id = R.id.email_address;
       TextView emailAddress = ViewBindings.findChildViewById(rootView, id);
       if (emailAddress == null) {
@@ -168,6 +206,30 @@ public final class ActivityProfileBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.qrButton;
+      ImageView qrButton = ViewBindings.findChildViewById(rootView, id);
+      if (qrButton == null) {
+        break missingId;
+      }
+
+      id = R.id.qrCard;
+      ConstraintLayout qrCard = ViewBindings.findChildViewById(rootView, id);
+      if (qrCard == null) {
+        break missingId;
+      }
+
+      id = R.id.qrCode;
+      ImageView qrCode = ViewBindings.findChildViewById(rootView, id);
+      if (qrCode == null) {
+        break missingId;
+      }
+
+      id = R.id.shareQr;
+      ImageView shareQr = ViewBindings.findChildViewById(rootView, id);
+      if (shareQr == null) {
+        break missingId;
+      }
+
       id = R.id.vertical_line_5;
       Guideline verticalLine5 = ViewBindings.findChildViewById(rootView, id);
       if (verticalLine5 == null) {
@@ -181,8 +243,9 @@ public final class ActivityProfileBinding implements ViewBinding {
       }
 
       return new ActivityProfileBinding((ConstraintLayout) rootView, address, backHome,
-          backgroundImg, btnEditProfile, emailAddress, farmName, horizontalLine55, horizontalLine58,
-          logoImg, phoneNumber, verticalLine5, verticalLine92);
+          backgroundImg, btnEditProfile, cardView, closeQr, emailAddress, farmName,
+          horizontalLine55, horizontalLine58, logoImg, phoneNumber, qrButton, qrCard, qrCode,
+          shareQr, verticalLine5, verticalLine92);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

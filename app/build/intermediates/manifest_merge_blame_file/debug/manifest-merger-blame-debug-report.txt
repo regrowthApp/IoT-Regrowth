@@ -6,502 +6,630 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="26"
-8-->D:\Regrowth\app\src\main\AndroidManifest.xml
+8-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml
 9        android:targetSdkVersion="32" />
-9-->D:\Regrowth\app\src\main\AndroidManifest.xml
+9-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml
 10
 11    <!-- Include required permissions for Google Maps API to run. -->
 12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-12-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\WIN10\.gradle\caches\transforms-3\b07a954fb1afb5d02f2e6f293c5c1072\transformed\play-services-maps-18.1.0\AndroidManifest.xml:23:5-79
-12-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\WIN10\.gradle\caches\transforms-3\b07a954fb1afb5d02f2e6f293c5c1072\transformed\play-services-maps-18.1.0\AndroidManifest.xml:23:22-76
+12-->[com.google.android.gms:play-services-maps:18.1.0] /Users/yoosinpaddy/.gradle/caches/transforms-3/b07a954fb1afb5d02f2e6f293c5c1072/transformed/play-services-maps-18.1.0/AndroidManifest.xml:23:5-79
+12-->[com.google.android.gms:play-services-maps:18.1.0] /Users/yoosinpaddy/.gradle/caches/transforms-3/b07a954fb1afb5d02f2e6f293c5c1072/transformed/play-services-maps-18.1.0/AndroidManifest.xml:23:22-76
 13    <uses-permission android:name="android.permission.INTERNET" />
-13-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\WIN10\.gradle\caches\transforms-3\b07a954fb1afb5d02f2e6f293c5c1072\transformed\play-services-maps-18.1.0\AndroidManifest.xml:24:5-67
-13-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\WIN10\.gradle\caches\transforms-3\b07a954fb1afb5d02f2e6f293c5c1072\transformed\play-services-maps-18.1.0\AndroidManifest.xml:24:22-64
+13-->[com.google.android.gms:play-services-maps:18.1.0] /Users/yoosinpaddy/.gradle/caches/transforms-3/b07a954fb1afb5d02f2e6f293c5c1072/transformed/play-services-maps-18.1.0/AndroidManifest.xml:24:5-67
+13-->[com.google.android.gms:play-services-maps:18.1.0] /Users/yoosinpaddy/.gradle/caches/transforms-3/b07a954fb1afb5d02f2e6f293c5c1072/transformed/play-services-maps-18.1.0/AndroidManifest.xml:24:22-64
 14
 15    <uses-feature
-15-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\WIN10\.gradle\caches\transforms-3\b07a954fb1afb5d02f2e6f293c5c1072\transformed\play-services-maps-18.1.0\AndroidManifest.xml:26:5-28:35
+15-->[com.google.android.gms:play-services-maps:18.1.0] /Users/yoosinpaddy/.gradle/caches/transforms-3/b07a954fb1afb5d02f2e6f293c5c1072/transformed/play-services-maps-18.1.0/AndroidManifest.xml:26:5-28:35
 16        android:glEsVersion="0x00020000"
-16-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\WIN10\.gradle\caches\transforms-3\b07a954fb1afb5d02f2e6f293c5c1072\transformed\play-services-maps-18.1.0\AndroidManifest.xml:27:9-41
+16-->[com.google.android.gms:play-services-maps:18.1.0] /Users/yoosinpaddy/.gradle/caches/transforms-3/b07a954fb1afb5d02f2e6f293c5c1072/transformed/play-services-maps-18.1.0/AndroidManifest.xml:27:9-41
 17        android:required="true" />
-17-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\WIN10\.gradle\caches\transforms-3\b07a954fb1afb5d02f2e6f293c5c1072\transformed\play-services-maps-18.1.0\AndroidManifest.xml:28:9-32
+17-->[com.google.android.gms:play-services-maps:18.1.0] /Users/yoosinpaddy/.gradle/caches/transforms-3/b07a954fb1afb5d02f2e6f293c5c1072/transformed/play-services-maps-18.1.0/AndroidManifest.xml:28:9-32
 18
 19    <queries>
-19-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\WIN10\.gradle\caches\transforms-3\b07a954fb1afb5d02f2e6f293c5c1072\transformed\play-services-maps-18.1.0\AndroidManifest.xml:30:5-34:15
+19-->[com.google.android.gms:play-services-maps:18.1.0] /Users/yoosinpaddy/.gradle/caches/transforms-3/b07a954fb1afb5d02f2e6f293c5c1072/transformed/play-services-maps-18.1.0/AndroidManifest.xml:30:5-34:15
 20
 21        <!-- Needs to be explicitly declared on Android R+ -->
 22        <package android:name="com.google.android.apps.maps" />
-22-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\WIN10\.gradle\caches\transforms-3\b07a954fb1afb5d02f2e6f293c5c1072\transformed\play-services-maps-18.1.0\AndroidManifest.xml:33:9-64
-22-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\WIN10\.gradle\caches\transforms-3\b07a954fb1afb5d02f2e6f293c5c1072\transformed\play-services-maps-18.1.0\AndroidManifest.xml:33:18-61
+22-->[com.google.android.gms:play-services-maps:18.1.0] /Users/yoosinpaddy/.gradle/caches/transforms-3/b07a954fb1afb5d02f2e6f293c5c1072/transformed/play-services-maps-18.1.0/AndroidManifest.xml:33:9-64
+22-->[com.google.android.gms:play-services-maps:18.1.0] /Users/yoosinpaddy/.gradle/caches/transforms-3/b07a954fb1afb5d02f2e6f293c5c1072/transformed/play-services-maps-18.1.0/AndroidManifest.xml:33:18-61
 23    </queries>
 24
 25    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
-25-->[com.google.firebase:firebase-messaging:23.0.8] C:\Users\WIN10\.gradle\caches\transforms-3\dc49caf2d4895910b85437e962631d77\transformed\firebase-messaging-23.0.8\AndroidManifest.xml:26:5-77
-25-->[com.google.firebase:firebase-messaging:23.0.8] C:\Users\WIN10\.gradle\caches\transforms-3\dc49caf2d4895910b85437e962631d77\transformed\firebase-messaging-23.0.8\AndroidManifest.xml:26:22-74
+25-->[com.google.firebase:firebase-messaging:23.0.8] /Users/yoosinpaddy/.gradle/caches/transforms-3/dc49caf2d4895910b85437e962631d77/transformed/firebase-messaging-23.0.8/AndroidManifest.xml:26:5-77
+25-->[com.google.firebase:firebase-messaging:23.0.8] /Users/yoosinpaddy/.gradle/caches/transforms-3/dc49caf2d4895910b85437e962631d77/transformed/firebase-messaging-23.0.8/AndroidManifest.xml:26:22-74
 26    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
-26-->[com.google.firebase:firebase-messaging:23.0.8] C:\Users\WIN10\.gradle\caches\transforms-3\dc49caf2d4895910b85437e962631d77\transformed\firebase-messaging-23.0.8\AndroidManifest.xml:27:5-68
-26-->[com.google.firebase:firebase-messaging:23.0.8] C:\Users\WIN10\.gradle\caches\transforms-3\dc49caf2d4895910b85437e962631d77\transformed\firebase-messaging-23.0.8\AndroidManifest.xml:27:22-65
+26-->[com.google.firebase:firebase-messaging:23.0.8] /Users/yoosinpaddy/.gradle/caches/transforms-3/dc49caf2d4895910b85437e962631d77/transformed/firebase-messaging-23.0.8/AndroidManifest.xml:27:5-68
+26-->[com.google.firebase:firebase-messaging:23.0.8] /Users/yoosinpaddy/.gradle/caches/transforms-3/dc49caf2d4895910b85437e962631d77/transformed/firebase-messaging-23.0.8/AndroidManifest.xml:27:22-65
 27    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
-27-->[com.google.firebase:firebase-messaging:23.0.8] C:\Users\WIN10\.gradle\caches\transforms-3\dc49caf2d4895910b85437e962631d77\transformed\firebase-messaging-23.0.8\AndroidManifest.xml:29:5-82
-27-->[com.google.firebase:firebase-messaging:23.0.8] C:\Users\WIN10\.gradle\caches\transforms-3\dc49caf2d4895910b85437e962631d77\transformed\firebase-messaging-23.0.8\AndroidManifest.xml:29:22-79
+27-->[com.google.firebase:firebase-messaging:23.0.8] /Users/yoosinpaddy/.gradle/caches/transforms-3/dc49caf2d4895910b85437e962631d77/transformed/firebase-messaging-23.0.8/AndroidManifest.xml:29:5-82
+27-->[com.google.firebase:firebase-messaging:23.0.8] /Users/yoosinpaddy/.gradle/caches/transforms-3/dc49caf2d4895910b85437e962631d77/transformed/firebase-messaging-23.0.8/AndroidManifest.xml:29:22-79
 28    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
-28-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\WIN10\.gradle\caches\transforms-3\f65e325fd4dc92b5383ebdb97d54a9c4\transformed\play-services-measurement-21.1.1\AndroidManifest.xml:26:5-110
-28-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\WIN10\.gradle\caches\transforms-3\f65e325fd4dc92b5383ebdb97d54a9c4\transformed\play-services-measurement-21.1.1\AndroidManifest.xml:26:22-107
+28-->[com.google.android.gms:play-services-measurement:21.1.1] /Users/yoosinpaddy/.gradle/caches/transforms-3/f65e325fd4dc92b5383ebdb97d54a9c4/transformed/play-services-measurement-21.1.1/AndroidManifest.xml:26:5-110
+28-->[com.google.android.gms:play-services-measurement:21.1.1] /Users/yoosinpaddy/.gradle/caches/transforms-3/f65e325fd4dc92b5383ebdb97d54a9c4/transformed/play-services-measurement-21.1.1/AndroidManifest.xml:26:22-107
 29    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
-29-->[com.google.android.gms:play-services-measurement-impl:21.1.1] C:\Users\WIN10\.gradle\caches\transforms-3\6f192a854b2a112d37d46a0d290bd4e8\transformed\play-services-measurement-impl-21.1.1\AndroidManifest.xml:27:5-79
-29-->[com.google.android.gms:play-services-measurement-impl:21.1.1] C:\Users\WIN10\.gradle\caches\transforms-3\6f192a854b2a112d37d46a0d290bd4e8\transformed\play-services-measurement-impl-21.1.1\AndroidManifest.xml:27:22-76
+29-->[com.google.android.gms:play-services-measurement-impl:21.1.1] /Users/yoosinpaddy/.gradle/caches/transforms-3/6f192a854b2a112d37d46a0d290bd4e8/transformed/play-services-measurement-impl-21.1.1/AndroidManifest.xml:27:5-79
+29-->[com.google.android.gms:play-services-measurement-impl:21.1.1] /Users/yoosinpaddy/.gradle/caches/transforms-3/6f192a854b2a112d37d46a0d290bd4e8/transformed/play-services-measurement-impl-21.1.1/AndroidManifest.xml:27:22-76
 30
 31    <permission
-31-->[androidx.core:core:1.9.0] C:\Users\WIN10\.gradle\caches\transforms-3\b2175fe05326dcdc2d092fdf72c9f886\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+31-->[androidx.core:core:1.9.0] /Users/yoosinpaddy/.gradle/caches/transforms-3/b2175fe05326dcdc2d092fdf72c9f886/transformed/core-1.9.0/AndroidManifest.xml:22:5-24:47
 32        android:name="com.iot.technion.regrowth.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-32-->[androidx.core:core:1.9.0] C:\Users\WIN10\.gradle\caches\transforms-3\b2175fe05326dcdc2d092fdf72c9f886\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+32-->[androidx.core:core:1.9.0] /Users/yoosinpaddy/.gradle/caches/transforms-3/b2175fe05326dcdc2d092fdf72c9f886/transformed/core-1.9.0/AndroidManifest.xml:23:9-81
 33        android:protectionLevel="signature" />
-33-->[androidx.core:core:1.9.0] C:\Users\WIN10\.gradle\caches\transforms-3\b2175fe05326dcdc2d092fdf72c9f886\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+33-->[androidx.core:core:1.9.0] /Users/yoosinpaddy/.gradle/caches/transforms-3/b2175fe05326dcdc2d092fdf72c9f886/transformed/core-1.9.0/AndroidManifest.xml:24:9-44
 34
 35    <uses-permission android:name="com.iot.technion.regrowth.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-35-->[androidx.core:core:1.9.0] C:\Users\WIN10\.gradle\caches\transforms-3\b2175fe05326dcdc2d092fdf72c9f886\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
-35-->[androidx.core:core:1.9.0] C:\Users\WIN10\.gradle\caches\transforms-3\b2175fe05326dcdc2d092fdf72c9f886\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
-36
-37    <application
-37-->D:\Regrowth\app\src\main\AndroidManifest.xml:6:5-57:19
-38        android:allowBackup="true"
-38-->D:\Regrowth\app\src\main\AndroidManifest.xml:7:9-35
-39        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-39-->[androidx.core:core:1.9.0] C:\Users\WIN10\.gradle\caches\transforms-3\b2175fe05326dcdc2d092fdf72c9f886\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
-40        android:dataExtractionRules="@xml/data_extraction_rules"
-40-->D:\Regrowth\app\src\main\AndroidManifest.xml:8:9-65
-41        android:debuggable="true"
-42        android:extractNativeLibs="false"
-43        android:fullBackupContent="@xml/backup_rules"
-43-->D:\Regrowth\app\src\main\AndroidManifest.xml:9:9-54
-44        android:icon="@drawable/app_logo"
-44-->D:\Regrowth\app\src\main\AndroidManifest.xml:10:9-42
-45        android:label="@string/app_name"
-45-->D:\Regrowth\app\src\main\AndroidManifest.xml:11:9-41
-46        android:supportsRtl="true"
-46-->D:\Regrowth\app\src\main\AndroidManifest.xml:12:9-35
-47        android:theme="@style/Theme.Regrowth" >
-47-->D:\Regrowth\app\src\main\AndroidManifest.xml:13:9-46
-48        <activity
-48-->D:\Regrowth\app\src\main\AndroidManifest.xml:15:9-22:20
-49            android:name="com.iot.technion.regrowth.NotificationListActivity"
-49-->D:\Regrowth\app\src\main\AndroidManifest.xml:16:13-53
-50            android:exported="false"
-50-->D:\Regrowth\app\src\main\AndroidManifest.xml:17:13-37
-51            android:theme="@style/Theme.Regrowth.NoActionBar" >
-51-->D:\Regrowth\app\src\main\AndroidManifest.xml:18:13-62
-52            <meta-data
-52-->D:\Regrowth\app\src\main\AndroidManifest.xml:19:13-21:36
-53                android:name="android.app.lib_name"
-53-->D:\Regrowth\app\src\main\AndroidManifest.xml:20:17-52
-54                android:value="" />
-54-->D:\Regrowth\app\src\main\AndroidManifest.xml:21:17-33
-55        </activity>
-56        <activity
-56-->D:\Regrowth\app\src\main\AndroidManifest.xml:23:9-25:40
-57            android:name="com.iot.technion.regrowth.ProfileActivity"
-57-->D:\Regrowth\app\src\main\AndroidManifest.xml:24:13-44
-58            android:exported="false" />
-58-->D:\Regrowth\app\src\main\AndroidManifest.xml:25:13-37
-59
-60        <meta-data
-60-->D:\Regrowth\app\src\main\AndroidManifest.xml:27:9-29:71
-61            android:name="com.google.android.geo.API_KEY"
-61-->D:\Regrowth\app\src\main\AndroidManifest.xml:28:13-58
-62            android:value="AIzaSyBA1YOl8wyYzLK3Fjxc3bvZC823MGxN0Sc" />
-62-->D:\Regrowth\app\src\main\AndroidManifest.xml:29:13-68
-63
-64        <activity
-64-->D:\Regrowth\app\src\main\AndroidManifest.xml:31:9-33:40
-65            android:name="com.iot.technion.regrowth.UserActivity"
-65-->D:\Regrowth\app\src\main\AndroidManifest.xml:32:13-41
-66            android:exported="false" />
-66-->D:\Regrowth\app\src\main\AndroidManifest.xml:33:13-37
-67        <activity
-67-->D:\Regrowth\app\src\main\AndroidManifest.xml:34:9-43:20
-68            android:name="com.iot.technion.regrowth.LoginActivity"
-68-->D:\Regrowth\app\src\main\AndroidManifest.xml:35:13-42
-69            android:exported="true"
-69-->D:\Regrowth\app\src\main\AndroidManifest.xml:36:13-36
-70            android:label="Regrowth" >
-70-->D:\Regrowth\app\src\main\AndroidManifest.xml:37:13-37
-71            <intent-filter>
-71-->D:\Regrowth\app\src\main\AndroidManifest.xml:38:13-42:29
-72                <action android:name="android.intent.action.MAIN" />
-72-->D:\Regrowth\app\src\main\AndroidManifest.xml:39:17-69
-72-->D:\Regrowth\app\src\main\AndroidManifest.xml:39:25-66
-73
-74                <category android:name="android.intent.category.LAUNCHER" />
-74-->D:\Regrowth\app\src\main\AndroidManifest.xml:41:17-77
-74-->D:\Regrowth\app\src\main\AndroidManifest.xml:41:27-74
-75            </intent-filter>
-76        </activity>
-77        <activity
-77-->D:\Regrowth\app\src\main\AndroidManifest.xml:44:9-47:74
-78            android:name="com.iot.technion.regrowth.MainActivity"
-78-->D:\Regrowth\app\src\main\AndroidManifest.xml:45:13-41
-79            android:exported="false"
-79-->D:\Regrowth\app\src\main\AndroidManifest.xml:46:13-37
-80            android:theme="@style/Theme.Regrowth.NoActionBar" />
-80-->D:\Regrowth\app\src\main\AndroidManifest.xml:47:13-62
-81
-82        <service
-82-->D:\Regrowth\app\src\main\AndroidManifest.xml:49:9-56:19
-83            android:name="com.iot.technion.regrowth.MyFirebaseNotificationService"
-83-->D:\Regrowth\app\src\main\AndroidManifest.xml:50:13-58
-84            android:exported="true" >
-84-->D:\Regrowth\app\src\main\AndroidManifest.xml:51:13-36
-85            <intent-filter>
-85-->D:\Regrowth\app\src\main\AndroidManifest.xml:52:13-55:29
-86                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
-86-->D:\Regrowth\app\src\main\AndroidManifest.xml:53:17-80
-86-->D:\Regrowth\app\src\main\AndroidManifest.xml:53:25-77
-87                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-87-->D:\Regrowth\app\src\main\AndroidManifest.xml:54:17-78
-87-->D:\Regrowth\app\src\main\AndroidManifest.xml:54:25-75
-88            </intent-filter>
-89        </service>
-90        <!-- Needs to be explicitly declared on P+ -->
-91        <uses-library
-91-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\WIN10\.gradle\caches\transforms-3\b07a954fb1afb5d02f2e6f293c5c1072\transformed\play-services-maps-18.1.0\AndroidManifest.xml:39:9-41:40
-92            android:name="org.apache.http.legacy"
-92-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\WIN10\.gradle\caches\transforms-3\b07a954fb1afb5d02f2e6f293c5c1072\transformed\play-services-maps-18.1.0\AndroidManifest.xml:40:13-50
-93            android:required="false" />
-93-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\WIN10\.gradle\caches\transforms-3\b07a954fb1afb5d02f2e6f293c5c1072\transformed\play-services-maps-18.1.0\AndroidManifest.xml:41:13-37
-94
-95        <activity
-95-->[com.google.android.gms:play-services-auth:20.3.0] C:\Users\WIN10\.gradle\caches\transforms-3\fe041a5923cd77fe5eb074f0a676a2ec\transformed\play-services-auth-20.3.0\AndroidManifest.xml:23:9-27:75
-96            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
-96-->[com.google.android.gms:play-services-auth:20.3.0] C:\Users\WIN10\.gradle\caches\transforms-3\fe041a5923cd77fe5eb074f0a676a2ec\transformed\play-services-auth-20.3.0\AndroidManifest.xml:24:13-93
-97            android:excludeFromRecents="true"
-97-->[com.google.android.gms:play-services-auth:20.3.0] C:\Users\WIN10\.gradle\caches\transforms-3\fe041a5923cd77fe5eb074f0a676a2ec\transformed\play-services-auth-20.3.0\AndroidManifest.xml:25:13-46
-98            android:exported="false"
-98-->[com.google.android.gms:play-services-auth:20.3.0] C:\Users\WIN10\.gradle\caches\transforms-3\fe041a5923cd77fe5eb074f0a676a2ec\transformed\play-services-auth-20.3.0\AndroidManifest.xml:26:13-37
-99            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-99-->[com.google.android.gms:play-services-auth:20.3.0] C:\Users\WIN10\.gradle\caches\transforms-3\fe041a5923cd77fe5eb074f0a676a2ec\transformed\play-services-auth-20.3.0\AndroidManifest.xml:27:13-72
-100        <!--
-101            Service handling Google Sign-In user revocation. For apps that do not integrate with
-102            Google Sign-In, this service will never be started.
-103        -->
-104        <service
-104-->[com.google.android.gms:play-services-auth:20.3.0] C:\Users\WIN10\.gradle\caches\transforms-3\fe041a5923cd77fe5eb074f0a676a2ec\transformed\play-services-auth-20.3.0\AndroidManifest.xml:33:9-37:51
-105            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
-105-->[com.google.android.gms:play-services-auth:20.3.0] C:\Users\WIN10\.gradle\caches\transforms-3\fe041a5923cd77fe5eb074f0a676a2ec\transformed\play-services-auth-20.3.0\AndroidManifest.xml:34:13-89
-106            android:exported="true"
-106-->[com.google.android.gms:play-services-auth:20.3.0] C:\Users\WIN10\.gradle\caches\transforms-3\fe041a5923cd77fe5eb074f0a676a2ec\transformed\play-services-auth-20.3.0\AndroidManifest.xml:35:13-36
-107            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
-107-->[com.google.android.gms:play-services-auth:20.3.0] C:\Users\WIN10\.gradle\caches\transforms-3\fe041a5923cd77fe5eb074f0a676a2ec\transformed\play-services-auth-20.3.0\AndroidManifest.xml:36:13-107
-108            android:visibleToInstantApps="true" />
-108-->[com.google.android.gms:play-services-auth:20.3.0] C:\Users\WIN10\.gradle\caches\transforms-3\fe041a5923cd77fe5eb074f0a676a2ec\transformed\play-services-auth-20.3.0\AndroidManifest.xml:37:13-48
-109
-110        <receiver
-110-->[com.google.firebase:firebase-messaging:23.0.8] C:\Users\WIN10\.gradle\caches\transforms-3\dc49caf2d4895910b85437e962631d77\transformed\firebase-messaging-23.0.8\AndroidManifest.xml:32:9-39:20
-111            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
-111-->[com.google.firebase:firebase-messaging:23.0.8] C:\Users\WIN10\.gradle\caches\transforms-3\dc49caf2d4895910b85437e962631d77\transformed\firebase-messaging-23.0.8\AndroidManifest.xml:33:13-78
-112            android:exported="true"
-112-->[com.google.firebase:firebase-messaging:23.0.8] C:\Users\WIN10\.gradle\caches\transforms-3\dc49caf2d4895910b85437e962631d77\transformed\firebase-messaging-23.0.8\AndroidManifest.xml:34:13-36
-113            android:permission="com.google.android.c2dm.permission.SEND" >
-113-->[com.google.firebase:firebase-messaging:23.0.8] C:\Users\WIN10\.gradle\caches\transforms-3\dc49caf2d4895910b85437e962631d77\transformed\firebase-messaging-23.0.8\AndroidManifest.xml:35:13-73
-114            <intent-filter>
-114-->[com.google.firebase:firebase-messaging:23.0.8] C:\Users\WIN10\.gradle\caches\transforms-3\dc49caf2d4895910b85437e962631d77\transformed\firebase-messaging-23.0.8\AndroidManifest.xml:36:13-38:29
-115                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-115-->[com.google.firebase:firebase-messaging:23.0.8] C:\Users\WIN10\.gradle\caches\transforms-3\dc49caf2d4895910b85437e962631d77\transformed\firebase-messaging-23.0.8\AndroidManifest.xml:37:17-81
-115-->[com.google.firebase:firebase-messaging:23.0.8] C:\Users\WIN10\.gradle\caches\transforms-3\dc49caf2d4895910b85437e962631d77\transformed\firebase-messaging-23.0.8\AndroidManifest.xml:37:25-78
-116            </intent-filter>
-117        </receiver>
-118        <!--
-119             FirebaseMessagingService performs security checks at runtime,
-120             but set to not exported to explicitly avoid allowing another app to call it.
-121        -->
-122        <service
-122-->[com.google.firebase:firebase-messaging:23.0.8] C:\Users\WIN10\.gradle\caches\transforms-3\dc49caf2d4895910b85437e962631d77\transformed\firebase-messaging-23.0.8\AndroidManifest.xml:45:9-52:19
-123            android:name="com.google.firebase.messaging.FirebaseMessagingService"
-123-->[com.google.firebase:firebase-messaging:23.0.8] C:\Users\WIN10\.gradle\caches\transforms-3\dc49caf2d4895910b85437e962631d77\transformed\firebase-messaging-23.0.8\AndroidManifest.xml:46:13-82
-124            android:directBootAware="true"
-124-->[com.google.firebase:firebase-messaging:23.0.8] C:\Users\WIN10\.gradle\caches\transforms-3\dc49caf2d4895910b85437e962631d77\transformed\firebase-messaging-23.0.8\AndroidManifest.xml:47:13-43
-125            android:exported="false" >
-125-->[com.google.firebase:firebase-messaging:23.0.8] C:\Users\WIN10\.gradle\caches\transforms-3\dc49caf2d4895910b85437e962631d77\transformed\firebase-messaging-23.0.8\AndroidManifest.xml:48:13-37
-126            <intent-filter android:priority="-500" >
-126-->[com.google.firebase:firebase-messaging:23.0.8] C:\Users\WIN10\.gradle\caches\transforms-3\dc49caf2d4895910b85437e962631d77\transformed\firebase-messaging-23.0.8\AndroidManifest.xml:49:13-51:29
-126-->[com.google.firebase:firebase-messaging:23.0.8] C:\Users\WIN10\.gradle\caches\transforms-3\dc49caf2d4895910b85437e962631d77\transformed\firebase-messaging-23.0.8\AndroidManifest.xml:49:28-51
-127                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-127-->D:\Regrowth\app\src\main\AndroidManifest.xml:54:17-78
-127-->D:\Regrowth\app\src\main\AndroidManifest.xml:54:25-75
-128            </intent-filter>
-129        </service>
-130        <service
-130-->[com.google.firebase:firebase-messaging:23.0.8] C:\Users\WIN10\.gradle\caches\transforms-3\dc49caf2d4895910b85437e962631d77\transformed\firebase-messaging-23.0.8\AndroidManifest.xml:53:9-59:19
-131            android:name="com.google.firebase.components.ComponentDiscoveryService"
-131-->[com.google.firebase:firebase-messaging:23.0.8] C:\Users\WIN10\.gradle\caches\transforms-3\dc49caf2d4895910b85437e962631d77\transformed\firebase-messaging-23.0.8\AndroidManifest.xml:54:13-84
-132            android:directBootAware="true"
-132-->[com.google.firebase:firebase-common:20.1.2] C:\Users\WIN10\.gradle\caches\transforms-3\66a18ba742eed2c25a00a2b6013694c2\transformed\firebase-common-20.1.2\AndroidManifest.xml:35:13-43
-133            android:exported="false" >
-133-->[com.google.firebase:firebase-messaging:23.0.8] C:\Users\WIN10\.gradle\caches\transforms-3\dc49caf2d4895910b85437e962631d77\transformed\firebase-messaging-23.0.8\AndroidManifest.xml:55:13-37
-134            <meta-data
-134-->[com.google.firebase:firebase-messaging:23.0.8] C:\Users\WIN10\.gradle\caches\transforms-3\dc49caf2d4895910b85437e962631d77\transformed\firebase-messaging-23.0.8\AndroidManifest.xml:56:13-58:85
-135                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
-135-->[com.google.firebase:firebase-messaging:23.0.8] C:\Users\WIN10\.gradle\caches\transforms-3\dc49caf2d4895910b85437e962631d77\transformed\firebase-messaging-23.0.8\AndroidManifest.xml:57:17-119
-136                android:value="com.google.firebase.components.ComponentRegistrar" />
-136-->[com.google.firebase:firebase-messaging:23.0.8] C:\Users\WIN10\.gradle\caches\transforms-3\dc49caf2d4895910b85437e962631d77\transformed\firebase-messaging-23.0.8\AndroidManifest.xml:58:17-82
-137            <meta-data
-137-->[com.google.firebase:firebase-auth-ktx:21.0.8] C:\Users\WIN10\.gradle\caches\transforms-3\973cfca41e8a534e342e56d901c2514e\transformed\firebase-auth-ktx-21.0.8\AndroidManifest.xml:11:13-13:85
-138                android:name="com.google.firebase.components:com.google.firebase.auth.ktx.FirebaseAuthKtxRegistrar"
-138-->[com.google.firebase:firebase-auth-ktx:21.0.8] C:\Users\WIN10\.gradle\caches\transforms-3\973cfca41e8a534e342e56d901c2514e\transformed\firebase-auth-ktx-21.0.8\AndroidManifest.xml:12:17-116
-139                android:value="com.google.firebase.components.ComponentRegistrar" />
-139-->[com.google.firebase:firebase-auth-ktx:21.0.8] C:\Users\WIN10\.gradle\caches\transforms-3\973cfca41e8a534e342e56d901c2514e\transformed\firebase-auth-ktx-21.0.8\AndroidManifest.xml:13:17-82
-140            <meta-data
-140-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\WIN10\.gradle\caches\transforms-3\e82f1e6a1738a0cd3f12d35eb5be3ef4\transformed\firebase-auth-21.0.8\AndroidManifest.xml:67:13-69:85
-141                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
-141-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\WIN10\.gradle\caches\transforms-3\e82f1e6a1738a0cd3f12d35eb5be3ef4\transformed\firebase-auth-21.0.8\AndroidManifest.xml:68:17-109
-142                android:value="com.google.firebase.components.ComponentRegistrar" />
-142-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\WIN10\.gradle\caches\transforms-3\e82f1e6a1738a0cd3f12d35eb5be3ef4\transformed\firebase-auth-21.0.8\AndroidManifest.xml:69:17-82
-143            <meta-data
-143-->[com.google.firebase:firebase-database-ktx:20.0.6] C:\Users\WIN10\.gradle\caches\transforms-3\997cb29a1679a79660678bfb96594aa7\transformed\firebase-database-ktx-20.0.6\AndroidManifest.xml:15:13-17:85
-144                android:name="com.google.firebase.components:com.google.firebase.database.ktx.FirebaseDatabaseKtxRegistrar"
-144-->[com.google.firebase:firebase-database-ktx:20.0.6] C:\Users\WIN10\.gradle\caches\transforms-3\997cb29a1679a79660678bfb96594aa7\transformed\firebase-database-ktx-20.0.6\AndroidManifest.xml:16:17-124
-145                android:value="com.google.firebase.components.ComponentRegistrar" />
-145-->[com.google.firebase:firebase-database-ktx:20.0.6] C:\Users\WIN10\.gradle\caches\transforms-3\997cb29a1679a79660678bfb96594aa7\transformed\firebase-database-ktx-20.0.6\AndroidManifest.xml:17:17-82
-146            <meta-data
-146-->[com.google.firebase:firebase-database:20.0.6] C:\Users\WIN10\.gradle\caches\transforms-3\8d31ea30e6e2bf3d0f926033b3af0ff9\transformed\firebase-database-20.0.6\AndroidManifest.xml:32:13-34:85
-147                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
-147-->[com.google.firebase:firebase-database:20.0.6] C:\Users\WIN10\.gradle\caches\transforms-3\8d31ea30e6e2bf3d0f926033b3af0ff9\transformed\firebase-database-20.0.6\AndroidManifest.xml:33:17-109
-148                android:value="com.google.firebase.components.ComponentRegistrar" />
-148-->[com.google.firebase:firebase-database:20.0.6] C:\Users\WIN10\.gradle\caches\transforms-3\8d31ea30e6e2bf3d0f926033b3af0ff9\transformed\firebase-database-20.0.6\AndroidManifest.xml:34:17-82
-149            <meta-data
-149-->[com.google.firebase:firebase-storage-ktx:20.0.2] C:\Users\WIN10\.gradle\caches\transforms-3\74b4d5cc795eb95dd485283dbafc92f5\transformed\firebase-storage-ktx-20.0.2\AndroidManifest.xml:15:13-17:85
-150                android:name="com.google.firebase.components:com.google.firebase.storage.ktx.FirebaseStorageKtxRegistrar"
-150-->[com.google.firebase:firebase-storage-ktx:20.0.2] C:\Users\WIN10\.gradle\caches\transforms-3\74b4d5cc795eb95dd485283dbafc92f5\transformed\firebase-storage-ktx-20.0.2\AndroidManifest.xml:16:17-122
-151                android:value="com.google.firebase.components.ComponentRegistrar" />
-151-->[com.google.firebase:firebase-storage-ktx:20.0.2] C:\Users\WIN10\.gradle\caches\transforms-3\74b4d5cc795eb95dd485283dbafc92f5\transformed\firebase-storage-ktx-20.0.2\AndroidManifest.xml:17:17-82
-152            <meta-data
-152-->[com.google.firebase:firebase-storage:20.0.2] C:\Users\WIN10\.gradle\caches\transforms-3\3c3fa809ef418105743ef878b0dce63e\transformed\firebase-storage-20.0.2\AndroidManifest.xml:33:13-35:85
-153                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
-153-->[com.google.firebase:firebase-storage:20.0.2] C:\Users\WIN10\.gradle\caches\transforms-3\3c3fa809ef418105743ef878b0dce63e\transformed\firebase-storage-20.0.2\AndroidManifest.xml:34:17-107
-154                android:value="com.google.firebase.components.ComponentRegistrar" />
-154-->[com.google.firebase:firebase-storage:20.0.2] C:\Users\WIN10\.gradle\caches\transforms-3\3c3fa809ef418105743ef878b0dce63e\transformed\firebase-storage-20.0.2\AndroidManifest.xml:35:17-82
-155            <meta-data
-155-->[com.google.firebase:firebase-analytics-ktx:21.1.1] C:\Users\WIN10\.gradle\caches\transforms-3\f7f25ae511c9b1961cd8de3d97c703da\transformed\firebase-analytics-ktx-21.1.1\AndroidManifest.xml:11:13-13:85
-156                android:name="com.google.firebase.components:com.google.firebase.analytics.ktx.FirebaseAnalyticsKtxRegistrar"
-156-->[com.google.firebase:firebase-analytics-ktx:21.1.1] C:\Users\WIN10\.gradle\caches\transforms-3\f7f25ae511c9b1961cd8de3d97c703da\transformed\firebase-analytics-ktx-21.1.1\AndroidManifest.xml:12:17-126
-157                android:value="com.google.firebase.components.ComponentRegistrar" />
-157-->[com.google.firebase:firebase-analytics-ktx:21.1.1] C:\Users\WIN10\.gradle\caches\transforms-3\f7f25ae511c9b1961cd8de3d97c703da\transformed\firebase-analytics-ktx-21.1.1\AndroidManifest.xml:13:17-82
-158            <meta-data
-158-->[com.google.android.gms:play-services-measurement-api:21.1.1] C:\Users\WIN10\.gradle\caches\transforms-3\8a6788ee3ec45fd625d2f8e107a0d93e\transformed\play-services-measurement-api-21.1.1\AndroidManifest.xml:31:13-33:85
-159                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
-159-->[com.google.android.gms:play-services-measurement-api:21.1.1] C:\Users\WIN10\.gradle\caches\transforms-3\8a6788ee3ec45fd625d2f8e107a0d93e\transformed\play-services-measurement-api-21.1.1\AndroidManifest.xml:32:17-139
-160                android:value="com.google.firebase.components.ComponentRegistrar" />
-160-->[com.google.android.gms:play-services-measurement-api:21.1.1] C:\Users\WIN10\.gradle\caches\transforms-3\8a6788ee3ec45fd625d2f8e107a0d93e\transformed\play-services-measurement-api-21.1.1\AndroidManifest.xml:33:17-82
-161            <meta-data
-161-->[com.google.firebase:firebase-installations:17.0.3] C:\Users\WIN10\.gradle\caches\transforms-3\fe5515f17549be2ec93c740eed4cfc9d\transformed\firebase-installations-17.0.3\AndroidManifest.xml:18:13-20:85
-162                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
-162-->[com.google.firebase:firebase-installations:17.0.3] C:\Users\WIN10\.gradle\caches\transforms-3\fe5515f17549be2ec93c740eed4cfc9d\transformed\firebase-installations-17.0.3\AndroidManifest.xml:19:17-127
-163                android:value="com.google.firebase.components.ComponentRegistrar" />
-163-->[com.google.firebase:firebase-installations:17.0.3] C:\Users\WIN10\.gradle\caches\transforms-3\fe5515f17549be2ec93c740eed4cfc9d\transformed\firebase-installations-17.0.3\AndroidManifest.xml:20:17-82
-164            <meta-data
-164-->[com.google.firebase:firebase-datatransport:18.1.6] C:\Users\WIN10\.gradle\caches\transforms-3\6d6182c678b8ec3b34f8fa4a5801ddef\transformed\firebase-datatransport-18.1.6\AndroidManifest.xml:28:13-30:85
-165                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
-165-->[com.google.firebase:firebase-datatransport:18.1.6] C:\Users\WIN10\.gradle\caches\transforms-3\6d6182c678b8ec3b34f8fa4a5801ddef\transformed\firebase-datatransport-18.1.6\AndroidManifest.xml:29:17-115
-166                android:value="com.google.firebase.components.ComponentRegistrar" />
-166-->[com.google.firebase:firebase-datatransport:18.1.6] C:\Users\WIN10\.gradle\caches\transforms-3\6d6182c678b8ec3b34f8fa4a5801ddef\transformed\firebase-datatransport-18.1.6\AndroidManifest.xml:30:17-82
-167            <meta-data
-167-->[com.google.firebase:firebase-common-ktx:20.1.2] C:\Users\WIN10\.gradle\caches\transforms-3\b020a64608295f9bd758a17489675176\transformed\firebase-common-ktx-20.1.2\AndroidManifest.xml:15:13-17:85
-168                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar"
-168-->[com.google.firebase:firebase-common-ktx:20.1.2] C:\Users\WIN10\.gradle\caches\transforms-3\b020a64608295f9bd758a17489675176\transformed\firebase-common-ktx-20.1.2\AndroidManifest.xml:16:17-113
-169                android:value="com.google.firebase.components.ComponentRegistrar" />
-169-->[com.google.firebase:firebase-common-ktx:20.1.2] C:\Users\WIN10\.gradle\caches\transforms-3\b020a64608295f9bd758a17489675176\transformed\firebase-common-ktx-20.1.2\AndroidManifest.xml:17:17-82
-170        </service>
-171
-172        <activity
-172-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\WIN10\.gradle\caches\transforms-3\e82f1e6a1738a0cd3f12d35eb5be3ef4\transformed\firebase-auth-21.0.8\AndroidManifest.xml:27:9-44:20
-173            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
-173-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\WIN10\.gradle\caches\transforms-3\e82f1e6a1738a0cd3f12d35eb5be3ef4\transformed\firebase-auth-21.0.8\AndroidManifest.xml:28:13-80
-174            android:excludeFromRecents="true"
-174-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\WIN10\.gradle\caches\transforms-3\e82f1e6a1738a0cd3f12d35eb5be3ef4\transformed\firebase-auth-21.0.8\AndroidManifest.xml:29:13-46
-175            android:exported="true"
-175-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\WIN10\.gradle\caches\transforms-3\e82f1e6a1738a0cd3f12d35eb5be3ef4\transformed\firebase-auth-21.0.8\AndroidManifest.xml:30:13-36
-176            android:launchMode="singleTask"
-176-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\WIN10\.gradle\caches\transforms-3\e82f1e6a1738a0cd3f12d35eb5be3ef4\transformed\firebase-auth-21.0.8\AndroidManifest.xml:31:13-44
-177            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-177-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\WIN10\.gradle\caches\transforms-3\e82f1e6a1738a0cd3f12d35eb5be3ef4\transformed\firebase-auth-21.0.8\AndroidManifest.xml:32:13-72
-178            <intent-filter>
-178-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\WIN10\.gradle\caches\transforms-3\e82f1e6a1738a0cd3f12d35eb5be3ef4\transformed\firebase-auth-21.0.8\AndroidManifest.xml:33:13-43:29
-179                <action android:name="android.intent.action.VIEW" />
-179-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\WIN10\.gradle\caches\transforms-3\e82f1e6a1738a0cd3f12d35eb5be3ef4\transformed\firebase-auth-21.0.8\AndroidManifest.xml:34:17-69
-179-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\WIN10\.gradle\caches\transforms-3\e82f1e6a1738a0cd3f12d35eb5be3ef4\transformed\firebase-auth-21.0.8\AndroidManifest.xml:34:25-66
-180
-181                <category android:name="android.intent.category.DEFAULT" />
-181-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\WIN10\.gradle\caches\transforms-3\e82f1e6a1738a0cd3f12d35eb5be3ef4\transformed\firebase-auth-21.0.8\AndroidManifest.xml:36:17-76
-181-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\WIN10\.gradle\caches\transforms-3\e82f1e6a1738a0cd3f12d35eb5be3ef4\transformed\firebase-auth-21.0.8\AndroidManifest.xml:36:27-73
-182                <category android:name="android.intent.category.BROWSABLE" />
-182-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\WIN10\.gradle\caches\transforms-3\e82f1e6a1738a0cd3f12d35eb5be3ef4\transformed\firebase-auth-21.0.8\AndroidManifest.xml:37:17-78
-182-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\WIN10\.gradle\caches\transforms-3\e82f1e6a1738a0cd3f12d35eb5be3ef4\transformed\firebase-auth-21.0.8\AndroidManifest.xml:37:27-75
-183
-184                <data
-184-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\WIN10\.gradle\caches\transforms-3\e82f1e6a1738a0cd3f12d35eb5be3ef4\transformed\firebase-auth-21.0.8\AndroidManifest.xml:39:17-42:51
-185                    android:host="firebase.auth"
-185-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\WIN10\.gradle\caches\transforms-3\e82f1e6a1738a0cd3f12d35eb5be3ef4\transformed\firebase-auth-21.0.8\AndroidManifest.xml:40:21-49
-186                    android:path="/"
-186-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\WIN10\.gradle\caches\transforms-3\e82f1e6a1738a0cd3f12d35eb5be3ef4\transformed\firebase-auth-21.0.8\AndroidManifest.xml:41:21-37
-187                    android:scheme="genericidp" />
-187-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\WIN10\.gradle\caches\transforms-3\e82f1e6a1738a0cd3f12d35eb5be3ef4\transformed\firebase-auth-21.0.8\AndroidManifest.xml:42:21-48
-188            </intent-filter>
-189        </activity>
-190        <activity
-190-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\WIN10\.gradle\caches\transforms-3\e82f1e6a1738a0cd3f12d35eb5be3ef4\transformed\firebase-auth-21.0.8\AndroidManifest.xml:45:9-62:20
-191            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
-191-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\WIN10\.gradle\caches\transforms-3\e82f1e6a1738a0cd3f12d35eb5be3ef4\transformed\firebase-auth-21.0.8\AndroidManifest.xml:46:13-79
-192            android:excludeFromRecents="true"
-192-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\WIN10\.gradle\caches\transforms-3\e82f1e6a1738a0cd3f12d35eb5be3ef4\transformed\firebase-auth-21.0.8\AndroidManifest.xml:47:13-46
-193            android:exported="true"
-193-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\WIN10\.gradle\caches\transforms-3\e82f1e6a1738a0cd3f12d35eb5be3ef4\transformed\firebase-auth-21.0.8\AndroidManifest.xml:48:13-36
-194            android:launchMode="singleTask"
-194-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\WIN10\.gradle\caches\transforms-3\e82f1e6a1738a0cd3f12d35eb5be3ef4\transformed\firebase-auth-21.0.8\AndroidManifest.xml:49:13-44
-195            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-195-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\WIN10\.gradle\caches\transforms-3\e82f1e6a1738a0cd3f12d35eb5be3ef4\transformed\firebase-auth-21.0.8\AndroidManifest.xml:50:13-72
-196            <intent-filter>
-196-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\WIN10\.gradle\caches\transforms-3\e82f1e6a1738a0cd3f12d35eb5be3ef4\transformed\firebase-auth-21.0.8\AndroidManifest.xml:51:13-61:29
-197                <action android:name="android.intent.action.VIEW" />
-197-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\WIN10\.gradle\caches\transforms-3\e82f1e6a1738a0cd3f12d35eb5be3ef4\transformed\firebase-auth-21.0.8\AndroidManifest.xml:34:17-69
-197-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\WIN10\.gradle\caches\transforms-3\e82f1e6a1738a0cd3f12d35eb5be3ef4\transformed\firebase-auth-21.0.8\AndroidManifest.xml:34:25-66
-198
-199                <category android:name="android.intent.category.DEFAULT" />
-199-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\WIN10\.gradle\caches\transforms-3\e82f1e6a1738a0cd3f12d35eb5be3ef4\transformed\firebase-auth-21.0.8\AndroidManifest.xml:36:17-76
-199-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\WIN10\.gradle\caches\transforms-3\e82f1e6a1738a0cd3f12d35eb5be3ef4\transformed\firebase-auth-21.0.8\AndroidManifest.xml:36:27-73
-200                <category android:name="android.intent.category.BROWSABLE" />
-200-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\WIN10\.gradle\caches\transforms-3\e82f1e6a1738a0cd3f12d35eb5be3ef4\transformed\firebase-auth-21.0.8\AndroidManifest.xml:37:17-78
-200-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\WIN10\.gradle\caches\transforms-3\e82f1e6a1738a0cd3f12d35eb5be3ef4\transformed\firebase-auth-21.0.8\AndroidManifest.xml:37:27-75
-201
-202                <data
-202-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\WIN10\.gradle\caches\transforms-3\e82f1e6a1738a0cd3f12d35eb5be3ef4\transformed\firebase-auth-21.0.8\AndroidManifest.xml:39:17-42:51
-203                    android:host="firebase.auth"
-203-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\WIN10\.gradle\caches\transforms-3\e82f1e6a1738a0cd3f12d35eb5be3ef4\transformed\firebase-auth-21.0.8\AndroidManifest.xml:40:21-49
-204                    android:path="/"
-204-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\WIN10\.gradle\caches\transforms-3\e82f1e6a1738a0cd3f12d35eb5be3ef4\transformed\firebase-auth-21.0.8\AndroidManifest.xml:41:21-37
-205                    android:scheme="recaptcha" />
-205-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\WIN10\.gradle\caches\transforms-3\e82f1e6a1738a0cd3f12d35eb5be3ef4\transformed\firebase-auth-21.0.8\AndroidManifest.xml:42:21-48
-206            </intent-filter>
-207        </activity>
-208        <activity
-208-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\WIN10\.gradle\caches\transforms-3\b8b297359baf8f3c67e535ce30925854\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
-209            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-209-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\WIN10\.gradle\caches\transforms-3\b8b297359baf8f3c67e535ce30925854\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:19-85
-210            android:exported="false"
-210-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\WIN10\.gradle\caches\transforms-3\b8b297359baf8f3c67e535ce30925854\transformed\play-services-base-18.0.1\AndroidManifest.xml:22:19-43
-211            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-211-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\WIN10\.gradle\caches\transforms-3\b8b297359baf8f3c67e535ce30925854\transformed\play-services-base-18.0.1\AndroidManifest.xml:21:19-78
-212
-213        <receiver
-213-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\WIN10\.gradle\caches\transforms-3\f65e325fd4dc92b5383ebdb97d54a9c4\transformed\play-services-measurement-21.1.1\AndroidManifest.xml:29:9-33:20
-214            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
-214-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\WIN10\.gradle\caches\transforms-3\f65e325fd4dc92b5383ebdb97d54a9c4\transformed\play-services-measurement-21.1.1\AndroidManifest.xml:30:13-85
-215            android:enabled="true"
-215-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\WIN10\.gradle\caches\transforms-3\f65e325fd4dc92b5383ebdb97d54a9c4\transformed\play-services-measurement-21.1.1\AndroidManifest.xml:31:13-35
-216            android:exported="false" >
-216-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\WIN10\.gradle\caches\transforms-3\f65e325fd4dc92b5383ebdb97d54a9c4\transformed\play-services-measurement-21.1.1\AndroidManifest.xml:32:13-37
-217        </receiver>
-218
-219        <service
-219-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\WIN10\.gradle\caches\transforms-3\f65e325fd4dc92b5383ebdb97d54a9c4\transformed\play-services-measurement-21.1.1\AndroidManifest.xml:35:9-38:40
-220            android:name="com.google.android.gms.measurement.AppMeasurementService"
-220-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\WIN10\.gradle\caches\transforms-3\f65e325fd4dc92b5383ebdb97d54a9c4\transformed\play-services-measurement-21.1.1\AndroidManifest.xml:36:13-84
-221            android:enabled="true"
-221-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\WIN10\.gradle\caches\transforms-3\f65e325fd4dc92b5383ebdb97d54a9c4\transformed\play-services-measurement-21.1.1\AndroidManifest.xml:37:13-35
-222            android:exported="false" />
-222-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\WIN10\.gradle\caches\transforms-3\f65e325fd4dc92b5383ebdb97d54a9c4\transformed\play-services-measurement-21.1.1\AndroidManifest.xml:38:13-37
-223        <service
-223-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\WIN10\.gradle\caches\transforms-3\f65e325fd4dc92b5383ebdb97d54a9c4\transformed\play-services-measurement-21.1.1\AndroidManifest.xml:39:9-43:72
-224            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
-224-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\WIN10\.gradle\caches\transforms-3\f65e325fd4dc92b5383ebdb97d54a9c4\transformed\play-services-measurement-21.1.1\AndroidManifest.xml:40:13-87
-225            android:enabled="true"
-225-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\WIN10\.gradle\caches\transforms-3\f65e325fd4dc92b5383ebdb97d54a9c4\transformed\play-services-measurement-21.1.1\AndroidManifest.xml:41:13-35
-226            android:exported="false"
-226-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\WIN10\.gradle\caches\transforms-3\f65e325fd4dc92b5383ebdb97d54a9c4\transformed\play-services-measurement-21.1.1\AndroidManifest.xml:42:13-37
-227            android:permission="android.permission.BIND_JOB_SERVICE" />
-227-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\WIN10\.gradle\caches\transforms-3\f65e325fd4dc92b5383ebdb97d54a9c4\transformed\play-services-measurement-21.1.1\AndroidManifest.xml:43:13-69
-228
-229        <provider
-229-->[com.google.firebase:firebase-common:20.1.2] C:\Users\WIN10\.gradle\caches\transforms-3\66a18ba742eed2c25a00a2b6013694c2\transformed\firebase-common-20.1.2\AndroidManifest.xml:26:9-31:39
-230            android:name="com.google.firebase.provider.FirebaseInitProvider"
-230-->[com.google.firebase:firebase-common:20.1.2] C:\Users\WIN10\.gradle\caches\transforms-3\66a18ba742eed2c25a00a2b6013694c2\transformed\firebase-common-20.1.2\AndroidManifest.xml:27:13-77
-231            android:authorities="com.iot.technion.regrowth.firebaseinitprovider"
-231-->[com.google.firebase:firebase-common:20.1.2] C:\Users\WIN10\.gradle\caches\transforms-3\66a18ba742eed2c25a00a2b6013694c2\transformed\firebase-common-20.1.2\AndroidManifest.xml:28:13-72
-232            android:directBootAware="true"
-232-->[com.google.firebase:firebase-common:20.1.2] C:\Users\WIN10\.gradle\caches\transforms-3\66a18ba742eed2c25a00a2b6013694c2\transformed\firebase-common-20.1.2\AndroidManifest.xml:29:13-43
-233            android:exported="false"
-233-->[com.google.firebase:firebase-common:20.1.2] C:\Users\WIN10\.gradle\caches\transforms-3\66a18ba742eed2c25a00a2b6013694c2\transformed\firebase-common-20.1.2\AndroidManifest.xml:30:13-37
-234            android:initOrder="100" />
-234-->[com.google.firebase:firebase-common:20.1.2] C:\Users\WIN10\.gradle\caches\transforms-3\66a18ba742eed2c25a00a2b6013694c2\transformed\firebase-common-20.1.2\AndroidManifest.xml:31:13-36
-235
-236        <meta-data
-236-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\WIN10\.gradle\caches\transforms-3\975c77b6a5e9c38aec3061064b69f327\transformed\play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
-237            android:name="com.google.android.gms.version"
-237-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\WIN10\.gradle\caches\transforms-3\975c77b6a5e9c38aec3061064b69f327\transformed\play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
-238            android:value="@integer/google_play_services_version" />
-238-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\WIN10\.gradle\caches\transforms-3\975c77b6a5e9c38aec3061064b69f327\transformed\play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
-239
-240        <uses-library
-240-->[androidx.window:window:1.0.0] C:\Users\WIN10\.gradle\caches\transforms-3\0785aa44109aa5616c9a2ed2471b15de\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
-241            android:name="androidx.window.extensions"
-241-->[androidx.window:window:1.0.0] C:\Users\WIN10\.gradle\caches\transforms-3\0785aa44109aa5616c9a2ed2471b15de\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
-242            android:required="false" />
-242-->[androidx.window:window:1.0.0] C:\Users\WIN10\.gradle\caches\transforms-3\0785aa44109aa5616c9a2ed2471b15de\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
-243        <uses-library
-243-->[androidx.window:window:1.0.0] C:\Users\WIN10\.gradle\caches\transforms-3\0785aa44109aa5616c9a2ed2471b15de\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
-244            android:name="androidx.window.sidecar"
-244-->[androidx.window:window:1.0.0] C:\Users\WIN10\.gradle\caches\transforms-3\0785aa44109aa5616c9a2ed2471b15de\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
-245            android:required="false" />
-245-->[androidx.window:window:1.0.0] C:\Users\WIN10\.gradle\caches\transforms-3\0785aa44109aa5616c9a2ed2471b15de\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
-246
-247        <provider
-247-->[androidx.emoji2:emoji2:1.2.0] C:\Users\WIN10\.gradle\caches\transforms-3\5347791b10df2983cd667522b7061ade\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
-248            android:name="androidx.startup.InitializationProvider"
-248-->[androidx.emoji2:emoji2:1.2.0] C:\Users\WIN10\.gradle\caches\transforms-3\5347791b10df2983cd667522b7061ade\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
-249            android:authorities="com.iot.technion.regrowth.androidx-startup"
-249-->[androidx.emoji2:emoji2:1.2.0] C:\Users\WIN10\.gradle\caches\transforms-3\5347791b10df2983cd667522b7061ade\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
-250            android:exported="false" >
-250-->[androidx.emoji2:emoji2:1.2.0] C:\Users\WIN10\.gradle\caches\transforms-3\5347791b10df2983cd667522b7061ade\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
-251            <meta-data
-251-->[androidx.emoji2:emoji2:1.2.0] C:\Users\WIN10\.gradle\caches\transforms-3\5347791b10df2983cd667522b7061ade\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
-252                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-252-->[androidx.emoji2:emoji2:1.2.0] C:\Users\WIN10\.gradle\caches\transforms-3\5347791b10df2983cd667522b7061ade\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
-253                android:value="androidx.startup" />
-253-->[androidx.emoji2:emoji2:1.2.0] C:\Users\WIN10\.gradle\caches\transforms-3\5347791b10df2983cd667522b7061ade\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
-254            <meta-data
-254-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\WIN10\.gradle\caches\transforms-3\2bc344f677f80e3e1c4c9f6b0053dfaa\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
-255                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-255-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\WIN10\.gradle\caches\transforms-3\2bc344f677f80e3e1c4c9f6b0053dfaa\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
-256                android:value="androidx.startup" />
-256-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\WIN10\.gradle\caches\transforms-3\2bc344f677f80e3e1c4c9f6b0053dfaa\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
-257        </provider>
-258
-259        <service
-259-->[com.google.android.datatransport:transport-backend-cct:3.1.7] C:\Users\WIN10\.gradle\caches\transforms-3\80ce7d8e37c0b5ff72a67282712acb0d\transformed\transport-backend-cct-3.1.7\AndroidManifest.xml:29:9-35:19
-260            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
-260-->[com.google.android.datatransport:transport-backend-cct:3.1.7] C:\Users\WIN10\.gradle\caches\transforms-3\80ce7d8e37c0b5ff72a67282712acb0d\transformed\transport-backend-cct-3.1.7\AndroidManifest.xml:30:13-103
-261            android:exported="false" >
-261-->[com.google.android.datatransport:transport-backend-cct:3.1.7] C:\Users\WIN10\.gradle\caches\transforms-3\80ce7d8e37c0b5ff72a67282712acb0d\transformed\transport-backend-cct-3.1.7\AndroidManifest.xml:31:13-37
-262            <meta-data
-262-->[com.google.android.datatransport:transport-backend-cct:3.1.7] C:\Users\WIN10\.gradle\caches\transforms-3\80ce7d8e37c0b5ff72a67282712acb0d\transformed\transport-backend-cct-3.1.7\AndroidManifest.xml:32:13-34:39
-263                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
-263-->[com.google.android.datatransport:transport-backend-cct:3.1.7] C:\Users\WIN10\.gradle\caches\transforms-3\80ce7d8e37c0b5ff72a67282712acb0d\transformed\transport-backend-cct-3.1.7\AndroidManifest.xml:33:17-94
-264                android:value="cct" />
-264-->[com.google.android.datatransport:transport-backend-cct:3.1.7] C:\Users\WIN10\.gradle\caches\transforms-3\80ce7d8e37c0b5ff72a67282712acb0d\transformed\transport-backend-cct-3.1.7\AndroidManifest.xml:34:17-36
-265        </service>
-266        <service
-266-->[com.google.android.datatransport:transport-runtime:3.1.7] C:\Users\WIN10\.gradle\caches\transforms-3\2668cb9f1b02d4ac024c554ca755cda8\transformed\transport-runtime-3.1.7\AndroidManifest.xml:26:9-30:19
-267            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
-267-->[com.google.android.datatransport:transport-runtime:3.1.7] C:\Users\WIN10\.gradle\caches\transforms-3\2668cb9f1b02d4ac024c554ca755cda8\transformed\transport-runtime-3.1.7\AndroidManifest.xml:27:13-117
+35-->[androidx.core:core:1.9.0] /Users/yoosinpaddy/.gradle/caches/transforms-3/b2175fe05326dcdc2d092fdf72c9f886/transformed/core-1.9.0/AndroidManifest.xml:26:5-97
+35-->[androidx.core:core:1.9.0] /Users/yoosinpaddy/.gradle/caches/transforms-3/b2175fe05326dcdc2d092fdf72c9f886/transformed/core-1.9.0/AndroidManifest.xml:26:22-94
+36    <uses-permission android:name="android.permission.CAMERA" /> <!-- Don't require camera, as this requires a rear camera. This allows it to work on the Nexus 7 -->
+36-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/yoosinpaddy/.gradle/caches/transforms-3/eb6c12ac60efdd8cb4a3b0f0dd12a8fe/transformed/zxing-android-embedded-4.3.0/AndroidManifest.xml:22:5-65
+36-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/yoosinpaddy/.gradle/caches/transforms-3/eb6c12ac60efdd8cb4a3b0f0dd12a8fe/transformed/zxing-android-embedded-4.3.0/AndroidManifest.xml:22:22-62
+37    <uses-feature
+37-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/yoosinpaddy/.gradle/caches/transforms-3/eb6c12ac60efdd8cb4a3b0f0dd12a8fe/transformed/zxing-android-embedded-4.3.0/AndroidManifest.xml:25:5-27:36
+38        android:name="android.hardware.camera"
+38-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/yoosinpaddy/.gradle/caches/transforms-3/eb6c12ac60efdd8cb4a3b0f0dd12a8fe/transformed/zxing-android-embedded-4.3.0/AndroidManifest.xml:26:9-47
+39        android:required="false" />
+39-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/yoosinpaddy/.gradle/caches/transforms-3/eb6c12ac60efdd8cb4a3b0f0dd12a8fe/transformed/zxing-android-embedded-4.3.0/AndroidManifest.xml:27:9-33
+40    <uses-feature
+40-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/yoosinpaddy/.gradle/caches/transforms-3/eb6c12ac60efdd8cb4a3b0f0dd12a8fe/transformed/zxing-android-embedded-4.3.0/AndroidManifest.xml:28:5-30:36
+41        android:name="android.hardware.camera.front"
+41-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/yoosinpaddy/.gradle/caches/transforms-3/eb6c12ac60efdd8cb4a3b0f0dd12a8fe/transformed/zxing-android-embedded-4.3.0/AndroidManifest.xml:29:9-53
+42        android:required="false" /> <!-- TODO replace above two with next line after Android 4.2 -->
+42-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/yoosinpaddy/.gradle/caches/transforms-3/eb6c12ac60efdd8cb4a3b0f0dd12a8fe/transformed/zxing-android-embedded-4.3.0/AndroidManifest.xml:30:9-33
+43    <!-- <uses-feature android:name="android.hardware.camera.any"/> -->
+44    <uses-feature
+44-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/yoosinpaddy/.gradle/caches/transforms-3/eb6c12ac60efdd8cb4a3b0f0dd12a8fe/transformed/zxing-android-embedded-4.3.0/AndroidManifest.xml:33:5-35:36
+45        android:name="android.hardware.camera.autofocus"
+45-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/yoosinpaddy/.gradle/caches/transforms-3/eb6c12ac60efdd8cb4a3b0f0dd12a8fe/transformed/zxing-android-embedded-4.3.0/AndroidManifest.xml:34:9-57
+46        android:required="false" />
+46-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/yoosinpaddy/.gradle/caches/transforms-3/eb6c12ac60efdd8cb4a3b0f0dd12a8fe/transformed/zxing-android-embedded-4.3.0/AndroidManifest.xml:35:9-33
+47    <uses-feature
+47-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/yoosinpaddy/.gradle/caches/transforms-3/eb6c12ac60efdd8cb4a3b0f0dd12a8fe/transformed/zxing-android-embedded-4.3.0/AndroidManifest.xml:36:5-38:36
+48        android:name="android.hardware.camera.flash"
+48-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/yoosinpaddy/.gradle/caches/transforms-3/eb6c12ac60efdd8cb4a3b0f0dd12a8fe/transformed/zxing-android-embedded-4.3.0/AndroidManifest.xml:37:9-53
+49        android:required="false" />
+49-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/yoosinpaddy/.gradle/caches/transforms-3/eb6c12ac60efdd8cb4a3b0f0dd12a8fe/transformed/zxing-android-embedded-4.3.0/AndroidManifest.xml:38:9-33
+50    <uses-feature
+50-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/yoosinpaddy/.gradle/caches/transforms-3/eb6c12ac60efdd8cb4a3b0f0dd12a8fe/transformed/zxing-android-embedded-4.3.0/AndroidManifest.xml:39:5-41:36
+51        android:name="android.hardware.screen.landscape"
+51-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/yoosinpaddy/.gradle/caches/transforms-3/eb6c12ac60efdd8cb4a3b0f0dd12a8fe/transformed/zxing-android-embedded-4.3.0/AndroidManifest.xml:40:9-57
+52        android:required="false" />
+52-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/yoosinpaddy/.gradle/caches/transforms-3/eb6c12ac60efdd8cb4a3b0f0dd12a8fe/transformed/zxing-android-embedded-4.3.0/AndroidManifest.xml:41:9-33
+53    <uses-feature
+53-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/yoosinpaddy/.gradle/caches/transforms-3/eb6c12ac60efdd8cb4a3b0f0dd12a8fe/transformed/zxing-android-embedded-4.3.0/AndroidManifest.xml:42:5-44:36
+54        android:name="android.hardware.wifi"
+54-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/yoosinpaddy/.gradle/caches/transforms-3/eb6c12ac60efdd8cb4a3b0f0dd12a8fe/transformed/zxing-android-embedded-4.3.0/AndroidManifest.xml:43:9-45
+55        android:required="false" />
+55-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/yoosinpaddy/.gradle/caches/transforms-3/eb6c12ac60efdd8cb4a3b0f0dd12a8fe/transformed/zxing-android-embedded-4.3.0/AndroidManifest.xml:44:9-33
+56
+57    <application
+57-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:6:5-94:19
+58        android:allowBackup="true"
+58-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:7:9-35
+59        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+59-->[androidx.core:core:1.9.0] /Users/yoosinpaddy/.gradle/caches/transforms-3/b2175fe05326dcdc2d092fdf72c9f886/transformed/core-1.9.0/AndroidManifest.xml:28:18-86
+60        android:dataExtractionRules="@xml/data_extraction_rules"
+60-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:8:9-65
+61        android:debuggable="true"
+62        android:extractNativeLibs="false"
+63        android:fullBackupContent="@xml/backup_rules"
+63-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:9:9-54
+64        android:hardwareAccelerated="true"
+64-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:10:9-43
+65        android:icon="@drawable/app_logo"
+65-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:11:9-42
+66        android:label="@string/app_name"
+66-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:12:9-41
+67        android:supportsRtl="true"
+67-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:13:9-35
+68        android:testOnly="true"
+69        android:theme="@style/Theme.Regrowth" >
+69-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:14:9-46
+70        <activity
+70-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:16:9-53:20
+71            android:name="com.iot.technion.regrowth.OpenProfileActivity"
+71-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:17:13-48
+72            android:exported="true" >
+72-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:18:13-36
+73            <meta-data
+73-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:19:13-21:36
+74                android:name="android.app.lib_name"
+74-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:20:17-52
+75                android:value="" />
+75-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:21:17-33
+76
+77            <intent-filter>
+77-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:23:13-32:29
+78                <action android:name="android.intent.action.VIEW" />
+78-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:24:17-69
+78-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:24:25-66
+79
+80                <category android:name="android.intent.category.DEFAULT" />
+80-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:26:17-76
+80-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:26:27-73
+81                <category android:name="android.intent.category.BROWSABLE" />
+81-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:27:17-78
+81-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:27:27-75
+82
+83                <data
+83-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:29:17-31:45
+84                    android:host="regrowthiot.web.app"
+84-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:30:21-55
+85                    android:scheme="http" />
+85-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:31:21-42
+86            </intent-filter>
+87            <intent-filter>
+87-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:33:13-42:29
+88                <action android:name="android.intent.action.VIEW" />
+88-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:24:17-69
+88-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:24:25-66
+89
+90                <category android:name="android.intent.category.DEFAULT" />
+90-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:26:17-76
+90-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:26:27-73
+91                <category android:name="android.intent.category.BROWSABLE" />
+91-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:27:17-78
+91-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:27:27-75
+92
+93                <data
+93-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:29:17-31:45
+94                    android:host="regrowthiot.web.app"
+94-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:30:21-55
+95                    android:scheme="https" />
+95-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:31:21-42
+96            </intent-filter>
+97            <intent-filter>
+97-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:43:13-52:29
+98                <action android:name="android.intent.action.VIEW" />
+98-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:24:17-69
+98-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:24:25-66
+99
+100                <category android:name="android.intent.category.DEFAULT" />
+100-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:26:17-76
+100-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:26:27-73
+101                <category android:name="android.intent.category.BROWSABLE" />
+101-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:27:17-78
+101-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:27:27-75
+102
+103                <data
+103-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:29:17-31:45
+104                    android:host="regrowthiot.app"
+104-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:30:21-55
+105                    android:scheme="https" />
+105-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:31:21-42
+106            </intent-filter>
+107        </activity>
+108        <activity
+108-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:54:9-61:20
+109            android:name="com.iot.technion.regrowth.NotificationListActivity"
+109-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:55:13-53
+110            android:exported="false"
+110-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:56:13-37
+111            android:theme="@style/Theme.Regrowth.NoActionBar" >
+111-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:57:13-62
+112            <meta-data
+112-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:19:13-21:36
+113                android:name="android.app.lib_name"
+113-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:20:17-52
+114                android:value="" />
+114-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:21:17-33
+115        </activity>
+116        <activity
+116-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:62:9-64:40
+117            android:name="com.iot.technion.regrowth.ProfileActivity"
+117-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:63:13-44
+118            android:exported="false" />
+118-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:64:13-37
+119        <activity
+119-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:65:9-67:40
+120            android:name="com.iot.technion.regrowth.UserActivity"
+120-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:66:13-41
+121            android:exported="false" />
+121-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:67:13-37
+122        <activity
+122-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:68:9-77:20
+123            android:name="com.iot.technion.regrowth.LoginActivity"
+123-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:69:13-42
+124            android:exported="true"
+124-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:70:13-36
+125            android:label="Regrowth" >
+125-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:71:13-37
+126            <intent-filter>
+126-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:72:13-76:29
+127                <action android:name="android.intent.action.MAIN" />
+127-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:73:17-69
+127-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:73:25-66
+128
+129                <category android:name="android.intent.category.LAUNCHER" />
+129-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:75:17-77
+129-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:75:27-74
+130            </intent-filter>
+131        </activity>
+132        <activity
+132-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:78:9-81:65
+133            android:name="com.iot.technion.regrowth.MainActivity"
+133-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:79:13-41
+134            android:exported="false"
+134-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:80:13-37
+135            android:theme="@style/Theme.Regrowth.NoActionBar" />
+135-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:81:13-62
+136
+137        <service
+137-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:83:9-90:19
+138            android:name="com.iot.technion.regrowth.MyFirebaseNotificationService"
+138-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:84:13-58
+139            android:exported="true" >
+139-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:85:13-36
+140            <intent-filter>
+140-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:86:13-89:29
+141                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+141-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:87:17-80
+141-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:87:25-77
+142                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+142-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:88:17-78
+142-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:88:25-75
+143            </intent-filter>
+144        </service> <!-- Google maps -->
+145        <meta-data
+145-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:91:9-93:51
+146            android:name="com.google.android.geo.API_KEY"
+146-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:92:13-58
+147            android:value="@string/map_api_key" />
+147-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:93:13-48
+148        <!-- Needs to be explicitly declared on P+ -->
+149        <uses-library
+149-->[com.google.android.gms:play-services-maps:18.1.0] /Users/yoosinpaddy/.gradle/caches/transforms-3/b07a954fb1afb5d02f2e6f293c5c1072/transformed/play-services-maps-18.1.0/AndroidManifest.xml:39:9-41:40
+150            android:name="org.apache.http.legacy"
+150-->[com.google.android.gms:play-services-maps:18.1.0] /Users/yoosinpaddy/.gradle/caches/transforms-3/b07a954fb1afb5d02f2e6f293c5c1072/transformed/play-services-maps-18.1.0/AndroidManifest.xml:40:13-50
+151            android:required="false" />
+151-->[com.google.android.gms:play-services-maps:18.1.0] /Users/yoosinpaddy/.gradle/caches/transforms-3/b07a954fb1afb5d02f2e6f293c5c1072/transformed/play-services-maps-18.1.0/AndroidManifest.xml:41:13-37
+152
+153        <activity
+153-->[com.google.android.gms:play-services-auth:20.3.0] /Users/yoosinpaddy/.gradle/caches/transforms-3/fe041a5923cd77fe5eb074f0a676a2ec/transformed/play-services-auth-20.3.0/AndroidManifest.xml:23:9-27:75
+154            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+154-->[com.google.android.gms:play-services-auth:20.3.0] /Users/yoosinpaddy/.gradle/caches/transforms-3/fe041a5923cd77fe5eb074f0a676a2ec/transformed/play-services-auth-20.3.0/AndroidManifest.xml:24:13-93
+155            android:excludeFromRecents="true"
+155-->[com.google.android.gms:play-services-auth:20.3.0] /Users/yoosinpaddy/.gradle/caches/transforms-3/fe041a5923cd77fe5eb074f0a676a2ec/transformed/play-services-auth-20.3.0/AndroidManifest.xml:25:13-46
+156            android:exported="false"
+156-->[com.google.android.gms:play-services-auth:20.3.0] /Users/yoosinpaddy/.gradle/caches/transforms-3/fe041a5923cd77fe5eb074f0a676a2ec/transformed/play-services-auth-20.3.0/AndroidManifest.xml:26:13-37
+157            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+157-->[com.google.android.gms:play-services-auth:20.3.0] /Users/yoosinpaddy/.gradle/caches/transforms-3/fe041a5923cd77fe5eb074f0a676a2ec/transformed/play-services-auth-20.3.0/AndroidManifest.xml:27:13-72
+158        <!--
+159            Service handling Google Sign-In user revocation. For apps that do not integrate with
+160            Google Sign-In, this service will never be started.
+161        -->
+162        <service
+162-->[com.google.android.gms:play-services-auth:20.3.0] /Users/yoosinpaddy/.gradle/caches/transforms-3/fe041a5923cd77fe5eb074f0a676a2ec/transformed/play-services-auth-20.3.0/AndroidManifest.xml:33:9-37:51
+163            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+163-->[com.google.android.gms:play-services-auth:20.3.0] /Users/yoosinpaddy/.gradle/caches/transforms-3/fe041a5923cd77fe5eb074f0a676a2ec/transformed/play-services-auth-20.3.0/AndroidManifest.xml:34:13-89
+164            android:exported="true"
+164-->[com.google.android.gms:play-services-auth:20.3.0] /Users/yoosinpaddy/.gradle/caches/transforms-3/fe041a5923cd77fe5eb074f0a676a2ec/transformed/play-services-auth-20.3.0/AndroidManifest.xml:35:13-36
+165            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+165-->[com.google.android.gms:play-services-auth:20.3.0] /Users/yoosinpaddy/.gradle/caches/transforms-3/fe041a5923cd77fe5eb074f0a676a2ec/transformed/play-services-auth-20.3.0/AndroidManifest.xml:36:13-107
+166            android:visibleToInstantApps="true" />
+166-->[com.google.android.gms:play-services-auth:20.3.0] /Users/yoosinpaddy/.gradle/caches/transforms-3/fe041a5923cd77fe5eb074f0a676a2ec/transformed/play-services-auth-20.3.0/AndroidManifest.xml:37:13-48
+167
+168        <receiver
+168-->[com.google.firebase:firebase-messaging:23.0.8] /Users/yoosinpaddy/.gradle/caches/transforms-3/dc49caf2d4895910b85437e962631d77/transformed/firebase-messaging-23.0.8/AndroidManifest.xml:32:9-39:20
+169            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+169-->[com.google.firebase:firebase-messaging:23.0.8] /Users/yoosinpaddy/.gradle/caches/transforms-3/dc49caf2d4895910b85437e962631d77/transformed/firebase-messaging-23.0.8/AndroidManifest.xml:33:13-78
+170            android:exported="true"
+170-->[com.google.firebase:firebase-messaging:23.0.8] /Users/yoosinpaddy/.gradle/caches/transforms-3/dc49caf2d4895910b85437e962631d77/transformed/firebase-messaging-23.0.8/AndroidManifest.xml:34:13-36
+171            android:permission="com.google.android.c2dm.permission.SEND" >
+171-->[com.google.firebase:firebase-messaging:23.0.8] /Users/yoosinpaddy/.gradle/caches/transforms-3/dc49caf2d4895910b85437e962631d77/transformed/firebase-messaging-23.0.8/AndroidManifest.xml:35:13-73
+172            <intent-filter>
+172-->[com.google.firebase:firebase-messaging:23.0.8] /Users/yoosinpaddy/.gradle/caches/transforms-3/dc49caf2d4895910b85437e962631d77/transformed/firebase-messaging-23.0.8/AndroidManifest.xml:36:13-38:29
+173                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+173-->[com.google.firebase:firebase-messaging:23.0.8] /Users/yoosinpaddy/.gradle/caches/transforms-3/dc49caf2d4895910b85437e962631d77/transformed/firebase-messaging-23.0.8/AndroidManifest.xml:37:17-81
+173-->[com.google.firebase:firebase-messaging:23.0.8] /Users/yoosinpaddy/.gradle/caches/transforms-3/dc49caf2d4895910b85437e962631d77/transformed/firebase-messaging-23.0.8/AndroidManifest.xml:37:25-78
+174            </intent-filter>
+175        </receiver>
+176        <!--
+177             FirebaseMessagingService performs security checks at runtime,
+178             but set to not exported to explicitly avoid allowing another app to call it.
+179        -->
+180        <service
+180-->[com.google.firebase:firebase-messaging:23.0.8] /Users/yoosinpaddy/.gradle/caches/transforms-3/dc49caf2d4895910b85437e962631d77/transformed/firebase-messaging-23.0.8/AndroidManifest.xml:45:9-52:19
+181            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+181-->[com.google.firebase:firebase-messaging:23.0.8] /Users/yoosinpaddy/.gradle/caches/transforms-3/dc49caf2d4895910b85437e962631d77/transformed/firebase-messaging-23.0.8/AndroidManifest.xml:46:13-82
+182            android:directBootAware="true"
+182-->[com.google.firebase:firebase-messaging:23.0.8] /Users/yoosinpaddy/.gradle/caches/transforms-3/dc49caf2d4895910b85437e962631d77/transformed/firebase-messaging-23.0.8/AndroidManifest.xml:47:13-43
+183            android:exported="false" >
+183-->[com.google.firebase:firebase-messaging:23.0.8] /Users/yoosinpaddy/.gradle/caches/transforms-3/dc49caf2d4895910b85437e962631d77/transformed/firebase-messaging-23.0.8/AndroidManifest.xml:48:13-37
+184            <intent-filter android:priority="-500" >
+184-->[com.google.firebase:firebase-messaging:23.0.8] /Users/yoosinpaddy/.gradle/caches/transforms-3/dc49caf2d4895910b85437e962631d77/transformed/firebase-messaging-23.0.8/AndroidManifest.xml:49:13-51:29
+184-->[com.google.firebase:firebase-messaging:23.0.8] /Users/yoosinpaddy/.gradle/caches/transforms-3/dc49caf2d4895910b85437e962631d77/transformed/firebase-messaging-23.0.8/AndroidManifest.xml:49:28-51
+185                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+185-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:88:17-78
+185-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:88:25-75
+186            </intent-filter>
+187        </service>
+188        <service
+188-->[com.google.firebase:firebase-messaging:23.0.8] /Users/yoosinpaddy/.gradle/caches/transforms-3/dc49caf2d4895910b85437e962631d77/transformed/firebase-messaging-23.0.8/AndroidManifest.xml:53:9-59:19
+189            android:name="com.google.firebase.components.ComponentDiscoveryService"
+189-->[com.google.firebase:firebase-messaging:23.0.8] /Users/yoosinpaddy/.gradle/caches/transforms-3/dc49caf2d4895910b85437e962631d77/transformed/firebase-messaging-23.0.8/AndroidManifest.xml:54:13-84
+190            android:directBootAware="true"
+190-->[com.google.firebase:firebase-common:20.1.2] /Users/yoosinpaddy/.gradle/caches/transforms-3/66a18ba742eed2c25a00a2b6013694c2/transformed/firebase-common-20.1.2/AndroidManifest.xml:35:13-43
+191            android:exported="false" >
+191-->[com.google.firebase:firebase-messaging:23.0.8] /Users/yoosinpaddy/.gradle/caches/transforms-3/dc49caf2d4895910b85437e962631d77/transformed/firebase-messaging-23.0.8/AndroidManifest.xml:55:13-37
+192            <meta-data
+192-->[com.google.firebase:firebase-messaging:23.0.8] /Users/yoosinpaddy/.gradle/caches/transforms-3/dc49caf2d4895910b85437e962631d77/transformed/firebase-messaging-23.0.8/AndroidManifest.xml:56:13-58:85
+193                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+193-->[com.google.firebase:firebase-messaging:23.0.8] /Users/yoosinpaddy/.gradle/caches/transforms-3/dc49caf2d4895910b85437e962631d77/transformed/firebase-messaging-23.0.8/AndroidManifest.xml:57:17-119
+194                android:value="com.google.firebase.components.ComponentRegistrar" />
+194-->[com.google.firebase:firebase-messaging:23.0.8] /Users/yoosinpaddy/.gradle/caches/transforms-3/dc49caf2d4895910b85437e962631d77/transformed/firebase-messaging-23.0.8/AndroidManifest.xml:58:17-82
+195            <meta-data
+195-->[com.google.firebase:firebase-auth-ktx:21.0.8] /Users/yoosinpaddy/.gradle/caches/transforms-3/973cfca41e8a534e342e56d901c2514e/transformed/firebase-auth-ktx-21.0.8/AndroidManifest.xml:11:13-13:85
+196                android:name="com.google.firebase.components:com.google.firebase.auth.ktx.FirebaseAuthKtxRegistrar"
+196-->[com.google.firebase:firebase-auth-ktx:21.0.8] /Users/yoosinpaddy/.gradle/caches/transforms-3/973cfca41e8a534e342e56d901c2514e/transformed/firebase-auth-ktx-21.0.8/AndroidManifest.xml:12:17-116
+197                android:value="com.google.firebase.components.ComponentRegistrar" />
+197-->[com.google.firebase:firebase-auth-ktx:21.0.8] /Users/yoosinpaddy/.gradle/caches/transforms-3/973cfca41e8a534e342e56d901c2514e/transformed/firebase-auth-ktx-21.0.8/AndroidManifest.xml:13:17-82
+198            <meta-data
+198-->[com.google.firebase:firebase-auth:21.0.8] /Users/yoosinpaddy/.gradle/caches/transforms-3/e82f1e6a1738a0cd3f12d35eb5be3ef4/transformed/firebase-auth-21.0.8/AndroidManifest.xml:67:13-69:85
+199                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+199-->[com.google.firebase:firebase-auth:21.0.8] /Users/yoosinpaddy/.gradle/caches/transforms-3/e82f1e6a1738a0cd3f12d35eb5be3ef4/transformed/firebase-auth-21.0.8/AndroidManifest.xml:68:17-109
+200                android:value="com.google.firebase.components.ComponentRegistrar" />
+200-->[com.google.firebase:firebase-auth:21.0.8] /Users/yoosinpaddy/.gradle/caches/transforms-3/e82f1e6a1738a0cd3f12d35eb5be3ef4/transformed/firebase-auth-21.0.8/AndroidManifest.xml:69:17-82
+201            <meta-data
+201-->[com.google.firebase:firebase-database-ktx:20.0.6] /Users/yoosinpaddy/.gradle/caches/transforms-3/997cb29a1679a79660678bfb96594aa7/transformed/firebase-database-ktx-20.0.6/AndroidManifest.xml:15:13-17:85
+202                android:name="com.google.firebase.components:com.google.firebase.database.ktx.FirebaseDatabaseKtxRegistrar"
+202-->[com.google.firebase:firebase-database-ktx:20.0.6] /Users/yoosinpaddy/.gradle/caches/transforms-3/997cb29a1679a79660678bfb96594aa7/transformed/firebase-database-ktx-20.0.6/AndroidManifest.xml:16:17-124
+203                android:value="com.google.firebase.components.ComponentRegistrar" />
+203-->[com.google.firebase:firebase-database-ktx:20.0.6] /Users/yoosinpaddy/.gradle/caches/transforms-3/997cb29a1679a79660678bfb96594aa7/transformed/firebase-database-ktx-20.0.6/AndroidManifest.xml:17:17-82
+204            <meta-data
+204-->[com.google.firebase:firebase-database:20.0.6] /Users/yoosinpaddy/.gradle/caches/transforms-3/8d31ea30e6e2bf3d0f926033b3af0ff9/transformed/firebase-database-20.0.6/AndroidManifest.xml:32:13-34:85
+205                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+205-->[com.google.firebase:firebase-database:20.0.6] /Users/yoosinpaddy/.gradle/caches/transforms-3/8d31ea30e6e2bf3d0f926033b3af0ff9/transformed/firebase-database-20.0.6/AndroidManifest.xml:33:17-109
+206                android:value="com.google.firebase.components.ComponentRegistrar" />
+206-->[com.google.firebase:firebase-database:20.0.6] /Users/yoosinpaddy/.gradle/caches/transforms-3/8d31ea30e6e2bf3d0f926033b3af0ff9/transformed/firebase-database-20.0.6/AndroidManifest.xml:34:17-82
+207            <meta-data
+207-->[com.google.firebase:firebase-storage-ktx:20.0.2] /Users/yoosinpaddy/.gradle/caches/transforms-3/74b4d5cc795eb95dd485283dbafc92f5/transformed/firebase-storage-ktx-20.0.2/AndroidManifest.xml:15:13-17:85
+208                android:name="com.google.firebase.components:com.google.firebase.storage.ktx.FirebaseStorageKtxRegistrar"
+208-->[com.google.firebase:firebase-storage-ktx:20.0.2] /Users/yoosinpaddy/.gradle/caches/transforms-3/74b4d5cc795eb95dd485283dbafc92f5/transformed/firebase-storage-ktx-20.0.2/AndroidManifest.xml:16:17-122
+209                android:value="com.google.firebase.components.ComponentRegistrar" />
+209-->[com.google.firebase:firebase-storage-ktx:20.0.2] /Users/yoosinpaddy/.gradle/caches/transforms-3/74b4d5cc795eb95dd485283dbafc92f5/transformed/firebase-storage-ktx-20.0.2/AndroidManifest.xml:17:17-82
+210            <meta-data
+210-->[com.google.firebase:firebase-storage:20.0.2] /Users/yoosinpaddy/.gradle/caches/transforms-3/3c3fa809ef418105743ef878b0dce63e/transformed/firebase-storage-20.0.2/AndroidManifest.xml:33:13-35:85
+211                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+211-->[com.google.firebase:firebase-storage:20.0.2] /Users/yoosinpaddy/.gradle/caches/transforms-3/3c3fa809ef418105743ef878b0dce63e/transformed/firebase-storage-20.0.2/AndroidManifest.xml:34:17-107
+212                android:value="com.google.firebase.components.ComponentRegistrar" />
+212-->[com.google.firebase:firebase-storage:20.0.2] /Users/yoosinpaddy/.gradle/caches/transforms-3/3c3fa809ef418105743ef878b0dce63e/transformed/firebase-storage-20.0.2/AndroidManifest.xml:35:17-82
+213            <meta-data
+213-->[com.google.firebase:firebase-analytics-ktx:21.1.1] /Users/yoosinpaddy/.gradle/caches/transforms-3/f7f25ae511c9b1961cd8de3d97c703da/transformed/firebase-analytics-ktx-21.1.1/AndroidManifest.xml:11:13-13:85
+214                android:name="com.google.firebase.components:com.google.firebase.analytics.ktx.FirebaseAnalyticsKtxRegistrar"
+214-->[com.google.firebase:firebase-analytics-ktx:21.1.1] /Users/yoosinpaddy/.gradle/caches/transforms-3/f7f25ae511c9b1961cd8de3d97c703da/transformed/firebase-analytics-ktx-21.1.1/AndroidManifest.xml:12:17-126
+215                android:value="com.google.firebase.components.ComponentRegistrar" />
+215-->[com.google.firebase:firebase-analytics-ktx:21.1.1] /Users/yoosinpaddy/.gradle/caches/transforms-3/f7f25ae511c9b1961cd8de3d97c703da/transformed/firebase-analytics-ktx-21.1.1/AndroidManifest.xml:13:17-82
+216            <meta-data
+216-->[com.google.android.gms:play-services-measurement-api:21.1.1] /Users/yoosinpaddy/.gradle/caches/transforms-3/8a6788ee3ec45fd625d2f8e107a0d93e/transformed/play-services-measurement-api-21.1.1/AndroidManifest.xml:31:13-33:85
+217                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+217-->[com.google.android.gms:play-services-measurement-api:21.1.1] /Users/yoosinpaddy/.gradle/caches/transforms-3/8a6788ee3ec45fd625d2f8e107a0d93e/transformed/play-services-measurement-api-21.1.1/AndroidManifest.xml:32:17-139
+218                android:value="com.google.firebase.components.ComponentRegistrar" />
+218-->[com.google.android.gms:play-services-measurement-api:21.1.1] /Users/yoosinpaddy/.gradle/caches/transforms-3/8a6788ee3ec45fd625d2f8e107a0d93e/transformed/play-services-measurement-api-21.1.1/AndroidManifest.xml:33:17-82
+219            <meta-data
+219-->[com.google.firebase:firebase-installations:17.0.3] /Users/yoosinpaddy/.gradle/caches/transforms-3/fe5515f17549be2ec93c740eed4cfc9d/transformed/firebase-installations-17.0.3/AndroidManifest.xml:18:13-20:85
+220                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+220-->[com.google.firebase:firebase-installations:17.0.3] /Users/yoosinpaddy/.gradle/caches/transforms-3/fe5515f17549be2ec93c740eed4cfc9d/transformed/firebase-installations-17.0.3/AndroidManifest.xml:19:17-127
+221                android:value="com.google.firebase.components.ComponentRegistrar" />
+221-->[com.google.firebase:firebase-installations:17.0.3] /Users/yoosinpaddy/.gradle/caches/transforms-3/fe5515f17549be2ec93c740eed4cfc9d/transformed/firebase-installations-17.0.3/AndroidManifest.xml:20:17-82
+222            <meta-data
+222-->[com.google.firebase:firebase-datatransport:18.1.6] /Users/yoosinpaddy/.gradle/caches/transforms-3/6d6182c678b8ec3b34f8fa4a5801ddef/transformed/firebase-datatransport-18.1.6/AndroidManifest.xml:28:13-30:85
+223                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+223-->[com.google.firebase:firebase-datatransport:18.1.6] /Users/yoosinpaddy/.gradle/caches/transforms-3/6d6182c678b8ec3b34f8fa4a5801ddef/transformed/firebase-datatransport-18.1.6/AndroidManifest.xml:29:17-115
+224                android:value="com.google.firebase.components.ComponentRegistrar" />
+224-->[com.google.firebase:firebase-datatransport:18.1.6] /Users/yoosinpaddy/.gradle/caches/transforms-3/6d6182c678b8ec3b34f8fa4a5801ddef/transformed/firebase-datatransport-18.1.6/AndroidManifest.xml:30:17-82
+225            <meta-data
+225-->[com.google.firebase:firebase-common-ktx:20.1.2] /Users/yoosinpaddy/.gradle/caches/transforms-3/b020a64608295f9bd758a17489675176/transformed/firebase-common-ktx-20.1.2/AndroidManifest.xml:15:13-17:85
+226                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar"
+226-->[com.google.firebase:firebase-common-ktx:20.1.2] /Users/yoosinpaddy/.gradle/caches/transforms-3/b020a64608295f9bd758a17489675176/transformed/firebase-common-ktx-20.1.2/AndroidManifest.xml:16:17-113
+227                android:value="com.google.firebase.components.ComponentRegistrar" />
+227-->[com.google.firebase:firebase-common-ktx:20.1.2] /Users/yoosinpaddy/.gradle/caches/transforms-3/b020a64608295f9bd758a17489675176/transformed/firebase-common-ktx-20.1.2/AndroidManifest.xml:17:17-82
+228        </service>
+229
+230        <activity
+230-->[com.google.firebase:firebase-auth:21.0.8] /Users/yoosinpaddy/.gradle/caches/transforms-3/e82f1e6a1738a0cd3f12d35eb5be3ef4/transformed/firebase-auth-21.0.8/AndroidManifest.xml:27:9-44:20
+231            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+231-->[com.google.firebase:firebase-auth:21.0.8] /Users/yoosinpaddy/.gradle/caches/transforms-3/e82f1e6a1738a0cd3f12d35eb5be3ef4/transformed/firebase-auth-21.0.8/AndroidManifest.xml:28:13-80
+232            android:excludeFromRecents="true"
+232-->[com.google.firebase:firebase-auth:21.0.8] /Users/yoosinpaddy/.gradle/caches/transforms-3/e82f1e6a1738a0cd3f12d35eb5be3ef4/transformed/firebase-auth-21.0.8/AndroidManifest.xml:29:13-46
+233            android:exported="true"
+233-->[com.google.firebase:firebase-auth:21.0.8] /Users/yoosinpaddy/.gradle/caches/transforms-3/e82f1e6a1738a0cd3f12d35eb5be3ef4/transformed/firebase-auth-21.0.8/AndroidManifest.xml:30:13-36
+234            android:launchMode="singleTask"
+234-->[com.google.firebase:firebase-auth:21.0.8] /Users/yoosinpaddy/.gradle/caches/transforms-3/e82f1e6a1738a0cd3f12d35eb5be3ef4/transformed/firebase-auth-21.0.8/AndroidManifest.xml:31:13-44
+235            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+235-->[com.google.firebase:firebase-auth:21.0.8] /Users/yoosinpaddy/.gradle/caches/transforms-3/e82f1e6a1738a0cd3f12d35eb5be3ef4/transformed/firebase-auth-21.0.8/AndroidManifest.xml:32:13-72
+236            <intent-filter>
+236-->[com.google.firebase:firebase-auth:21.0.8] /Users/yoosinpaddy/.gradle/caches/transforms-3/e82f1e6a1738a0cd3f12d35eb5be3ef4/transformed/firebase-auth-21.0.8/AndroidManifest.xml:33:13-43:29
+237                <action android:name="android.intent.action.VIEW" />
+237-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:24:17-69
+237-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:24:25-66
+238
+239                <category android:name="android.intent.category.DEFAULT" />
+239-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:26:17-76
+239-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:26:27-73
+240                <category android:name="android.intent.category.BROWSABLE" />
+240-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:27:17-78
+240-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:27:27-75
+241
+242                <data
+242-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:29:17-31:45
+243                    android:host="firebase.auth"
+243-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:30:21-55
+244                    android:path="/"
+245                    android:scheme="genericidp" />
+245-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:31:21-42
+246            </intent-filter>
+247        </activity>
+248        <activity
+248-->[com.google.firebase:firebase-auth:21.0.8] /Users/yoosinpaddy/.gradle/caches/transforms-3/e82f1e6a1738a0cd3f12d35eb5be3ef4/transformed/firebase-auth-21.0.8/AndroidManifest.xml:45:9-62:20
+249            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+249-->[com.google.firebase:firebase-auth:21.0.8] /Users/yoosinpaddy/.gradle/caches/transforms-3/e82f1e6a1738a0cd3f12d35eb5be3ef4/transformed/firebase-auth-21.0.8/AndroidManifest.xml:46:13-79
+250            android:excludeFromRecents="true"
+250-->[com.google.firebase:firebase-auth:21.0.8] /Users/yoosinpaddy/.gradle/caches/transforms-3/e82f1e6a1738a0cd3f12d35eb5be3ef4/transformed/firebase-auth-21.0.8/AndroidManifest.xml:47:13-46
+251            android:exported="true"
+251-->[com.google.firebase:firebase-auth:21.0.8] /Users/yoosinpaddy/.gradle/caches/transforms-3/e82f1e6a1738a0cd3f12d35eb5be3ef4/transformed/firebase-auth-21.0.8/AndroidManifest.xml:48:13-36
+252            android:launchMode="singleTask"
+252-->[com.google.firebase:firebase-auth:21.0.8] /Users/yoosinpaddy/.gradle/caches/transforms-3/e82f1e6a1738a0cd3f12d35eb5be3ef4/transformed/firebase-auth-21.0.8/AndroidManifest.xml:49:13-44
+253            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+253-->[com.google.firebase:firebase-auth:21.0.8] /Users/yoosinpaddy/.gradle/caches/transforms-3/e82f1e6a1738a0cd3f12d35eb5be3ef4/transformed/firebase-auth-21.0.8/AndroidManifest.xml:50:13-72
+254            <intent-filter>
+254-->[com.google.firebase:firebase-auth:21.0.8] /Users/yoosinpaddy/.gradle/caches/transforms-3/e82f1e6a1738a0cd3f12d35eb5be3ef4/transformed/firebase-auth-21.0.8/AndroidManifest.xml:51:13-61:29
+255                <action android:name="android.intent.action.VIEW" />
+255-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:24:17-69
+255-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:24:25-66
+256
+257                <category android:name="android.intent.category.DEFAULT" />
+257-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:26:17-76
+257-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:26:27-73
+258                <category android:name="android.intent.category.BROWSABLE" />
+258-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:27:17-78
+258-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:27:27-75
+259
+260                <data
+260-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:29:17-31:45
+261                    android:host="firebase.auth"
+261-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:30:21-55
+262                    android:path="/"
+263                    android:scheme="recaptcha" />
+263-->/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/AndroidManifest.xml:31:21-42
+264            </intent-filter>
+265        </activity>
+266        <activity
+266-->[com.google.android.gms:play-services-base:18.0.1] /Users/yoosinpaddy/.gradle/caches/transforms-3/b8b297359baf8f3c67e535ce30925854/transformed/play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
+267            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+267-->[com.google.android.gms:play-services-base:18.0.1] /Users/yoosinpaddy/.gradle/caches/transforms-3/b8b297359baf8f3c67e535ce30925854/transformed/play-services-base-18.0.1/AndroidManifest.xml:20:19-85
 268            android:exported="false"
-268-->[com.google.android.datatransport:transport-runtime:3.1.7] C:\Users\WIN10\.gradle\caches\transforms-3\2668cb9f1b02d4ac024c554ca755cda8\transformed\transport-runtime-3.1.7\AndroidManifest.xml:28:13-37
-269            android:permission="android.permission.BIND_JOB_SERVICE" >
-269-->[com.google.android.datatransport:transport-runtime:3.1.7] C:\Users\WIN10\.gradle\caches\transforms-3\2668cb9f1b02d4ac024c554ca755cda8\transformed\transport-runtime-3.1.7\AndroidManifest.xml:29:13-69
-270        </service>
-271
-272        <receiver
-272-->[com.google.android.datatransport:transport-runtime:3.1.7] C:\Users\WIN10\.gradle\caches\transforms-3\2668cb9f1b02d4ac024c554ca755cda8\transformed\transport-runtime-3.1.7\AndroidManifest.xml:32:9-34:40
-273            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
-273-->[com.google.android.datatransport:transport-runtime:3.1.7] C:\Users\WIN10\.gradle\caches\transforms-3\2668cb9f1b02d4ac024c554ca755cda8\transformed\transport-runtime-3.1.7\AndroidManifest.xml:33:13-132
-274            android:exported="false" />
-274-->[com.google.android.datatransport:transport-runtime:3.1.7] C:\Users\WIN10\.gradle\caches\transforms-3\2668cb9f1b02d4ac024c554ca755cda8\transformed\transport-runtime-3.1.7\AndroidManifest.xml:34:13-37
-275    </application>
+268-->[com.google.android.gms:play-services-base:18.0.1] /Users/yoosinpaddy/.gradle/caches/transforms-3/b8b297359baf8f3c67e535ce30925854/transformed/play-services-base-18.0.1/AndroidManifest.xml:22:19-43
+269            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+269-->[com.google.android.gms:play-services-base:18.0.1] /Users/yoosinpaddy/.gradle/caches/transforms-3/b8b297359baf8f3c67e535ce30925854/transformed/play-services-base-18.0.1/AndroidManifest.xml:21:19-78
+270
+271        <receiver
+271-->[com.google.android.gms:play-services-measurement:21.1.1] /Users/yoosinpaddy/.gradle/caches/transforms-3/f65e325fd4dc92b5383ebdb97d54a9c4/transformed/play-services-measurement-21.1.1/AndroidManifest.xml:29:9-33:20
+272            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+272-->[com.google.android.gms:play-services-measurement:21.1.1] /Users/yoosinpaddy/.gradle/caches/transforms-3/f65e325fd4dc92b5383ebdb97d54a9c4/transformed/play-services-measurement-21.1.1/AndroidManifest.xml:30:13-85
+273            android:enabled="true"
+273-->[com.google.android.gms:play-services-measurement:21.1.1] /Users/yoosinpaddy/.gradle/caches/transforms-3/f65e325fd4dc92b5383ebdb97d54a9c4/transformed/play-services-measurement-21.1.1/AndroidManifest.xml:31:13-35
+274            android:exported="false" >
+274-->[com.google.android.gms:play-services-measurement:21.1.1] /Users/yoosinpaddy/.gradle/caches/transforms-3/f65e325fd4dc92b5383ebdb97d54a9c4/transformed/play-services-measurement-21.1.1/AndroidManifest.xml:32:13-37
+275        </receiver>
 276
-277</manifest>
+277        <service
+277-->[com.google.android.gms:play-services-measurement:21.1.1] /Users/yoosinpaddy/.gradle/caches/transforms-3/f65e325fd4dc92b5383ebdb97d54a9c4/transformed/play-services-measurement-21.1.1/AndroidManifest.xml:35:9-38:40
+278            android:name="com.google.android.gms.measurement.AppMeasurementService"
+278-->[com.google.android.gms:play-services-measurement:21.1.1] /Users/yoosinpaddy/.gradle/caches/transforms-3/f65e325fd4dc92b5383ebdb97d54a9c4/transformed/play-services-measurement-21.1.1/AndroidManifest.xml:36:13-84
+279            android:enabled="true"
+279-->[com.google.android.gms:play-services-measurement:21.1.1] /Users/yoosinpaddy/.gradle/caches/transforms-3/f65e325fd4dc92b5383ebdb97d54a9c4/transformed/play-services-measurement-21.1.1/AndroidManifest.xml:37:13-35
+280            android:exported="false" />
+280-->[com.google.android.gms:play-services-measurement:21.1.1] /Users/yoosinpaddy/.gradle/caches/transforms-3/f65e325fd4dc92b5383ebdb97d54a9c4/transformed/play-services-measurement-21.1.1/AndroidManifest.xml:38:13-37
+281        <service
+281-->[com.google.android.gms:play-services-measurement:21.1.1] /Users/yoosinpaddy/.gradle/caches/transforms-3/f65e325fd4dc92b5383ebdb97d54a9c4/transformed/play-services-measurement-21.1.1/AndroidManifest.xml:39:9-43:72
+282            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+282-->[com.google.android.gms:play-services-measurement:21.1.1] /Users/yoosinpaddy/.gradle/caches/transforms-3/f65e325fd4dc92b5383ebdb97d54a9c4/transformed/play-services-measurement-21.1.1/AndroidManifest.xml:40:13-87
+283            android:enabled="true"
+283-->[com.google.android.gms:play-services-measurement:21.1.1] /Users/yoosinpaddy/.gradle/caches/transforms-3/f65e325fd4dc92b5383ebdb97d54a9c4/transformed/play-services-measurement-21.1.1/AndroidManifest.xml:41:13-35
+284            android:exported="false"
+284-->[com.google.android.gms:play-services-measurement:21.1.1] /Users/yoosinpaddy/.gradle/caches/transforms-3/f65e325fd4dc92b5383ebdb97d54a9c4/transformed/play-services-measurement-21.1.1/AndroidManifest.xml:42:13-37
+285            android:permission="android.permission.BIND_JOB_SERVICE" />
+285-->[com.google.android.gms:play-services-measurement:21.1.1] /Users/yoosinpaddy/.gradle/caches/transforms-3/f65e325fd4dc92b5383ebdb97d54a9c4/transformed/play-services-measurement-21.1.1/AndroidManifest.xml:43:13-69
+286
+287        <provider
+287-->[com.google.firebase:firebase-common:20.1.2] /Users/yoosinpaddy/.gradle/caches/transforms-3/66a18ba742eed2c25a00a2b6013694c2/transformed/firebase-common-20.1.2/AndroidManifest.xml:26:9-31:39
+288            android:name="com.google.firebase.provider.FirebaseInitProvider"
+288-->[com.google.firebase:firebase-common:20.1.2] /Users/yoosinpaddy/.gradle/caches/transforms-3/66a18ba742eed2c25a00a2b6013694c2/transformed/firebase-common-20.1.2/AndroidManifest.xml:27:13-77
+289            android:authorities="com.iot.technion.regrowth.firebaseinitprovider"
+289-->[com.google.firebase:firebase-common:20.1.2] /Users/yoosinpaddy/.gradle/caches/transforms-3/66a18ba742eed2c25a00a2b6013694c2/transformed/firebase-common-20.1.2/AndroidManifest.xml:28:13-72
+290            android:directBootAware="true"
+290-->[com.google.firebase:firebase-common:20.1.2] /Users/yoosinpaddy/.gradle/caches/transforms-3/66a18ba742eed2c25a00a2b6013694c2/transformed/firebase-common-20.1.2/AndroidManifest.xml:29:13-43
+291            android:exported="false"
+291-->[com.google.firebase:firebase-common:20.1.2] /Users/yoosinpaddy/.gradle/caches/transforms-3/66a18ba742eed2c25a00a2b6013694c2/transformed/firebase-common-20.1.2/AndroidManifest.xml:30:13-37
+292            android:initOrder="100" />
+292-->[com.google.firebase:firebase-common:20.1.2] /Users/yoosinpaddy/.gradle/caches/transforms-3/66a18ba742eed2c25a00a2b6013694c2/transformed/firebase-common-20.1.2/AndroidManifest.xml:31:13-36
+293
+294        <meta-data
+294-->[com.google.android.gms:play-services-basement:18.1.0] /Users/yoosinpaddy/.gradle/caches/transforms-3/975c77b6a5e9c38aec3061064b69f327/transformed/play-services-basement-18.1.0/AndroidManifest.xml:21:9-23:69
+295            android:name="com.google.android.gms.version"
+295-->[com.google.android.gms:play-services-basement:18.1.0] /Users/yoosinpaddy/.gradle/caches/transforms-3/975c77b6a5e9c38aec3061064b69f327/transformed/play-services-basement-18.1.0/AndroidManifest.xml:22:13-58
+296            android:value="@integer/google_play_services_version" />
+296-->[com.google.android.gms:play-services-basement:18.1.0] /Users/yoosinpaddy/.gradle/caches/transforms-3/975c77b6a5e9c38aec3061064b69f327/transformed/play-services-basement-18.1.0/AndroidManifest.xml:23:13-66
+297
+298        <uses-library
+298-->[androidx.window:window:1.0.0] /Users/yoosinpaddy/.gradle/caches/transforms-3/0785aa44109aa5616c9a2ed2471b15de/transformed/window-1.0.0/AndroidManifest.xml:25:9-27:40
+299            android:name="androidx.window.extensions"
+299-->[androidx.window:window:1.0.0] /Users/yoosinpaddy/.gradle/caches/transforms-3/0785aa44109aa5616c9a2ed2471b15de/transformed/window-1.0.0/AndroidManifest.xml:26:13-54
+300            android:required="false" />
+300-->[androidx.window:window:1.0.0] /Users/yoosinpaddy/.gradle/caches/transforms-3/0785aa44109aa5616c9a2ed2471b15de/transformed/window-1.0.0/AndroidManifest.xml:27:13-37
+301        <uses-library
+301-->[androidx.window:window:1.0.0] /Users/yoosinpaddy/.gradle/caches/transforms-3/0785aa44109aa5616c9a2ed2471b15de/transformed/window-1.0.0/AndroidManifest.xml:28:9-30:40
+302            android:name="androidx.window.sidecar"
+302-->[androidx.window:window:1.0.0] /Users/yoosinpaddy/.gradle/caches/transforms-3/0785aa44109aa5616c9a2ed2471b15de/transformed/window-1.0.0/AndroidManifest.xml:29:13-51
+303            android:required="false" />
+303-->[androidx.window:window:1.0.0] /Users/yoosinpaddy/.gradle/caches/transforms-3/0785aa44109aa5616c9a2ed2471b15de/transformed/window-1.0.0/AndroidManifest.xml:30:13-37
+304
+305        <provider
+305-->[androidx.emoji2:emoji2:1.2.0] /Users/yoosinpaddy/.gradle/caches/transforms-3/5347791b10df2983cd667522b7061ade/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+306            android:name="androidx.startup.InitializationProvider"
+306-->[androidx.emoji2:emoji2:1.2.0] /Users/yoosinpaddy/.gradle/caches/transforms-3/5347791b10df2983cd667522b7061ade/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
+307            android:authorities="com.iot.technion.regrowth.androidx-startup"
+307-->[androidx.emoji2:emoji2:1.2.0] /Users/yoosinpaddy/.gradle/caches/transforms-3/5347791b10df2983cd667522b7061ade/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
+308            android:exported="false" >
+308-->[androidx.emoji2:emoji2:1.2.0] /Users/yoosinpaddy/.gradle/caches/transforms-3/5347791b10df2983cd667522b7061ade/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
+309            <meta-data
+309-->[androidx.emoji2:emoji2:1.2.0] /Users/yoosinpaddy/.gradle/caches/transforms-3/5347791b10df2983cd667522b7061ade/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+310                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+310-->[androidx.emoji2:emoji2:1.2.0] /Users/yoosinpaddy/.gradle/caches/transforms-3/5347791b10df2983cd667522b7061ade/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
+311                android:value="androidx.startup" />
+311-->[androidx.emoji2:emoji2:1.2.0] /Users/yoosinpaddy/.gradle/caches/transforms-3/5347791b10df2983cd667522b7061ade/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
+312            <meta-data
+312-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/yoosinpaddy/.gradle/caches/transforms-3/2bc344f677f80e3e1c4c9f6b0053dfaa/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
+313                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+313-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/yoosinpaddy/.gradle/caches/transforms-3/2bc344f677f80e3e1c4c9f6b0053dfaa/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
+314                android:value="androidx.startup" />
+314-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/yoosinpaddy/.gradle/caches/transforms-3/2bc344f677f80e3e1c4c9f6b0053dfaa/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
+315        </provider>
+316
+317        <service
+317-->[com.google.android.datatransport:transport-backend-cct:3.1.7] /Users/yoosinpaddy/.gradle/caches/transforms-3/80ce7d8e37c0b5ff72a67282712acb0d/transformed/transport-backend-cct-3.1.7/AndroidManifest.xml:29:9-35:19
+318            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+318-->[com.google.android.datatransport:transport-backend-cct:3.1.7] /Users/yoosinpaddy/.gradle/caches/transforms-3/80ce7d8e37c0b5ff72a67282712acb0d/transformed/transport-backend-cct-3.1.7/AndroidManifest.xml:30:13-103
+319            android:exported="false" >
+319-->[com.google.android.datatransport:transport-backend-cct:3.1.7] /Users/yoosinpaddy/.gradle/caches/transforms-3/80ce7d8e37c0b5ff72a67282712acb0d/transformed/transport-backend-cct-3.1.7/AndroidManifest.xml:31:13-37
+320            <meta-data
+320-->[com.google.android.datatransport:transport-backend-cct:3.1.7] /Users/yoosinpaddy/.gradle/caches/transforms-3/80ce7d8e37c0b5ff72a67282712acb0d/transformed/transport-backend-cct-3.1.7/AndroidManifest.xml:32:13-34:39
+321                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+321-->[com.google.android.datatransport:transport-backend-cct:3.1.7] /Users/yoosinpaddy/.gradle/caches/transforms-3/80ce7d8e37c0b5ff72a67282712acb0d/transformed/transport-backend-cct-3.1.7/AndroidManifest.xml:33:17-94
+322                android:value="cct" />
+322-->[com.google.android.datatransport:transport-backend-cct:3.1.7] /Users/yoosinpaddy/.gradle/caches/transforms-3/80ce7d8e37c0b5ff72a67282712acb0d/transformed/transport-backend-cct-3.1.7/AndroidManifest.xml:34:17-36
+323        </service>
+324        <service
+324-->[com.google.android.datatransport:transport-runtime:3.1.7] /Users/yoosinpaddy/.gradle/caches/transforms-3/2668cb9f1b02d4ac024c554ca755cda8/transformed/transport-runtime-3.1.7/AndroidManifest.xml:26:9-30:19
+325            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+325-->[com.google.android.datatransport:transport-runtime:3.1.7] /Users/yoosinpaddy/.gradle/caches/transforms-3/2668cb9f1b02d4ac024c554ca755cda8/transformed/transport-runtime-3.1.7/AndroidManifest.xml:27:13-117
+326            android:exported="false"
+326-->[com.google.android.datatransport:transport-runtime:3.1.7] /Users/yoosinpaddy/.gradle/caches/transforms-3/2668cb9f1b02d4ac024c554ca755cda8/transformed/transport-runtime-3.1.7/AndroidManifest.xml:28:13-37
+327            android:permission="android.permission.BIND_JOB_SERVICE" >
+327-->[com.google.android.datatransport:transport-runtime:3.1.7] /Users/yoosinpaddy/.gradle/caches/transforms-3/2668cb9f1b02d4ac024c554ca755cda8/transformed/transport-runtime-3.1.7/AndroidManifest.xml:29:13-69
+328        </service>
+329
+330        <receiver
+330-->[com.google.android.datatransport:transport-runtime:3.1.7] /Users/yoosinpaddy/.gradle/caches/transforms-3/2668cb9f1b02d4ac024c554ca755cda8/transformed/transport-runtime-3.1.7/AndroidManifest.xml:32:9-34:40
+331            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+331-->[com.google.android.datatransport:transport-runtime:3.1.7] /Users/yoosinpaddy/.gradle/caches/transforms-3/2668cb9f1b02d4ac024c554ca755cda8/transformed/transport-runtime-3.1.7/AndroidManifest.xml:33:13-132
+332            android:exported="false" />
+332-->[com.google.android.datatransport:transport-runtime:3.1.7] /Users/yoosinpaddy/.gradle/caches/transforms-3/2668cb9f1b02d4ac024c554ca755cda8/transformed/transport-runtime-3.1.7/AndroidManifest.xml:34:13-37
+333
+334        <activity
+334-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/yoosinpaddy/.gradle/caches/transforms-3/eb6c12ac60efdd8cb4a3b0f0dd12a8fe/transformed/zxing-android-embedded-4.3.0/AndroidManifest.xml:47:9-53:63
+335            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+335-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/yoosinpaddy/.gradle/caches/transforms-3/eb6c12ac60efdd8cb4a3b0f0dd12a8fe/transformed/zxing-android-embedded-4.3.0/AndroidManifest.xml:48:13-74
+336            android:clearTaskOnLaunch="true"
+336-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/yoosinpaddy/.gradle/caches/transforms-3/eb6c12ac60efdd8cb4a3b0f0dd12a8fe/transformed/zxing-android-embedded-4.3.0/AndroidManifest.xml:49:13-45
+337            android:screenOrientation="sensorLandscape"
+337-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/yoosinpaddy/.gradle/caches/transforms-3/eb6c12ac60efdd8cb4a3b0f0dd12a8fe/transformed/zxing-android-embedded-4.3.0/AndroidManifest.xml:50:13-56
+338            android:stateNotNeeded="true"
+338-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/yoosinpaddy/.gradle/caches/transforms-3/eb6c12ac60efdd8cb4a3b0f0dd12a8fe/transformed/zxing-android-embedded-4.3.0/AndroidManifest.xml:51:13-42
+339            android:theme="@style/zxing_CaptureTheme"
+339-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/yoosinpaddy/.gradle/caches/transforms-3/eb6c12ac60efdd8cb4a3b0f0dd12a8fe/transformed/zxing-android-embedded-4.3.0/AndroidManifest.xml:52:13-54
+340            android:windowSoftInputMode="stateAlwaysHidden" />
+340-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/yoosinpaddy/.gradle/caches/transforms-3/eb6c12ac60efdd8cb4a3b0f0dd12a8fe/transformed/zxing-android-embedded-4.3.0/AndroidManifest.xml:53:13-60
+341    </application>
+342
+343</manifest>

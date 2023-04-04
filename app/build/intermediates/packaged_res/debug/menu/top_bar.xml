@@ -3,6 +3,7 @@
     <item
         android:id="@+id/profile"
         android:icon="@drawable/ic_profile"
+        android:iconTint="@color/green"
         android:title="@string/profile" />
 
 

@@ -1,5 +1,6 @@
 package com.iot.technion.regrowth
 
+import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -38,14 +39,21 @@ class NotificationListActivity : AppCompatActivity() {
     private fun notificationListFromFirebase() {
         var database: FirebaseDatabase = FirebaseDatabase.getInstance()
         val ref = database.getReference("notifications/users/$userId/")
+        var lastNotificationDate = getSharedPreferences("lastNotificationDate", Context.MODE_PRIVATE)
+            .getLong("lastNotificationDate", 0)
         ref.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
                 notificationList.clear()
                 for (child in snapshot.children) {
                     val notification = child.getValue(NotificationModel::class.java)
                     notificationList.add(notification!!)
+                    if (notification.timestamp > lastNotificationDate) {
+                        lastNotificationDate = notification.timestamp
+                    }
                 }
                 adapter.notifyDataSetChanged()
+                getSharedPreferences("lastNotificationDate", Context.MODE_PRIVATE).edit()
+                    .putLong("lastNotificationDate", lastNotificationDate).apply()
             }
 
             override fun onCancelled(error: DatabaseError) {
@@ -53,6 +61,8 @@ class NotificationListActivity : AppCompatActivity() {
             }
         })
     }
+
+
 
 
 }

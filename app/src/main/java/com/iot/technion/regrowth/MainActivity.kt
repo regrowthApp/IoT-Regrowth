@@ -1,5 +1,6 @@
 package com.iot.technion.regrowth
 
+import android.content.Context
 import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
@@ -11,7 +12,6 @@ import android.widget.ArrayAdapter
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.text.set
 import com.iot.technion.regrowth.databinding.ActivityTabbedBinding
 import com.iot.technion.regrowth.model.AnimalModel
 import com.iot.technion.regrowth.model.NodeModel
@@ -19,7 +19,7 @@ import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 import com.google.firebase.database.*
 import com.iot.technion.regrowth.adapters.AnimalsAdapter
-import com.iot.technion.regrowth.databinding.FragmentTabbedBinding
+import com.iot.technion.regrowth.model.NotificationModel
 import com.iot.technion.regrowth.model.ThreshHoldsModel
 import kotlinx.android.synthetic.main.activity_tabbed.view.*
 import kotlinx.android.synthetic.main.dialog_create_animal.view.*
@@ -175,6 +175,50 @@ class MainActivity : AppCompatActivity() {
             }
             true
         }
+    }
+
+    override fun onResume() {
+        super.onResume()
+
+        notificationListFromFirebase()
+    }
+
+    private fun addBudgeToNotification(notificationCount: Int) {
+        if (notificationCount == 0) {
+            binding.topNaviBar.removeBadge(R.id.notification)
+            return
+        }else{
+            val badgeDrawable = binding.topNaviBar.getOrCreateBadge(R.id.notification)
+            badgeDrawable.backgroundColor = Color.parseColor("#239127")
+            badgeDrawable.isVisible = true
+            badgeDrawable.number = notificationCount
+        }
+    }
+
+    private fun notificationListFromFirebase() {
+        //get last notification date from local storage (long)
+        val lastNotificationDate = getSharedPreferences("lastNotificationDate", Context.MODE_PRIVATE)
+            .getLong("lastNotificationDate", 0)
+        Log.e(TAG, "notificationListFromFirebase: $lastNotificationDate")
+        val ref = database.getReference("notifications/users/$uid/")
+        var notificationCount=0
+        ref.addValueEventListener(object : ValueEventListener {
+            override fun onDataChange(snapshot: DataSnapshot) {
+                for (child in snapshot.children) {
+                    val notification = child.getValue(NotificationModel::class.java)
+                    if (notification != null) {
+                        if (notification.timestamp > lastNotificationDate) {
+                            notificationCount++
+                        }
+                    }
+                }
+                addBudgeToNotification(notificationCount)
+            }
+
+            override fun onCancelled(error: DatabaseError) {
+                Log.e(TAG, "onCancelled: ", error.toException())
+            }
+        })
     }
 
     private fun addAnimalToFirebase(animalModel: AnimalModel) {

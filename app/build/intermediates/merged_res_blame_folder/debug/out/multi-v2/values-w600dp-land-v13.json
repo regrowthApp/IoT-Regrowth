@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.iot.technion.regrowth.app-mergeDebugResources-54:/values-w600dp-land-v13/values-w600dp-land-v13.xml",
+            "outputFile": "com.iot.technion.regrowth.app-mergeDebugResources-55:/values-w600dp-land-v13/values-w600dp-land-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\WIN10\\.gradle\\caches\\transforms-3\\ba8fcbaa52ed855ca1b7c3c417c4e9a9\\transformed\\material-1.6.1\\res\\values-w600dp-land-v13\\values-w600dp-land-v13.xml",
+                    "source": "/Users/yoosinpaddy/.gradle/caches/transforms-3/ba8fcbaa52ed855ca1b7c3c417c4e9a9/transformed/material-1.6.1/res/values-w600dp-land-v13/values-w600dp-land-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

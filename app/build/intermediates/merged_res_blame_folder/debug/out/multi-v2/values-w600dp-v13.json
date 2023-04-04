@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.iot.technion.regrowth.app-mergeDebugResources-54:/values-w600dp-v13/values-w600dp-v13.xml",
+            "outputFile": "com.iot.technion.regrowth.app-mergeDebugResources-55:/values-w600dp-v13/values-w600dp-v13.xml",
             "map": [
                 {
-                    "source": "D:\\Regrowth\\app\\src\\main\\res\\values-w600dp\\dimens.xml",
+                    "source": "/Users/yoosinpaddy/Downloads/IoT-Regrowth/app/src/main/res/values-w600dp/dimens.xml",
                     "from": {
                         "startLines": "2,1",
                         "startColumns": "4,4",

@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.iot.technion.regrowth.app-mergeDebugResources-54:/values-watch-v21/values-watch-v21.xml",
+            "outputFile": "com.iot.technion.regrowth.app-mergeDebugResources-55:/values-watch-v21/values-watch-v21.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\WIN10\\.gradle\\caches\\transforms-3\\296f84479b2f358744ab631ded31d7fc\\transformed\\appcompat-1.5.1\\res\\values-watch-v21\\values-watch-v21.xml",
+                    "source": "/Users/yoosinpaddy/.gradle/caches/transforms-3/296f84479b2f358744ab631ded31d7fc/transformed/appcompat-1.5.1/res/values-watch-v21/values-watch-v21.xml",
                     "from": {
                         "startLines": "2,6,10",
                         "startColumns": "4,4,4",

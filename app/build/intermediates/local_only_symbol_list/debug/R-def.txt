@@ -13,6 +13,7 @@ color Weight_Bar_Color
 color background_button_background
 color basic
 color black
+color bottom_nav_color
 color bright_green
 color bright_orange
 color bright_red
@@ -48,9 +49,12 @@ drawable ic_background_picture
 drawable ic_baseline_add_24
 drawable ic_baseline_analytics_24
 drawable ic_baseline_arrow_back_24
+drawable ic_baseline_close_24
 drawable ic_baseline_info_24
 drawable ic_baseline_person_outline_24
+drawable ic_baseline_qr_code_24
 drawable ic_baseline_remove_24
+drawable ic_baseline_share_24
 drawable ic_chicken
 drawable ic_goat
 drawable ic_home
@@ -61,6 +65,7 @@ drawable ic_notifications
 drawable ic_pig
 drawable ic_profile
 drawable ic_sheep
+drawable item_count
 drawable login_background
 drawable nationality
 drawable top_background
@@ -86,6 +91,9 @@ id battery_percentage
 id battery_tension
 id btn_edit_profile
 id cancel
+id cardView
+id cart_item_count
+id closeQr
 id email
 id email_address
 id fab
@@ -113,6 +121,7 @@ id logo_btn
 id logo_img
 id main_layout
 id main_thresh
+id mapFragment
 id max_hum
 id max_temp
 id max_weight
@@ -138,8 +147,13 @@ id others
 id password
 id phone_number
 id profile
+id progressBar
+id qrButton
+id qrCard
+id qrCode
 id rvNotificationList
 id save_profile_btn
+id shareQr
 id socialicons
 id tabs
 id top_navi_bar
@@ -157,11 +171,14 @@ id vertical_line.92
 id view_pager
 id weight_chart
 layout activity_login
+layout activity_main
 layout activity_notification_list
+layout activity_open_profile
 layout activity_profile
 layout activity_tabbed
 layout activity_user
 layout add_node
+layout badge
 layout chart_tabbed
 layout dialog_create_animal
 layout dialog_remove_animal
@@ -210,6 +227,7 @@ string hello_second_fragment
 string invalid_password
 string invalid_username
 string login_failed
+string map_api_key
 string menu
 string menu_gallery
 string menu_home
