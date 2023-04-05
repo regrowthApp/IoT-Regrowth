@@ -21,6 +21,7 @@ import com.google.firebase.database.*
 import com.iot.technion.regrowth.adapters.AnimalsAdapter
 import com.iot.technion.regrowth.model.NotificationModel
 import com.iot.technion.regrowth.model.ThreshHoldsModel
+import kotlinx.android.synthetic.main.activity_tabbed.*
 import kotlinx.android.synthetic.main.activity_tabbed.view.*
 import kotlinx.android.synthetic.main.dialog_create_animal.view.*
 import kotlinx.android.synthetic.main.fragment_tabbed.view.*
@@ -355,7 +356,7 @@ class MainActivity : AppCompatActivity() {
         val dialog = AlertDialog.Builder(this@MainActivity)
         fillThreshHoldsTexts(view,animal)
         fillThreshHolds(view,animal)
-        dialog.setTitle("Set $animal Thresh Holds")
+        dialog.setTitle("Set $animal Thresholds")
         dialog.setView(view)
 
         dialog.setNegativeButton("Cancel"){dialog,which ->
@@ -375,7 +376,7 @@ class MainActivity : AppCompatActivity() {
                         thresh_holds.min_hum = view.minimum_humidity.text.toString()
 
                         dataSnapshot.ref.setValue(thresh_holds).addOnSuccessListener {
-                            Toast.makeText(this@MainActivity, "Thresh holds has been saved", Toast.LENGTH_SHORT).show()
+                            Toast.makeText(this@MainActivity, "Thresholds has been saved", Toast.LENGTH_SHORT).show()
 
                         }
 

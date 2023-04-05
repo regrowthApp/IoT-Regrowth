@@ -23,11 +23,12 @@
             android:layout_height="match_parent"
             android:layout_gravity="center"
             android:src="@drawable/app_logo"
-            app:maxImageSize="70dp"
-            app:fabCustomSize="70dp"
-            app:tint="@null"
             app:backgroundTint="@color/white"
-            app:layout_anchor="@+id/top_navi_bar" />
+            app:fabCustomSize="70dp"
+            app:layout_anchor="@+id/top_navi_bar"
+            app:maxImageSize="70dp"
+            app:tint="@null"
+            tools:ignore="SpeakableTextPresentCheck" />
     </com.google.android.material.bottomnavigation.BottomNavigationView>
 
     <com.google.android.material.appbar.AppBarLayout

@@ -193,7 +193,6 @@ class ProfileActivity : AppCompatActivity() {
                     }else{
                         Log.e(TAG, "onDataChange: logo image is null")
                     }
-
                     binding.farmName.text = farm_name
                     binding.phoneNumber.text = phoneNumber
                     binding.emailAddress.text = emailAddress
