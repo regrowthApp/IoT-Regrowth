@@ -1,382 +1,374 @@
 [
     {
-        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-57:\\menu_top_bar.xml.flat",
-        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-59:\\menu\\top_bar.xml"
+        "merged": "com.iot.technion.regrowth.app-merged_res-57:/mipmap-mdpi_background_button.png.flat",
+        "source": "com.iot.technion.regrowth.app-main-59:/mipmap-mdpi/background_button.png"
     },
     {
-        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-57:\\layout_badge.xml.flat",
-        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-59:\\layout\\badge.xml"
+        "merged": "com.iot.technion.regrowth.app-merged_res-57:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.iot.technion.regrowth.app-main-59:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-57:\\xml_backup_rules.xml.flat",
-        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-59:\\xml\\backup_rules.xml"
+        "merged": "com.iot.technion.regrowth.app-merged_res-57:/mipmap-mdpi_ic_launcher_user_img.png.flat",
+        "source": "com.iot.technion.regrowth.app-main-59:/mipmap-mdpi/ic_launcher_user_img.png"
     },
     {
-        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-57:\\drawable_white_background.xml.flat",
-        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-59:\\drawable\\white_background.xml"
+        "merged": "com.iot.technion.regrowth.app-merged_res-57:/drawable_birthday.png.flat",
+        "source": "com.iot.technion.regrowth.app-main-59:/drawable/birthday.png"
     },
     {
-        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-57:\\layout_dialog_create_animal.xml.flat",
-        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-59:\\layout\\dialog_create_animal.xml"
+        "merged": "com.iot.technion.regrowth.app-merged_res-57:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.iot.technion.regrowth.app-main-59:/mipmap-xxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-57:\\mipmap-mdpi_background_button.png.flat",
-        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-59:\\mipmap-mdpi\\background_button.png"
+        "merged": "com.iot.technion.regrowth.app-merged_res-57:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.iot.technion.regrowth.app-main-59:/mipmap-xxxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-57:\\drawable_ic_chicken.xml.flat",
-        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-59:\\drawable\\ic_chicken.xml"
+        "merged": "com.iot.technion.regrowth.app-merged_res-57:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.iot.technion.regrowth.app-main-59:/mipmap-hdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-57:\\layout_activity_profile.xml.flat",
-        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-59:\\layout\\activity_profile.xml"
+        "merged": "com.iot.technion.regrowth.app-merged_res-57:/xml_backup_rules.xml.flat",
+        "source": "com.iot.technion.regrowth.app-main-59:/xml/backup_rules.xml"
     },
     {
-        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-57:\\mipmap-hdpi_ic_launcher_user_img.png.flat",
-        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-59:\\mipmap-hdpi\\ic_launcher_user_img.png"
+        "merged": "com.iot.technion.regrowth.app-merged_res-57:/mipmap-hdpi_background_button_round.png.flat",
+        "source": "com.iot.technion.regrowth.app-main-59:/mipmap-hdpi/background_button_round.png"
     },
     {
-        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-57:\\drawable_login_background.png.flat",
-        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-59:\\drawable\\login_background.png"
+        "merged": "com.iot.technion.regrowth.app-merged_res-57:/drawable_ic_notifications.xml.flat",
+        "source": "com.iot.technion.regrowth.app-main-59:/drawable/ic_notifications.xml"
     },
     {
-        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-57:\\drawable_ic_baseline_share_24.xml.flat",
-        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-59:\\drawable\\ic_baseline_share_24.xml"
+        "merged": "com.iot.technion.regrowth.app-merged_res-57:/mipmap-xxxhdpi_background_button.png.flat",
+        "source": "com.iot.technion.regrowth.app-main-59:/mipmap-xxxhdpi/background_button.png"
     },
     {
-        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-57:\\drawable_ic_baseline_qr_code_24.xml.flat",
-        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-59:\\drawable\\ic_baseline_qr_code_24.xml"
+        "merged": "com.iot.technion.regrowth.app-merged_res-57:/layout_activity_profile.xml.flat",
+        "source": "com.iot.technion.regrowth.app-main-59:/layout/activity_profile.xml"
     },
     {
-        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-57:\\mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-59:\\mipmap-mdpi\\ic_launcher.webp"
+        "merged": "com.iot.technion.regrowth.app-merged_res-57:/drawable_ic_baseline_share_24.xml.flat",
+        "source": "com.iot.technion.regrowth.app-main-59:/drawable/ic_baseline_share_24.xml"
     },
     {
-        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-57:\\layout_add_node.xml.flat",
-        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-59:\\layout\\add_node.xml"
+        "merged": "com.iot.technion.regrowth.app-merged_res-57:/layout_dialog_remove_animal.xml.flat",
+        "source": "com.iot.technion.regrowth.app-main-59:/layout/dialog_remove_animal.xml"
     },
     {
-        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-57:\\layout_item_notification.xml.flat",
-        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-59:\\layout\\item_notification.xml"
+        "merged": "com.iot.technion.regrowth.app-merged_res-57:/mipmap-hdpi_ic_launcher_user_img.png.flat",
+        "source": "com.iot.technion.regrowth.app-main-59:/mipmap-hdpi/ic_launcher_user_img.png"
     },
     {
-        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-57:\\layout_activity_notification_list.xml.flat",
-        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-59:\\layout\\activity_notification_list.xml"
+        "merged": "com.iot.technion.regrowth.app-merged_res-57:/drawable_ic_chicken.xml.flat",
+        "source": "com.iot.technion.regrowth.app-main-59:/drawable/ic_chicken.xml"
     },
     {
-        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-57:\\drawable_ic_nodes_analytics.xml.flat",
-        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-59:\\drawable\\ic_nodes_analytics.xml"
+        "merged": "com.iot.technion.regrowth.app-merged_res-57:/mipmap-anydpi-v26_background_button_round.xml.flat",
+        "source": "com.iot.technion.regrowth.app-main-59:/mipmap-anydpi-v26/background_button_round.xml"
     },
     {
-        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-57:\\drawable_ic_baseline_add_24.xml.flat",
-        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-59:\\drawable\\ic_baseline_add_24.xml"
+        "merged": "com.iot.technion.regrowth.app-merged_res-57:/layout_add_node.xml.flat",
+        "source": "com.iot.technion.regrowth.app-main-59:/layout/add_node.xml"
     },
     {
-        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-57:\\drawable_ic_baseline_info_24.xml.flat",
-        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-59:\\drawable\\ic_baseline_info_24.xml"
+        "merged": "com.iot.technion.regrowth.app-merged_res-57:/mipmap-mdpi_background_button_round.png.flat",
+        "source": "com.iot.technion.regrowth.app-main-59:/mipmap-mdpi/background_button_round.png"
     },
     {
-        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-57:\\drawable_ic_baseline_arrow_back_24.xml.flat",
-        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-59:\\drawable\\ic_baseline_arrow_back_24.xml"
+        "merged": "com.iot.technion.regrowth.app-merged_res-57:/mipmap-xxxhdpi_ic_launcher_user_img_round.png.flat",
+        "source": "com.iot.technion.regrowth.app-main-59:/mipmap-xxxhdpi/ic_launcher_user_img_round.png"
     },
     {
-        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-57:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-59:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+        "merged": "com.iot.technion.regrowth.app-merged_res-57:/mipmap-xhdpi_background_button.png.flat",
+        "source": "com.iot.technion.regrowth.app-main-59:/mipmap-xhdpi/background_button.png"
     },
     {
-        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-57:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-59:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+        "merged": "com.iot.technion.regrowth.app-merged_res-57:/layout_fragment_tabbed.xml.flat",
+        "source": "com.iot.technion.regrowth.app-main-59:/layout/fragment_tabbed.xml"
     },
     {
-        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-57:\\mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-59:\\mipmap-mdpi\\ic_launcher_round.webp"
+        "merged": "com.iot.technion.regrowth.app-merged_res-57:/layout_activity_open_profile.xml.flat",
+        "source": "com.iot.technion.regrowth.app-main-59:/layout/activity_open_profile.xml"
     },
     {
-        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-57:\\drawable_nationality.png.flat",
-        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-59:\\drawable\\nationality.png"
+        "merged": "com.iot.technion.regrowth.app-merged_res-57:/mipmap-xxhdpi_ic_launcher_user_img.png.flat",
+        "source": "com.iot.technion.regrowth.app-main-59:/mipmap-xxhdpi/ic_launcher_user_img.png"
     },
     {
-        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-57:\\xml_data_extraction_rules.xml.flat",
-        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-59:\\xml\\data_extraction_rules.xml"
+        "merged": "com.iot.technion.regrowth.app-merged_res-57:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.iot.technion.regrowth.app-main-59:/mipmap-xxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-57:\\layout_activity_login.xml.flat",
-        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-59:\\layout\\activity_login.xml"
+        "merged": "com.iot.technion.regrowth.app-merged_res-57:/mipmap-hdpi_ic_launcher_user_img_round.png.flat",
+        "source": "com.iot.technion.regrowth.app-main-59:/mipmap-hdpi/ic_launcher_user_img_round.png"
     },
     {
-        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-57:\\drawable_google.png.flat",
-        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-59:\\drawable\\google.png"
+        "merged": "com.iot.technion.regrowth.app-merged_res-57:/drawable_ic_pig.xml.flat",
+        "source": "com.iot.technion.regrowth.app-main-59:/drawable/ic_pig.xml"
     },
     {
-        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-57:\\drawable_item_count.xml.flat",
-        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-59:\\drawable\\item_count.xml"
+        "merged": "com.iot.technion.regrowth.app-merged_res-57:/drawable-v24_top_background.xml.flat",
+        "source": "com.iot.technion.regrowth.app-main-59:/drawable-v24/top_background.xml"
     },
     {
-        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-57:\\drawable_ic_baseline_remove_24.xml.flat",
-        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-59:\\drawable\\ic_baseline_remove_24.xml"
+        "merged": "com.iot.technion.regrowth.app-merged_res-57:/drawable_login_background.png.flat",
+        "source": "com.iot.technion.regrowth.app-main-59:/drawable/login_background.png"
     },
     {
-        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-57:\\drawable_ic_launcher_user_img_foreground.xml.flat",
-        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-59:\\drawable\\ic_launcher_user_img_foreground.xml"
+        "merged": "com.iot.technion.regrowth.app-merged_res-57:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.iot.technion.regrowth.app-main-59:/mipmap-hdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-57:\\mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-59:\\mipmap-xxhdpi\\ic_launcher.webp"
+        "merged": "com.iot.technion.regrowth.app-merged_res-57:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.iot.technion.regrowth.app-main-59:/mipmap-mdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-57:\\color_bottom_nav_color.xml.flat",
-        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-59:\\color\\bottom_nav_color.xml"
+        "merged": "com.iot.technion.regrowth.app-merged_res-57:/drawable_white_background.xml.flat",
+        "source": "com.iot.technion.regrowth.app-main-59:/drawable/white_background.xml"
     },
     {
-        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-57:\\mipmap-hdpi_background_button.png.flat",
-        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-59:\\mipmap-hdpi\\background_button.png"
+        "merged": "com.iot.technion.regrowth.app-merged_res-57:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.iot.technion.regrowth.app-main-59:/mipmap-xhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-57:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-59:\\mipmap-xhdpi\\ic_launcher_round.webp"
+        "merged": "com.iot.technion.regrowth.app-merged_res-57:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.iot.technion.regrowth.app-main-59:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.iot.technion.regrowth.app-merged_res-57:/mipmap-xxhdpi_background_button_round.png.flat",
+        "source": "com.iot.technion.regrowth.app-main-59:/mipmap-xxhdpi/background_button_round.png"
+    },
+    {
+        "merged": "com.iot.technion.regrowth.app-merged_res-57:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.iot.technion.regrowth.app-main-59:/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
         "merged": "com.iot.technion.regrowth.app-merged_res-57:/layout_activity_login.xml.flat",
         "source": "com.iot.technion.regrowth.app-main-59:/layout/activity_login.xml"
     },
     {
-        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-57:\\mipmap-mdpi_background_button_round.png.flat",
-        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-59:\\mipmap-mdpi\\background_button_round.png"
+        "merged": "com.iot.technion.regrowth.app-merged_res-57:/mipmap-xxhdpi_background_button.png.flat",
+        "source": "com.iot.technion.regrowth.app-main-59:/mipmap-xxhdpi/background_button.png"
     },
     {
-        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-57:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-59:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+        "merged": "com.iot.technion.regrowth.app-merged_res-57:/layout_chart_tabbed.xml.flat",
+        "source": "com.iot.technion.regrowth.app-main-59:/layout/chart_tabbed.xml"
     },
     {
-        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-57:\\drawable_ic_profile.xml.flat",
-        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-59:\\drawable\\ic_profile.xml"
+        "merged": "com.iot.technion.regrowth.app-merged_res-57:/layout_activity_notification_list.xml.flat",
+        "source": "com.iot.technion.regrowth.app-main-59:/layout/activity_notification_list.xml"
     },
     {
-        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-57:\\layout_item_node.xml.flat",
-        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-59:\\layout\\item_node.xml"
+        "merged": "com.iot.technion.regrowth.app-merged_res-57:/layout_item_node.xml.flat",
+        "source": "com.iot.technion.regrowth.app-main-59:/layout/item_node.xml"
     },
     {
-        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-57:\\drawable_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-59:\\drawable\\ic_launcher_background.xml"
+        "merged": "com.iot.technion.regrowth.app-merged_res-57:/drawable_nationality.png.flat",
+        "source": "com.iot.technion.regrowth.app-main-59:/drawable/nationality.png"
     },
     {
-        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-57:\\drawable_app_logo.png.flat",
-        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-59:\\drawable\\app_logo.png"
+        "merged": "com.iot.technion.regrowth.app-merged_res-57:/drawable_ic_baseline_close_24.xml.flat",
+        "source": "com.iot.technion.regrowth.app-main-59:/drawable/ic_baseline_close_24.xml"
     },
     {
-        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-57:\\mipmap-xxxhdpi_background_button.png.flat",
-        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-59:\\mipmap-xxxhdpi\\background_button.png"
+        "merged": "com.iot.technion.regrowth.app-merged_res-57:/drawable_ic_goat.xml.flat",
+        "source": "com.iot.technion.regrowth.app-main-59:/drawable/ic_goat.xml"
     },
     {
-        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-57:\\drawable_grey_background.xml.flat",
-        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-59:\\drawable\\grey_background.xml"
+        "merged": "com.iot.technion.regrowth.app-merged_res-57:/navigation_nav_graph.xml.flat",
+        "source": "com.iot.technion.regrowth.app-main-59:/navigation/nav_graph.xml"
     },
     {
-        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-57:\\drawable_background_button.xml.flat",
-        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-59:\\drawable\\background_button.xml"
+        "merged": "com.iot.technion.regrowth.app-merged_res-57:/layout_item_tab.xml.flat",
+        "source": "com.iot.technion.regrowth.app-main-59:/layout/item_tab.xml"
     },
     {
-        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-57:\\layout_chart_tabbed.xml.flat",
-        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-59:\\layout\\chart_tabbed.xml"
+        "merged": "com.iot.technion.regrowth.app-merged_res-57:/drawable-v24_address.png.flat",
+        "source": "com.iot.technion.regrowth.app-main-59:/drawable-v24/address.png"
     },
     {
-        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-57:\\layout_activity_user.xml.flat",
-        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-59:\\layout\\activity_user.xml"
+        "merged": "com.iot.technion.regrowth.app-merged_res-57:/mipmap-xhdpi_background_button_round.png.flat",
+        "source": "com.iot.technion.regrowth.app-main-59:/mipmap-xhdpi/background_button_round.png"
     },
     {
-        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-57:\\drawable_ic_sheep.xml.flat",
-        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-59:\\drawable\\ic_sheep.xml"
+        "merged": "com.iot.technion.regrowth.app-merged_res-57:/mipmap-mdpi_ic_launcher_user_img_round.png.flat",
+        "source": "com.iot.technion.regrowth.app-main-59:/mipmap-mdpi/ic_launcher_user_img_round.png"
     },
     {
-        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-57:\\mipmap-xxxhdpi_ic_launcher_user_img_round.png.flat",
-        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-59:\\mipmap-xxxhdpi\\ic_launcher_user_img_round.png"
+        "merged": "com.iot.technion.regrowth.app-merged_res-57:/drawable_background_button.xml.flat",
+        "source": "com.iot.technion.regrowth.app-main-59:/drawable/background_button.xml"
     },
     {
-        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-57:\\mipmap-hdpi_ic_launcher_user_img_round.png.flat",
-        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-59:\\mipmap-hdpi\\ic_launcher_user_img_round.png"
+        "merged": "com.iot.technion.regrowth.app-merged_res-57:/drawable_ic_baseline_add_24.xml.flat",
+        "source": "com.iot.technion.regrowth.app-main-59:/drawable/ic_baseline_add_24.xml"
     },
     {
-        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-57:\\layout_thresh_holds.xml.flat",
-        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-59:\\layout\\thresh_holds.xml"
+        "merged": "com.iot.technion.regrowth.app-merged_res-57:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.iot.technion.regrowth.app-main-59:/drawable/ic_launcher_background.xml"
     },
     {
-        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-57:\\layout_activity_tabbed.xml.flat",
-        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-59:\\layout\\activity_tabbed.xml"
+        "merged": "com.iot.technion.regrowth.app-merged_res-57:/mipmap-anydpi-v26_background_button.xml.flat",
+        "source": "com.iot.technion.regrowth.app-main-59:/mipmap-anydpi-v26/background_button.xml"
     },
     {
-        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-57:\\mipmap-xhdpi_background_button.png.flat",
-        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-59:\\mipmap-xhdpi\\background_button.png"
+        "merged": "com.iot.technion.regrowth.app-merged_res-57:/layout_thresh_holds.xml.flat",
+        "source": "com.iot.technion.regrowth.app-main-59:/layout/thresh_holds.xml"
     },
     {
-        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-57:\\layout_activity_open_profile.xml.flat",
-        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-59:\\layout\\activity_open_profile.xml"
-    },
-    {
-        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-57:\\mipmap-xxhdpi_background_button.png.flat",
-        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-59:\\mipmap-xxhdpi\\background_button.png"
-    },
-    {
-        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-57:\\mipmap-xhdpi_ic_launcher_user_img.png.flat",
-        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-59:\\mipmap-xhdpi\\ic_launcher_user_img.png"
-    },
-    {
-        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-57:\\mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-59:\\mipmap-xhdpi\\ic_launcher.webp"
-    },
-    {
-        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-57:\\mipmap-xxxhdpi_ic_launcher_user_img.png.flat",
-        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-59:\\mipmap-xxxhdpi\\ic_launcher_user_img.png"
-    },
-    {
-        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-57:\\mipmap-xxxhdpi_background_button_round.png.flat",
-        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-59:\\mipmap-xxxhdpi\\background_button_round.png"
+        "merged": "com.iot.technion.regrowth.app-merged_res-57:/drawable_item_count.xml.flat",
+        "source": "com.iot.technion.regrowth.app-main-59:/drawable/item_count.xml"
     },
     {
         "merged": "com.iot.technion.regrowth.app-merged_res-57:/layout_activity_tabbed.xml.flat",
         "source": "com.iot.technion.regrowth.app-main-59:/layout/activity_tabbed.xml"
     },
     {
-        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-57:\\drawable_ic_notifications.xml.flat",
-        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-59:\\drawable\\ic_notifications.xml"
+        "merged": "com.iot.technion.regrowth.app-merged_res-57:/layout_activity_user.xml.flat",
+        "source": "com.iot.technion.regrowth.app-main-59:/layout/activity_user.xml"
     },
     {
-        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-57:\\mipmap-xhdpi_background_button_round.png.flat",
-        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-59:\\mipmap-xhdpi\\background_button_round.png"
+        "merged": "com.iot.technion.regrowth.app-merged_res-57:/mipmap-anydpi-v26_ic_launcher_user_img.xml.flat",
+        "source": "com.iot.technion.regrowth.app-main-59:/mipmap-anydpi-v26/ic_launcher_user_img.xml"
     },
     {
-        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-57:\\layout_item_tab.xml.flat",
-        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-59:\\layout\\item_tab.xml"
+        "merged": "com.iot.technion.regrowth.app-merged_res-57:/xml_data_extraction_rules.xml.flat",
+        "source": "com.iot.technion.regrowth.app-main-59:/xml/data_extraction_rules.xml"
     },
     {
-        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-57:\\drawable_ic_pig.xml.flat",
-        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-59:\\drawable\\ic_pig.xml"
+        "merged": "com.iot.technion.regrowth.app-merged_res-57:/drawable_app_logo.png.flat",
+        "source": "com.iot.technion.regrowth.app-main-59:/drawable/app_logo.png"
     },
     {
-        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-57:\\drawable-v24_top_background.xml.flat",
-        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-59:\\drawable-v24\\top_background.xml"
+        "merged": "com.iot.technion.regrowth.app-merged_res-57:/color_bottom_nav_color.xml.flat",
+        "source": "com.iot.technion.regrowth.app-main-59:/color/bottom_nav_color.xml"
     },
     {
-        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-57:\\drawable_ic_home.xml.flat",
-        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-59:\\drawable\\ic_home.xml"
+        "merged": "com.iot.technion.regrowth.app-merged_res-57:/drawable_ic_baseline_analytics_24.xml.flat",
+        "source": "com.iot.technion.regrowth.app-main-59:/drawable/ic_baseline_analytics_24.xml"
     },
     {
-        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-57:\\mipmap-anydpi-v26_ic_launcher_user_img.xml.flat",
-        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-59:\\mipmap-anydpi-v26\\ic_launcher_user_img.xml"
+        "merged": "com.iot.technion.regrowth.app-merged_res-57:/drawable_ic_nodes_analytics.xml.flat",
+        "source": "com.iot.technion.regrowth.app-main-59:/drawable/ic_nodes_analytics.xml"
     },
     {
-        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-57:\\drawable_ic_goat.xml.flat",
-        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-59:\\drawable\\ic_goat.xml"
+        "merged": "com.iot.technion.regrowth.app-merged_res-57:/layout_edit_nodes.xml.flat",
+        "source": "com.iot.technion.regrowth.app-main-59:/layout/edit_nodes.xml"
     },
     {
-        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-57:\\mipmap-xxhdpi_ic_launcher_user_img_round.png.flat",
-        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-59:\\mipmap-xxhdpi\\ic_launcher_user_img_round.png"
+        "merged": "com.iot.technion.regrowth.app-merged_res-57:/mipmap-xxxhdpi_background_button_round.png.flat",
+        "source": "com.iot.technion.regrowth.app-main-59:/mipmap-xxxhdpi/background_button_round.png"
     },
     {
-        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-57:\\mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-59:\\mipmap-hdpi\\ic_launcher_round.webp"
+        "merged": "com.iot.technion.regrowth.app-merged_res-57:/drawable_ic_home.xml.flat",
+        "source": "com.iot.technion.regrowth.app-main-59:/drawable/ic_home.xml"
     },
     {
-        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-57:\\layout_remove_node.xml.flat",
-        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-59:\\layout\\remove_node.xml"
+        "merged": "com.iot.technion.regrowth.app-merged_res-57:/layout_item_notification.xml.flat",
+        "source": "com.iot.technion.regrowth.app-main-59:/layout/item_notification.xml"
     },
     {
-        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-57:\\drawable_ic_baseline_analytics_24.xml.flat",
-        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-59:\\drawable\\ic_baseline_analytics_24.xml"
+        "merged": "com.iot.technion.regrowth.app-merged_res-57:/mipmap-xhdpi_ic_launcher_user_img_round.png.flat",
+        "source": "com.iot.technion.regrowth.app-main-59:/mipmap-xhdpi/ic_launcher_user_img_round.png"
     },
     {
-        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-57:\\mipmap-xxhdpi_ic_launcher_user_img.png.flat",
-        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-59:\\mipmap-xxhdpi\\ic_launcher_user_img.png"
+        "merged": "com.iot.technion.regrowth.app-merged_res-57:/drawable_ic_background_picture.xml.flat",
+        "source": "com.iot.technion.regrowth.app-main-59:/drawable/ic_background_picture.xml"
     },
     {
-        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-57:\\drawable_ic_baseline_person_outline_24.xml.flat",
-        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-59:\\drawable\\ic_baseline_person_outline_24.xml"
+        "merged": "com.iot.technion.regrowth.app-merged_res-57:/menu_top_bar.xml.flat",
+        "source": "com.iot.technion.regrowth.app-main-59:/menu/top_bar.xml"
     },
     {
-        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-57:\\layout_dialog_remove_animal.xml.flat",
-        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-59:\\layout\\dialog_remove_animal.xml"
+        "merged": "com.iot.technion.regrowth.app-merged_res-57:/layout_remove_node.xml.flat",
+        "source": "com.iot.technion.regrowth.app-main-59:/layout/remove_node.xml"
     },
     {
-        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-57:\\layout_activity_main.xml.flat",
-        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-59:\\layout\\activity_main.xml"
+        "merged": "com.iot.technion.regrowth.app-merged_res-57:/drawable_ic_baseline_qr_code_24.xml.flat",
+        "source": "com.iot.technion.regrowth.app-main-59:/drawable/ic_baseline_qr_code_24.xml"
     },
     {
-        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-57:\\mipmap-anydpi-v26_background_button.xml.flat",
-        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-59:\\mipmap-anydpi-v26\\background_button.xml"
+        "merged": "com.iot.technion.regrowth.app-merged_res-57:/layout_badge.xml.flat",
+        "source": "com.iot.technion.regrowth.app-main-59:/layout/badge.xml"
     },
     {
-        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-57:\\layout_edit_nodes.xml.flat",
-        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-59:\\layout\\edit_nodes.xml"
+        "merged": "com.iot.technion.regrowth.app-merged_res-57:/drawable_ic_baseline_remove_24.xml.flat",
+        "source": "com.iot.technion.regrowth.app-main-59:/drawable/ic_baseline_remove_24.xml"
     },
     {
-        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-57:\\navigation_nav_graph.xml.flat",
-        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-59:\\navigation\\nav_graph.xml"
+        "merged": "com.iot.technion.regrowth.app-merged_res-57:/drawable_ic_sheep.xml.flat",
+        "source": "com.iot.technion.regrowth.app-main-59:/drawable/ic_sheep.xml"
     },
     {
-        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-57:\\mipmap-mdpi_ic_launcher_user_img_round.png.flat",
-        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-59:\\mipmap-mdpi\\ic_launcher_user_img_round.png"
+        "merged": "com.iot.technion.regrowth.app-merged_res-57:/drawable_ic_baseline_arrow_back_24.xml.flat",
+        "source": "com.iot.technion.regrowth.app-main-59:/drawable/ic_baseline_arrow_back_24.xml"
     },
     {
-        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-57:\\mipmap-hdpi_background_button_round.png.flat",
-        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-59:\\mipmap-hdpi\\background_button_round.png"
+        "merged": "com.iot.technion.regrowth.app-merged_res-57:/layout_dialog_create_animal.xml.flat",
+        "source": "com.iot.technion.regrowth.app-main-59:/layout/dialog_create_animal.xml"
     },
     {
-        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-57:\\drawable_ic_baseline_close_24.xml.flat",
-        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-59:\\drawable\\ic_baseline_close_24.xml"
+        "merged": "com.iot.technion.regrowth.app-merged_res-57:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.iot.technion.regrowth.app-main-59:/mipmap-mdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-57:\\drawable_ic_background_picture.xml.flat",
-        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-59:\\drawable\\ic_background_picture.xml"
+        "merged": "com.iot.technion.regrowth.app-merged_res-57:/layout_activity_main.xml.flat",
+        "source": "com.iot.technion.regrowth.app-main-59:/layout/activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-57:\\drawable-v24_address.png.flat",
-        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-59:\\drawable-v24\\address.png"
+        "merged": "com.iot.technion.regrowth.app-merged_res-57:/drawable-v24_circles.png.flat",
+        "source": "com.iot.technion.regrowth.app-main-59:/drawable-v24/circles.png"
     },
     {
-        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-57:\\mipmap-anydpi-v26_ic_launcher_user_img_round.xml.flat",
-        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-59:\\mipmap-anydpi-v26\\ic_launcher_user_img_round.xml"
+        "merged": "com.iot.technion.regrowth.app-merged_res-57:/mipmap-xxhdpi_ic_launcher_user_img_round.png.flat",
+        "source": "com.iot.technion.regrowth.app-main-59:/mipmap-xxhdpi/ic_launcher_user_img_round.png"
     },
     {
-        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-57:\\drawable_birthday.png.flat",
-        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-59:\\drawable\\birthday.png"
+        "merged": "com.iot.technion.regrowth.app-merged_res-57:/mipmap-xhdpi_ic_launcher_user_img.png.flat",
+        "source": "com.iot.technion.regrowth.app-main-59:/mipmap-xhdpi/ic_launcher_user_img.png"
     },
     {
-        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-57:\\layout_fragment_tabbed.xml.flat",
-        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-59:\\layout\\fragment_tabbed.xml"
+        "merged": "com.iot.technion.regrowth.app-merged_res-57:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.iot.technion.regrowth.app-main-59:/mipmap-xhdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-57:\\mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-59:\\mipmap-hdpi\\ic_launcher.webp"
+        "merged": "com.iot.technion.regrowth.app-merged_res-57:/drawable_google.png.flat",
+        "source": "com.iot.technion.regrowth.app-main-59:/drawable/google.png"
     },
     {
-        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-57:\\mipmap-mdpi_ic_launcher_user_img.png.flat",
-        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-59:\\mipmap-mdpi\\ic_launcher_user_img.png"
+        "merged": "com.iot.technion.regrowth.app-merged_res-57:/drawable_ic_baseline_info_24.xml.flat",
+        "source": "com.iot.technion.regrowth.app-main-59:/drawable/ic_baseline_info_24.xml"
     },
     {
-        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-57:\\drawable-v24_circles.png.flat",
-        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-59:\\drawable-v24\\circles.png"
+        "merged": "com.iot.technion.regrowth.app-merged_res-57:/drawable_ic_profile.xml.flat",
+        "source": "com.iot.technion.regrowth.app-main-59:/drawable/ic_profile.xml"
     },
     {
-        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-57:\\drawable_circle_background.xml.flat",
-        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-59:\\drawable\\circle_background.xml"
+        "merged": "com.iot.technion.regrowth.app-merged_res-57:/mipmap-hdpi_background_button.png.flat",
+        "source": "com.iot.technion.regrowth.app-main-59:/mipmap-hdpi/background_button.png"
     },
     {
-        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-57:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-59:\\mipmap-xxxhdpi\\ic_launcher.webp"
+        "merged": "com.iot.technion.regrowth.app-merged_res-57:/drawable_ic_launcher_user_img_foreground.xml.flat",
+        "source": "com.iot.technion.regrowth.app-main-59:/drawable/ic_launcher_user_img_foreground.xml"
     },
     {
-        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-57:\\mipmap-anydpi-v26_background_button_round.xml.flat",
-        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-59:\\mipmap-anydpi-v26\\background_button_round.xml"
+        "merged": "com.iot.technion.regrowth.app-merged_res-57:/mipmap-anydpi-v26_ic_launcher_user_img_round.xml.flat",
+        "source": "com.iot.technion.regrowth.app-main-59:/mipmap-anydpi-v26/ic_launcher_user_img_round.xml"
     },
     {
-        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-57:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-59:\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "com.iot.technion.regrowth.app-merged_res-57:/drawable_circle_background.xml.flat",
+        "source": "com.iot.technion.regrowth.app-main-59:/drawable/circle_background.xml"
     },
     {
-        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-57:\\mipmap-xxhdpi_background_button_round.png.flat",
-        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-59:\\mipmap-xxhdpi\\background_button_round.png"
+        "merged": "com.iot.technion.regrowth.app-merged_res-57:/drawable_ic_baseline_person_outline_24.xml.flat",
+        "source": "com.iot.technion.regrowth.app-main-59:/drawable/ic_baseline_person_outline_24.xml"
     },
     {
-        "merged": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-merged_res-57:\\mipmap-xhdpi_ic_launcher_user_img_round.png.flat",
-        "source": "C:\\Users\\WIN10\\.gradle\\daemon\\7.3.3\\com.iot.technion.regrowth.app-main-59:\\mipmap-xhdpi\\ic_launcher_user_img_round.png"
+        "merged": "com.iot.technion.regrowth.app-merged_res-57:/drawable_grey_background.xml.flat",
+        "source": "com.iot.technion.regrowth.app-main-59:/drawable/grey_background.xml"
+    },
+    {
+        "merged": "com.iot.technion.regrowth.app-merged_res-57:/mipmap-xxxhdpi_ic_launcher_user_img.png.flat",
+        "source": "com.iot.technion.regrowth.app-main-59:/mipmap-xxxhdpi/ic_launcher_user_img.png"
     }
 ]

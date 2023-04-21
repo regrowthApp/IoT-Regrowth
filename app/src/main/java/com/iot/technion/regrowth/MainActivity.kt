@@ -21,11 +21,7 @@ import com.google.firebase.database.*
 import com.iot.technion.regrowth.adapters.AnimalsAdapter
 import com.iot.technion.regrowth.model.NotificationModel
 import com.iot.technion.regrowth.model.ThreshHoldsModel
-import kotlinx.android.synthetic.main.activity_tabbed.*
-import kotlinx.android.synthetic.main.activity_tabbed.view.*
 import kotlinx.android.synthetic.main.dialog_create_animal.view.*
-import kotlinx.android.synthetic.main.fragment_tabbed.view.*
-import kotlinx.android.synthetic.main.item_node.*
 import kotlinx.android.synthetic.main.item_tab.view.*
 import kotlinx.android.synthetic.main.thresh_holds.view.*
 

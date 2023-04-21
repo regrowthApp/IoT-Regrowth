@@ -66,7 +66,6 @@ class ProfileActivity : AppCompatActivity() {
             binding.btnEditProfile.visibility = View.GONE
             binding.qrButton.visibility = View.GONE
         }
-
     }
 
     private fun showQRCode() {
@@ -106,12 +105,9 @@ class ProfileActivity : AppCompatActivity() {
         } catch (e: Exception) {
             Log.e(TAG, "showQRCode: ${e.message}")
         }
-
-
     }
 
     private fun setUpMap() {
-
         val mapFragment = supportFragmentManager
             .findFragmentById(R.id.mapFragment) as SupportMapFragment
         mapFragment.getMapAsync { googleMap ->
@@ -119,7 +115,6 @@ class ProfileActivity : AppCompatActivity() {
             if (userDataIsReady) {
                 convertAddressToLocation()
             }
-
         }
     }
 
@@ -142,7 +137,7 @@ class ProfileActivity : AppCompatActivity() {
         }
     }
 
-    private fun getFromFireBase() {
+     fun getFromFireBase() {
         val ref = database.reference.child("users/${uid}/profile")
         ref.addValueEventListener(
             object : ValueEventListener {
@@ -209,7 +204,5 @@ class ProfileActivity : AppCompatActivity() {
                 }
             }
         )
-
-
     }
 }
