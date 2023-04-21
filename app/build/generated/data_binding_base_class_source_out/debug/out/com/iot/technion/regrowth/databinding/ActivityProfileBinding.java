@@ -25,7 +25,7 @@ public final class ActivityProfileBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final TextView address;
+  public final TextView addressProfile;
 
   @NonNull
   public final MaterialButton backHome;
@@ -43,10 +43,10 @@ public final class ActivityProfileBinding implements ViewBinding {
   public final ImageView closeQr;
 
   @NonNull
-  public final TextView emailAddress;
+  public final TextView emailAddressProfile;
 
   @NonNull
-  public final TextView farmName;
+  public final TextView farmNameProfile;
 
   @NonNull
   public final Guideline horizontalLine55;
@@ -58,7 +58,7 @@ public final class ActivityProfileBinding implements ViewBinding {
   public final CircleImageView logoImg;
 
   @NonNull
-  public final TextView phoneNumber;
+  public final TextView phoneNumberProfile;
 
   @NonNull
   public final ImageView qrButton;
@@ -78,27 +78,28 @@ public final class ActivityProfileBinding implements ViewBinding {
   @NonNull
   public final Guideline verticalLine92;
 
-  private ActivityProfileBinding(@NonNull ConstraintLayout rootView, @NonNull TextView address,
-      @NonNull MaterialButton backHome, @NonNull ImageView backgroundImg,
-      @NonNull MaterialButton btnEditProfile, @NonNull CardView cardView,
-      @NonNull ImageView closeQr, @NonNull TextView emailAddress, @NonNull TextView farmName,
-      @NonNull Guideline horizontalLine55, @NonNull Guideline horizontalLine58,
-      @NonNull CircleImageView logoImg, @NonNull TextView phoneNumber, @NonNull ImageView qrButton,
+  private ActivityProfileBinding(@NonNull ConstraintLayout rootView,
+      @NonNull TextView addressProfile, @NonNull MaterialButton backHome,
+      @NonNull ImageView backgroundImg, @NonNull MaterialButton btnEditProfile,
+      @NonNull CardView cardView, @NonNull ImageView closeQr, @NonNull TextView emailAddressProfile,
+      @NonNull TextView farmNameProfile, @NonNull Guideline horizontalLine55,
+      @NonNull Guideline horizontalLine58, @NonNull CircleImageView logoImg,
+      @NonNull TextView phoneNumberProfile, @NonNull ImageView qrButton,
       @NonNull ConstraintLayout qrCard, @NonNull ImageView qrCode, @NonNull ImageView shareQr,
       @NonNull Guideline verticalLine5, @NonNull Guideline verticalLine92) {
     this.rootView = rootView;
-    this.address = address;
+    this.addressProfile = addressProfile;
     this.backHome = backHome;
     this.backgroundImg = backgroundImg;
     this.btnEditProfile = btnEditProfile;
     this.cardView = cardView;
     this.closeQr = closeQr;
-    this.emailAddress = emailAddress;
-    this.farmName = farmName;
+    this.emailAddressProfile = emailAddressProfile;
+    this.farmNameProfile = farmNameProfile;
     this.horizontalLine55 = horizontalLine55;
     this.horizontalLine58 = horizontalLine58;
     this.logoImg = logoImg;
-    this.phoneNumber = phoneNumber;
+    this.phoneNumberProfile = phoneNumberProfile;
     this.qrButton = qrButton;
     this.qrCard = qrCard;
     this.qrCode = qrCode;
@@ -134,9 +135,9 @@ public final class ActivityProfileBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.address;
-      TextView address = ViewBindings.findChildViewById(rootView, id);
-      if (address == null) {
+      id = R.id.address_profile;
+      TextView addressProfile = ViewBindings.findChildViewById(rootView, id);
+      if (addressProfile == null) {
         break missingId;
       }
 
@@ -170,15 +171,15 @@ public final class ActivityProfileBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.email_address;
-      TextView emailAddress = ViewBindings.findChildViewById(rootView, id);
-      if (emailAddress == null) {
+      id = R.id.email_address_profile;
+      TextView emailAddressProfile = ViewBindings.findChildViewById(rootView, id);
+      if (emailAddressProfile == null) {
         break missingId;
       }
 
-      id = R.id.farm_name;
-      TextView farmName = ViewBindings.findChildViewById(rootView, id);
-      if (farmName == null) {
+      id = R.id.farm_name_profile;
+      TextView farmNameProfile = ViewBindings.findChildViewById(rootView, id);
+      if (farmNameProfile == null) {
         break missingId;
       }
 
@@ -200,9 +201,9 @@ public final class ActivityProfileBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.phone_number;
-      TextView phoneNumber = ViewBindings.findChildViewById(rootView, id);
-      if (phoneNumber == null) {
+      id = R.id.phone_number_profile;
+      TextView phoneNumberProfile = ViewBindings.findChildViewById(rootView, id);
+      if (phoneNumberProfile == null) {
         break missingId;
       }
 
@@ -242,9 +243,9 @@ public final class ActivityProfileBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityProfileBinding((ConstraintLayout) rootView, address, backHome,
-          backgroundImg, btnEditProfile, cardView, closeQr, emailAddress, farmName,
-          horizontalLine55, horizontalLine58, logoImg, phoneNumber, qrButton, qrCard, qrCode,
+      return new ActivityProfileBinding((ConstraintLayout) rootView, addressProfile, backHome,
+          backgroundImg, btnEditProfile, cardView, closeQr, emailAddressProfile, farmNameProfile,
+          horizontalLine55, horizontalLine58, logoImg, phoneNumberProfile, qrButton, qrCard, qrCode,
           shareQr, verticalLine5, verticalLine92);
     }
     String missingId = rootView.getResources().getResourceName(id);

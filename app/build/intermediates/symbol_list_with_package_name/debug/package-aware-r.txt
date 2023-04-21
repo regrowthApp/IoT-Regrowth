@@ -2793,7 +2793,8 @@ id activity_chart
 id activity_chart_tabbed
 id activity_chooser_view_content
 id add
-id address
+id address_profile
+id address_user
 id adjust_height
 id adjust_width
 id alertTitle
@@ -2927,7 +2928,8 @@ id edittext_dropdown_editable
 id edittext_dropdown_noneditable
 id elastic
 id email
-id email_address
+id email_address_profile
+id email_address_user
 id end
 id endToStart
 id enterAlways
@@ -2937,7 +2939,8 @@ id expand_activities_button
 id expanded_menu
 id fab
 id fade
-id farm_name
+id farm_name_profile
+id farm_name_user
 id fill
 id fill_horizontal
 id fill_vertical
@@ -3140,7 +3143,8 @@ id path
 id pathRelative
 id peekHeight
 id percent
-id phone_number
+id phone_number_profile
+id phone_number_user
 id pin
 id position
 id postLayout

@@ -24,7 +24,7 @@ public final class ActivityUserBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final EditText address;
+  public final EditText addressUser;
 
   @NonNull
   public final ImageView backgroundImg;
@@ -33,10 +33,10 @@ public final class ActivityUserBinding implements ViewBinding {
   public final MaterialButton cancel;
 
   @NonNull
-  public final EditText emailAddress;
+  public final EditText emailAddressUser;
 
   @NonNull
-  public final EditText farmName;
+  public final EditText farmNameUser;
 
   @NonNull
   public final Guideline horizontalLine55;
@@ -51,7 +51,7 @@ public final class ActivityUserBinding implements ViewBinding {
   public final CircleImageView logoImg;
 
   @NonNull
-  public final EditText phoneNumber;
+  public final EditText phoneNumberUser;
 
   @NonNull
   public final MaterialButton saveProfileBtn;
@@ -59,24 +59,24 @@ public final class ActivityUserBinding implements ViewBinding {
   @NonNull
   public final Guideline verticalLine5;
 
-  private ActivityUserBinding(@NonNull ConstraintLayout rootView, @NonNull EditText address,
+  private ActivityUserBinding(@NonNull ConstraintLayout rootView, @NonNull EditText addressUser,
       @NonNull ImageView backgroundImg, @NonNull MaterialButton cancel,
-      @NonNull EditText emailAddress, @NonNull EditText farmName,
+      @NonNull EditText emailAddressUser, @NonNull EditText farmNameUser,
       @NonNull Guideline horizontalLine55, @NonNull Guideline horizontalLine58,
       @NonNull Guideline horizontalLine92, @NonNull CircleImageView logoImg,
-      @NonNull EditText phoneNumber, @NonNull MaterialButton saveProfileBtn,
+      @NonNull EditText phoneNumberUser, @NonNull MaterialButton saveProfileBtn,
       @NonNull Guideline verticalLine5) {
     this.rootView = rootView;
-    this.address = address;
+    this.addressUser = addressUser;
     this.backgroundImg = backgroundImg;
     this.cancel = cancel;
-    this.emailAddress = emailAddress;
-    this.farmName = farmName;
+    this.emailAddressUser = emailAddressUser;
+    this.farmNameUser = farmNameUser;
     this.horizontalLine55 = horizontalLine55;
     this.horizontalLine58 = horizontalLine58;
     this.horizontalLine92 = horizontalLine92;
     this.logoImg = logoImg;
-    this.phoneNumber = phoneNumber;
+    this.phoneNumberUser = phoneNumberUser;
     this.saveProfileBtn = saveProfileBtn;
     this.verticalLine5 = verticalLine5;
   }
@@ -108,9 +108,9 @@ public final class ActivityUserBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.address;
-      EditText address = ViewBindings.findChildViewById(rootView, id);
-      if (address == null) {
+      id = R.id.address_user;
+      EditText addressUser = ViewBindings.findChildViewById(rootView, id);
+      if (addressUser == null) {
         break missingId;
       }
 
@@ -126,15 +126,15 @@ public final class ActivityUserBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.email_address;
-      EditText emailAddress = ViewBindings.findChildViewById(rootView, id);
-      if (emailAddress == null) {
+      id = R.id.email_address_user;
+      EditText emailAddressUser = ViewBindings.findChildViewById(rootView, id);
+      if (emailAddressUser == null) {
         break missingId;
       }
 
-      id = R.id.farm_name;
-      EditText farmName = ViewBindings.findChildViewById(rootView, id);
-      if (farmName == null) {
+      id = R.id.farm_name_user;
+      EditText farmNameUser = ViewBindings.findChildViewById(rootView, id);
+      if (farmNameUser == null) {
         break missingId;
       }
 
@@ -162,9 +162,9 @@ public final class ActivityUserBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.phone_number;
-      EditText phoneNumber = ViewBindings.findChildViewById(rootView, id);
-      if (phoneNumber == null) {
+      id = R.id.phone_number_user;
+      EditText phoneNumberUser = ViewBindings.findChildViewById(rootView, id);
+      if (phoneNumberUser == null) {
         break missingId;
       }
 
@@ -180,9 +180,9 @@ public final class ActivityUserBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityUserBinding((ConstraintLayout) rootView, address, backgroundImg, cancel,
-          emailAddress, farmName, horizontalLine55, horizontalLine58, horizontalLine92, logoImg,
-          phoneNumber, saveProfileBtn, verticalLine5);
+      return new ActivityUserBinding((ConstraintLayout) rootView, addressUser, backgroundImg,
+          cancel, emailAddressUser, farmNameUser, horizontalLine55, horizontalLine58,
+          horizontalLine92, logoImg, phoneNumberUser, saveProfileBtn, verticalLine5);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

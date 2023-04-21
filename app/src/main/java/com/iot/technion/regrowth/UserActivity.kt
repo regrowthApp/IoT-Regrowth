@@ -20,8 +20,6 @@ import java.io.File
 
 
 class UserActivity : AppCompatActivity() {
-
-
     private lateinit var binding: ActivityUserBinding
     private lateinit var database: FirebaseDatabase
     private lateinit var storage: FirebaseStorage
@@ -75,10 +73,10 @@ class UserActivity : AppCompatActivity() {
         }
 
         binding.saveProfileBtn.setOnClickListener {
-            val name = binding.farmName.text!!.toString()
-            val phone_number = binding.phoneNumber.text!!.toString()
-            val email = binding.emailAddress.text!!.toString()
-            val address = binding.address.text!!.toString()
+            val name = binding.farmNameUser.text!!.toString()
+            val phone_number = binding.phoneNumberUser.text!!.toString()
+            val email = binding.emailAddressUser.text!!.toString()
+            val address = binding.addressUser.text!!.toString()
             uploadData(name, phone_number, email, address)
         }
 
@@ -145,19 +143,37 @@ class UserActivity : AppCompatActivity() {
             settingLogoImage = false
         }
 
-        //keep checking in background if the images are uploaded
-        val handler = Handler()
-        handler.postDelayed(object : Runnable {
-            override fun run() {
-                if (farmImgPath.equals("") || logoImgPath.equals("")) {
-                    handler.postDelayed(this, 1000)
-                } else {
-                    saveProfileDataToFirebase(name, farmImgPath, logoImgPath, phone, email, address)
+        reference.listAll().addOnSuccessListener {
+            for (item in it.items) {
+                when (item.name.toString()) {
+                    "logo" -> logoImgPath = "exist"
+                    "farm" -> farmImgPath = "exist"
                 }
             }
-        }, 1000)
+        }
+        if (logoImgPath.equals("exist") and farmImgPath.equals("exist")) {
+            saveProfileDataToFirebase(name, farmImgPath, logoImgPath, phone, email, address)
+        } else {
+            //keep checking in background if the images are uploaded
+            val handler = Handler()
+            handler.postDelayed(object : Runnable {
+                override fun run() {
+                    if (farmImgPath.equals("") || logoImgPath.equals("")) {
+                        handler.postDelayed(this, 1000)
+                    } else {
+                        saveProfileDataToFirebase(
+                            name,
+                            farmImgPath,
+                            logoImgPath,
+                            phone,
+                            email,
+                            address
+                        )
+                    }
+                }
+            }, 1000)
+        }
     }
-
     private fun saveProfileDataToFirebase(name: String, farmImgPath: String, logoImgPath: String, phone: String, email: String, address: String) {
         val profile = ProfileModel(name, farmImgPath, logoImgPath, phone, email, address)
         database.reference.child("users/${uid}/profile")
@@ -218,10 +234,10 @@ class UserActivity : AppCompatActivity() {
                     }
 
 
-                    binding.farmName.setText(farm_name)
-                    binding.phoneNumber.setText(phoneNumber)
-                    binding.emailAddress.setText(emailAddress)
-                    binding.address.setText(address)
+                    binding.farmNameUser.setText(farm_name)
+                    binding.phoneNumberUser.setText(phoneNumber)
+                    binding.emailAddressUser.setText(emailAddress)
+                    binding.addressUser.setText(address)
                 }
 
                 override fun onCancelled(error: DatabaseError) {

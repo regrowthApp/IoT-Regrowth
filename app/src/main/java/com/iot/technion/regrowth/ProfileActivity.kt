@@ -23,8 +23,9 @@ import com.google.firebase.storage.FirebaseStorage
 import com.google.zxing.BarcodeFormat
 import com.iot.technion.regrowth.databinding.ActivityProfileBinding
 import com.journeyapps.barcodescanner.BarcodeEncoder
+import kotlinx.android.synthetic.main.activity_profile.*
+import kotlinx.android.synthetic.main.activity_user.*
 import java.io.File
-
 
 class ProfileActivity : AppCompatActivity() {
     private lateinit var binding: ActivityProfileBinding
@@ -137,7 +138,7 @@ class ProfileActivity : AppCompatActivity() {
         }
     }
 
-     fun getFromFireBase() {
+     private fun getFromFireBase() {
         val ref = database.reference.child("users/${uid}/profile")
         ref.addValueEventListener(
             object : ValueEventListener {
@@ -147,7 +148,7 @@ class ProfileActivity : AppCompatActivity() {
                     var phoneNumber: String = ""
                     var address: String = ""
                     if (dataSnapshot.hasChild("farm_name")) {
-                        farm_name = dataSnapshot.child("farm_name").value!!.toString()
+                        farm_name = dataSnapshot.child("farm_name").value.toString()
                     }
 
                     if (dataSnapshot.hasChild("email")) {
@@ -188,10 +189,12 @@ class ProfileActivity : AppCompatActivity() {
                     }else{
                         Log.e(TAG, "onDataChange: logo image is null")
                     }
-                    binding.farmName.text = farm_name
-                    binding.phoneNumber.text = phoneNumber
-                    binding.emailAddress.text = emailAddress
-                    binding.address.text = address
+                    val farm = binding.root.getViewById(farm_name_profile.id)
+
+                    binding.farmNameProfile.text = farm_name
+                    binding.phoneNumberProfile.text = phoneNumber
+                    binding.emailAddressProfile.text = emailAddress
+                    binding.addressProfile.text = address
                     userDataIsReady = true
                     if(map != null){
                         convertAddressToLocation()

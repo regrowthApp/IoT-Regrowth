@@ -79,7 +79,8 @@ id action_FirstFragment_to_SecondFragment
 id action_SecondFragment_to_FirstFragment
 id activity_chart
 id activity_chart_tabbed
-id address
+id address_profile
+id address_user
 id animalIcon
 id animalName
 id animalNameSpinner
@@ -95,9 +96,11 @@ id cardView
 id cart_item_count
 id closeQr
 id email
-id email_address
+id email_address_profile
+id email_address_user
 id fab
-id farm_name
+id farm_name_profile
+id farm_name_user
 id gateway
 id gateway_recycler_view
 id google_btn
@@ -145,7 +148,8 @@ id nodes_recycler_view
 id notification
 id others
 id password
-id phone_number
+id phone_number_profile
+id phone_number_user
 id profile
 id progressBar
 id qrButton
